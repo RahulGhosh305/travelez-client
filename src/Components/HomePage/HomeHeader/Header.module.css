@@ -1,0 +1,57 @@
+.planeTreeBg {
+    background-image: url("../../../assets/plane&treeBg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerContent {
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+}
+.headerContent button {
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: rgb(35, 35, 102);
+    padding: 15px 50px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.headerContent button:hover {
+    background-color: rgb(241, 228, 45);
+    color: #000;
+}
+.headerContentInner {
+    text-align: center;
+    margin: auto 0;
+}
+.headerContentInner p {
+    color:rgb(35, 35, 102);
+}
+.mainHeading {
+
+}
+.headerParagraph {
+    font-size: 26px;
+    font-weight: 600;
+}
+.headerBgContent {
+    background-image: url("../../../assets//headerBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
