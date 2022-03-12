@@ -13,28 +13,29 @@
     font-weight: 600;
     margin-top: 20px;
     background-color: rgb(35, 35, 102);
-    padding: 15px 50px;
+    padding: 10px 30px;
     color: #fff;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 22px;
 }
 .headerContent button:hover {
     background-color: rgb(241, 228, 45);
     color: #000;
+}
+.mainHeading {
+    /* margin-bottom: 0px; */
 }
 .headerContentInner {
     text-align: center;
     margin: auto 0;
 }
 .headerContentInner p {
+    padding-top: 20px;
     color:rgb(35, 35, 102);
-}
-.mainHeading {
-
 }
 .headerParagraph {
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .headerBgContent {
     background-image: url("../../../assets//headerBg.png");
@@ -45,7 +46,10 @@
 }
 
 @media (min-width: 576px) {
-
+    .headerContent button {
+        padding: 15px 50px;
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 768px) {}

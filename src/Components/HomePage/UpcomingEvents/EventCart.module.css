@@ -1,0 +1,24 @@
+.containerDetails {
+    padding-right: 20px;
+    position: relative;
+}
+.middleOverlay {
+    position: absolute;
+    left : 0;
+    bottom : 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s ease;
+    background-color: #fff;
+    text-align: center;
+    padding : 0px 16px;
+    cursor : pointer;
+}
+.containerDetails:hover .middleOverlay {
+    height: 60%;
+}
+.overlayText {
+    padding : 0 20px;
+}

@@ -1,13 +1,39 @@
 .infoCart {
     display: flex;
-    align-items: end;
-    justify-self: end;
-    padding: 0ps 10px;
-    margin-top: 100px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0px 10px;
 }
+
 .infoImg {
-    width : 20%;
+    width : 10%;
 }
-.horizontal {
-    margin-top: 100px;
+
+@media (min-width: 576px) {
+    .infoCart {
+        justify-content: center;
+        padding: 10px 10px;
+    }
+    .infoImg {
+        width : 14%;
+    }
 }
+
+@media (min-width: 768px) {
+    .infoCart {
+        padding: 20px 10px;
+    }
+    .infoImg {
+        width : 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .infoCart {
+        padding: 50px 10px;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
