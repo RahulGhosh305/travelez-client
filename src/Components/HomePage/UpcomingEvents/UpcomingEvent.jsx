@@ -49,10 +49,12 @@ const UpcomingEvent = () => {
             <div className="row">
                 <div className="col-sm-12">
                     <div className={styles.eventWrapper}>
-                        <div className="d-flex justify-content-center mb-5">
-                            <div className="text-center">
-                                <p className="lead mb-0">Check Our Best Promotional Tour</p>
-                                <h1 className={`display-4 ${styles.eventHeading}`}> Upcoming Event </h1>
+                        <div className="d-flex justify-content-center">
+                            <div className={styles.textContent}>
+                                <div className="text-center">
+                                    <p className="lead mb-0">Check Our Best Promotional Tour</p>
+                                    <h1 className="display-4"> Upcoming Event </h1>
+                                </div>
                             </div>
                         </div>
                         <Slider {...settings}>

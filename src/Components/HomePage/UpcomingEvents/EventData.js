@@ -27,13 +27,13 @@ const EventData = [
         photo: tourJaflong,
         name: "Jaflong",
         plan: "1 Days 1 Nights",
-        message: "Traveling – it leaves you speechless, then turns you into a storyteller."
+        message: "Travel is the only thing you buy that makes you richer."
     },
     {
         photo: tourCoxsBazar,
         name: "Cox's Bazar",
         plan: "2 Days 1 Nights",
-        message: "A journey of a thousand miles begins with a single step"
+        message: "A journey of a thousand miles begins with a single step."
     }
 ]
 export default EventData;
