@@ -5,7 +5,10 @@
     font-family: 'Playfair Display', serif;
     line-height: 1.5;
     font-weight: 400;
+    text-align: center;
 }
 .tourMessage {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    text-align: center;
 }

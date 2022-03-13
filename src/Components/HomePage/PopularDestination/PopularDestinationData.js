@@ -13,9 +13,16 @@ const PopularDestinationData = [
         packagePrice: "15000"
     },
     {
+        photo: kolkata,
+        name: "Dhaka-Kolkata-Darjeeling-Dhaka",
+        message: "Kolkata-Darjeeling Tour Package – Explore the world's third-highest mountain and the Darjeeling Himalayan Railway & sightseeing places at the best price by trevelez ...",
+        rating: "5.0",
+        packagePrice: "20000"
+    },
+    {
         photo: kasmir,
         name: "Dhaka-Delhi-Kasmir-ladakh",
-        message: "Kashmir & Ladakh Tour · Sightseeing and Shikara ride in Srinagar · Enjoy the Gondola ride in Gulmarg · Treat your eyes to the lush greenery of Pahalgam · Observe ...",
+        message: "Kashmir & Ladakh Tour Sightseeing and Shikara ride in Srinagar Enjoy the Gondola ride in Gulmarg Treat your eyes to the greenery of Pahalgam ...",
         rating: "5.0",
         packagePrice: "30000"
     },
@@ -32,13 +39,6 @@ const PopularDestinationData = [
         message: "Bhutan tourism is famed for its stunning valleys, lush greenery, magnificent mountains and colourful culture that you can experience at Bhutan tourist places...",
         rating: "4.9",
         packagePrice: "30000"
-    },
-    {
-        photo: kolkata,
-        name: "Dhaka-Kolkata-Darjeeling-Dhaka",
-        message: "Kolkata-Darjeeling Tour Package – Explore the world's third-highest mountain and the Darjeeling Himalayan Railway & sightseeing places at the best price by trevelez ...",
-        rating: "5.0",
-        packagePrice: "20000"
     },
     {
         photo: srilonka,

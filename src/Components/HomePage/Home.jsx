@@ -8,6 +8,8 @@ import OurStory from './OurStory/OurStory';
 import PopularDestination from './PopularDestination/PopularDestination';
 import UpcomingEvent from './UpcomingEvents/UpcomingEvent';
 import Footer from '../Shared/Footer/Footer';
+import Blog from './Blog/Blog';
+import NewsLetter from './NewsLetter/NewsLetter';
 
 const Home = () => {
     return (
@@ -19,6 +21,8 @@ const Home = () => {
             <UpcomingEvent />
             <OurStory/>
             <PopularDestination/>
+            <Blog />
+            <NewsLetter />
             <GetTouch/>
             <Footer/>
         </>
