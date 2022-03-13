@@ -14,7 +14,7 @@ const PopularDestinationData = [
     },
     {
         photo: kasmir,
-        name: "Dhaka-Delhi-Kasmir-ladakh-Dhaka",
+        name: "Dhaka-Delhi-Kasmir-ladakh",
         message: "Kashmir & Ladakh Tour · Sightseeing and Shikara ride in Srinagar · Enjoy the Gondola ride in Gulmarg · Treat your eyes to the lush greenery of Pahalgam · Observe ...",
         rating: "5.0",
         packagePrice: "30000"
