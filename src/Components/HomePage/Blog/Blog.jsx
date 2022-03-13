@@ -14,11 +14,13 @@ const Blog = () => {
                 <div className="row">
                     <div className="col-md-8 my-auto">
                         {
-                            BlogData.map(singleData => <BlogCart singleData={singleData} key={Math.random()}/> )
+                            BlogData.map(singleData => <BlogCart singleData={singleData} key={Math.random()} />)
                         }
                     </div>
-                    <div className="col-md-4">
-                        <img src={blogSiteImage} alt="" className="img-fluid"/>
+                    <div className="col-md-4 my-auto">
+                        <div className={styles.blogSiteImg}>
+                            <img src={blogSiteImage} alt="" className="img-fluid" />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -13,11 +13,11 @@ const NewsLetter = () => {
                         </div>
                     </div>
                     <div className="col-md-6 my-auto">
-                        <div>
+                        <div className="mb-4">
                             <h1 className={styles.newsLtterTitle}>SubscribeTo Get Updated For Our Newsletter</h1>
                             <p className="lead">Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts, it even breaks your heart. But that’s okay. The journey changes you; it should change you. It leaves marks on your memory, on your consciousness, on your heart, and on your body. You take something with you. Hopefully, you leave something good behind. <strong className="fw-bold"> – Anthony Bourdain</strong> </p>
 
-                            <div className="row pt-3">
+                            <div className="row">
                                 <div className="col-md-8">
                                     <form class="d-flex">
                                         <input class="form-control me-2" type="email" placeholder="E-Mail" />

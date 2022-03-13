@@ -8,8 +8,8 @@ const Footer = () => {
         <div className={styles.footWrapper}>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3 col-md-6">
-                        <h4 className={styles.footerTitle}>Travelez</h4>
+                    <div className="col-lg-3 col-md-6 mb-4">
+                        <h3 className={styles.footerTitle}>Travelez</h3>
                         <p className={styles.footerSubtext}>Travelez is a travel and tourism organization company. Organize tour plan in local and asian tourist spots. </p>
 
                         <div className={styles.footerSocial}>
@@ -20,8 +20,8 @@ const Footer = () => {
                             <i> <FontAwesomeIcon icon={faInstagram} /> </i>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6">
-                        <h4 className={styles.footerTitle}>Information</h4>
+                    <div className="col-lg-3 col-md-6 mb-4">
+                        <h3 className={styles.footerTitle}>Information</h3>
                         <ul class="list-group">
                             <li className={styles.footerListItem}>About</li>
                             <li className={styles.footerListItem}>Service</li>
@@ -35,8 +35,8 @@ const Footer = () => {
                             <i></i>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6">
-                        <h4 className={styles.footerTitle}>Customer Support</h4>
+                    <div className="col-lg-3 col-md-6 mb-4">
+                        <h3 className={styles.footerTitle}>Customer Support</h3>
                         <ul class="list-group">
                             <li className={styles.footerListItem}>FAQ</li>
                             <li className={styles.footerListItem}>Payment Options</li>
@@ -45,8 +45,8 @@ const Footer = () => {
                             <li className={styles.footerListItem}>Contact Us</li>
                         </ul>
                     </div>
-                    <div className="col-lg-3 col-md-6">
-                        <h4 className={styles.footerTitle}>Have a Questions?</h4>
+                    <div className="col-lg-3 col-md-6 mb-4">
+                        <h3 className={styles.footerTitle}>Have a Questions?</h3>
                         <div className="d-flex align-items-center">
                             <i><FontAwesomeIcon icon={faLocation} /></i>
                             <li className={styles.questionText} >26/A House, Nazrul Ave, KandirPar</li>
@@ -60,7 +60,9 @@ const Footer = () => {
                             <li className={styles.questionText} >travelez@gmail.com</li>
                         </div>
                     </div>
-                    <p className="mx-3 mt-5 d-flex justify-content-center">All right reserve 2022 by Travelez tour and tourism organization.</p>
+                    <div className="row">
+                        <p className="mx-3 text-center">All right reserve 2022 by Travelez tour and tourism organization.</p>
+                    </div>
                 </div>
             </div>
         </div>

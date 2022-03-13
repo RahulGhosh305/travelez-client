@@ -1,14 +1,19 @@
 .infoCart {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 0px 10px;
+    justify-content: center;
 }
 
 .infoImg {
     width : 10%;
 }
-
+.horizontal {
+    width : 90%;
+    padding: auto;
+    color: blue;
+}
 @media (min-width: 576px) {
     .infoCart {
         justify-content: center;

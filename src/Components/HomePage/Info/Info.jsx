@@ -9,7 +9,7 @@ const Info = () => {
             <div className="row">
                 <div className="col-md-6 col-lg-4">
                     <div className={styles.infoCart}>
-                        <img src={beach} alt="" className={`img-fluid ${styles.infoImg}`}/>
+                        <img src={beach} alt="" className={`img-fluid ${styles.infoImg}`} />
                         <div className="ms-4">
                             <h5 className="mb-0">Top Destinations</h5>
                             <p className="mb-0">All travelers goes there</p>
@@ -18,7 +18,7 @@ const Info = () => {
                 </div>
                 <div className="col-md-6 col-lg-4">
                     <div className={styles.infoCart}>
-                        <img src={wallet} alt="" className={`img-fluid ${styles.infoImg}`}/>
+                        <img src={wallet} alt="" className={`img-fluid ${styles.infoImg}`} />
                         <div className="ms-4">
                             <h5 className="mb-0">The Best Prices</h5>
                             <p className="mb-0">We know travelers feeling's</p>
@@ -27,14 +27,16 @@ const Info = () => {
                 </div>
                 <div className="col-md-6 mx-auto col-lg-4">
                     <div className={styles.infoCart}>
-                        <img src={suitcase} alt="" className={`img-fluid ${styles.infoImg}`}/>
+                        <img src={suitcase} alt="" className={`img-fluid ${styles.infoImg}`} />
                         <div className="ms-4">
                             <h5 className="mb-0">Amazing Services</h5>
                             <p className="mb-0">Try best services from us</p>
                         </div>
                     </div>
                 </div>
-                <hr  className={styles.horizontal} />
+                <div className={styles.horizontal}>
+                    <hr className="mt-5"/>
+                </div>
             </div>
         </div>
     );
