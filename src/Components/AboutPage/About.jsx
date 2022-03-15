@@ -1,12 +1,20 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
 import Header from './AboutHeader/Header';
+import FAQ from './FAQ/FAQ';
+import KnowUs from './KnowUs/KnowUs';
+import BoatAndSea from './BoatAndSea/BoatAndSea'
+import Counter from './Counter/Counter';
+import Footer from '../Shared/Footer/Footer'
 
 const About = () => {
     return (
         <div>
-            <Navbar/>
             <Header/>
+            <KnowUs/>
+            <FAQ/>
+            <BoatAndSea />
+            <Counter/>
+            <Footer />
         </div>
     );
 };

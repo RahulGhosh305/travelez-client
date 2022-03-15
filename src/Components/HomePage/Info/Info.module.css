@@ -5,13 +5,19 @@
     padding: 0px 10px;
     justify-content: center;
 }
-
+.infoTitle {
+    font-family: 'Playfair Display', serif;
+}
+.subTitle {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
 .infoImg {
     width : 10%;
 }
 .horizontal {
     width : 90%;
-    padding: auto;
+    margin: 0 auto;
     color: blue;
 }
 @media (min-width: 576px) {

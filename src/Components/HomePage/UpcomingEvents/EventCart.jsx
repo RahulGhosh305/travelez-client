@@ -13,11 +13,8 @@ const EventCart = (props) => {
             <div className={styles.middleOverlay}>
                 <div className={styles.overlayText}>
                     <div>
-                        <h4 className="pt-1 display-4">{name}</h4>
+                        <h4 className="display-4">{name}</h4>
                         <p className={styles.eventPlanText}>{plan}</p>
-                        <div className={styles.socialIcons}>
-                            <i></i><i></i><i></i>
-                        </div>
                         <p className={styles.eventMessage}> {message} </p>
                     </div>
                 </div>

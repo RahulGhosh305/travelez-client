@@ -7,7 +7,7 @@ import tourCoxsBazar from '../../../assets/coxsBazar.jpg'
 const EventData = [
     {
         photo: tourSaintMartin,
-        name: "Saint Martin",
+        name: "SaintMartin",
         plan: "3 Days 2 Nights",
         message: "Jobs fill your pocket, but adventures fill your soul."
     },
@@ -19,7 +19,7 @@ const EventData = [
     },
     {
         photo: tourSajekValley,
-        name: "Sajek Valley",
+        name: "SajekValley",
         plan: "3 Days 2 Nights",
         message: "A journey is best measured in friends, rather than miles."
     },
@@ -31,7 +31,7 @@ const EventData = [
     },
     {
         photo: tourCoxsBazar,
-        name: "Cox's Bazar",
+        name: "Cox'sBazar",
         plan: "2 Days 1 Nights",
         message: "A journey of a thousand miles begins with a single step."
     }

@@ -17,13 +17,14 @@
     color: #fff;
     border-radius: 5px;
     font-size: 22px;
+    font-family: 'Playfair Display', serif;
 }
 .headerContent button:hover {
     background-color: rgb(241, 228, 45);
     color: #000;
 }
 .mainHeading {
-    /* margin-bottom: 0px; */
+    font-family: 'Playfair Display', serif;
 }
 .headerContentInner {
     text-align: center;
@@ -34,6 +35,7 @@
     color:rgb(35, 35, 102);
 }
 .headerParagraph {
+    font-family: 'Playfair Display', serif;
     font-size: 26px;
     font-weight: 500;
 }

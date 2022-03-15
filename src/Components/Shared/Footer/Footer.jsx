@@ -22,22 +22,17 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-3 col-md-6 mb-4">
                         <h3 className={styles.footerTitle}>Information</h3>
-                        <ul class="list-group">
+                        <ul className="list-group">
                             <li className={styles.footerListItem}>About</li>
                             <li className={styles.footerListItem}>Service</li>
                             <li className={styles.footerListItem}>Terms and Condition</li>
                             <li className={styles.footerListItem}>Become a partner</li>
                             <li className={styles.footerListItem}>Privacy and Policy</li>
                         </ul>
-                        <div className="d-flex align-items-center">
-                            <i><FontAwesomeIcon icon="fa-brands fa-facebook" /></i>
-                            <i></i>
-                            <i></i>
-                        </div>
                     </div>
                     <div className="col-lg-3 col-md-6 mb-4">
                         <h3 className={styles.footerTitle}>Customer Support</h3>
-                        <ul class="list-group">
+                        <ul className="list-group">
                             <li className={styles.footerListItem}>FAQ</li>
                             <li className={styles.footerListItem}>Payment Options</li>
                             <li className={styles.footerListItem}>Booking Tips</li>

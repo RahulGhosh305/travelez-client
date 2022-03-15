@@ -13,7 +13,7 @@ const Navbar = () => {
     }
     window.addEventListener('scroll', changeNavbarColor)
     return (
-        <div className='mt-3'>
+        <div className='pt-3'>
             <nav className={navbarColor ? `navbar navbar-expand-lg fixed-top navbar-light bg-light ${styles.navStyle}` : "navbar navbar-expand-lg navbar-light"}>
                 <div className="container">
                     <NavLink className="navbar-brand fw-bold" to="/">Travelerz</NavLink>
