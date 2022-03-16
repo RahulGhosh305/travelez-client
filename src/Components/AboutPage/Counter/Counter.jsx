@@ -45,6 +45,10 @@ const Counter = () => {
                         <h4>Ship tours</h4>
                     </div>
                 </div>
+
+                <div className={styles.horizontal}>
+                    <hr/>
+                </div>
             </div>
         </div>
     );

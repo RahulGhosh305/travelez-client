@@ -34,6 +34,10 @@ const ContactForm = () => {
                             <img src={contactUsSiteImg} alt="" className="img-fluid" />
                         </div>
                     </div>
+
+                    <div className={styles.horizontal}>
+                        <hr />
+                    </div>
                 </div>
             </div>
         </div>

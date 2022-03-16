@@ -12,3 +12,9 @@
 .counterWrapper h2, h4 {
     font-family: 'Playfair Display', serif;
 }
+.horizontal {
+    width : 90%;
+    margin: 0 auto;
+    color: blue;
+    margin-top: 25px;
+}
