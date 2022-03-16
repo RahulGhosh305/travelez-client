@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import GetTouch from './GetTouch/GetTouch';
 import Bus from './Bus/Bus';
@@ -12,6 +12,9 @@ import Blog from './Blog/Blog';
 import NewsLetter from './NewsLetter/NewsLetter';
 
 const Home = () => {
+    useEffect(()=> {
+        window.scrollTo(0,0)
+    },[])
     return (
         <>
             <Navbar/>

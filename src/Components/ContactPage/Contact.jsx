@@ -1,12 +1,15 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
+import ContactForm from './ContactForm/ContactForm';
 import ContactHeader from './ContactHeader/ContactHeader';
-
+import GetTouch from './GetTouch/GetTouch';
+import Footer from '../Shared/Footer/Footer'
 const Contact = () => {
     return (
         <div>
-            <Navbar/>
             <ContactHeader/>
+            <GetTouch />
+            <ContactForm/>
+            <Footer />
         </div>
     );
 };
