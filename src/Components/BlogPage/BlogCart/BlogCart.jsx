@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './BlogCart.module.css'
-import blogPostImg1 from '../../../../assets/blogPostImg1.jpg'
+import blogPostImg1 from '../../../assets/blogPostImg1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faComment, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faEye } from '@fortawesome/free-regular-svg-icons';

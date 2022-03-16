@@ -15,7 +15,7 @@ const Counter = () => {
                         <h2 className="display-2">
                             <CountUp end={37} duration={15} />
                         </h2>
-                        <h4>Mounting tours</h4>
+                        <h4 className={styles.CounterName}>Mounting tours</h4>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-3">
@@ -24,7 +24,7 @@ const Counter = () => {
                         <h2 className="display-2">
                             <CountUp end={22} duration={15} />
                         </h2>
-                        <h4>Iceland tours</h4>
+                        <h4 className={styles.CounterName}>Iceland tours</h4>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-3">
@@ -33,7 +33,7 @@ const Counter = () => {
                         <h2 className="display-2">
                             <CountUp end={49} duration={15}/>
                         </h2>
-                        <h4>Photos click</h4>
+                        <h4 className={styles.CounterName}>Photos click</h4>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-3">
@@ -42,7 +42,7 @@ const Counter = () => {
                         <h2 className="display-2">
                             <CountUp end={57} duration={15} />
                         </h2>
-                        <h4>Ship tours</h4>
+                        <h4 className={styles.CounterName}>Ship tours</h4>
                     </div>
                 </div>
 

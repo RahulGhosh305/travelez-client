@@ -41,10 +41,10 @@ const Navbar = () => {
                                 <NavLink className={({isActive}) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/contact'>Contact</NavLink>
                             </li>
                         </ul>
-                        <form>
-                            <button className={`btn ${styles.inBtn}`} >SignIn</button>
+                        <div>
+                            <NavLink to="/signin" className={`btn ${styles.inBtn}`} >SignIn</NavLink>
                             {/* <button className={`btn ${styles.outBtn}`} >SignOut</button> */}
-                        </form>
+                        </div>
                     </div>
                 </div>
             </nav>

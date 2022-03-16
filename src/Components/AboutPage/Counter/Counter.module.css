@@ -9,7 +9,7 @@
 .counterWrapper img {
     width : 35%;
 }
-.counterWrapper h2, h4 {
+.counterWrapper h2 {
     font-family: 'Playfair Display', serif;
 }
 .horizontal {
@@ -17,4 +17,7 @@
     margin: 0 auto;
     color: blue;
     margin-top: 25px;
+}
+.CounterName{
+    font-family: 'Playfair Display', serif;
 }

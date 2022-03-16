@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogCart from './BlogCart/BlogCart'
+import BlogCart from '../BlogCart/BlogCart'
 import styles from './AllBlogs.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGoogle, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
