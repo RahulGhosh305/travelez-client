@@ -10,7 +10,7 @@ const ContactForm = () => {
         <div className={styles.formWrapper}>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 my-auto">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <h2 className={styles.formTitle}>Drop a message</h2>
 

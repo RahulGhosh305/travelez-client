@@ -8,6 +8,13 @@
   overflow: hidden;
   border-radius: 15px;
 }
+.newsLetterBtn {
+  background-color: #f8b600;
+  color: #fff;
+  font-weight: 500;
+}
+
+
 @keyframes move {
   0% {
     transform: scale(1) translateY(0);

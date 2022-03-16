@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
+import AllBlogs from './AllBlogs/AllBlogs';
 import BlogHeader from './BlogHeader/BlogHeader';
-
+import Footer from '../Shared/Footer/Footer'
 const Blog = () => {
     return (
         <div>
-            <Navbar/>
             <BlogHeader />
+            <AllBlogs />
+            <Footer />
         </div>
     );
 };

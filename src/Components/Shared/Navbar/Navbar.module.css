@@ -11,10 +11,10 @@ ul li:last-child {
 }
 .inBtn {
     border-radius: 5px;
-    color: #000;
+    color: #fff !important;
     font-size: 18px;
-    font-weight: 500;
-    background-color: rgb(255, 243, 70) !important;
+    font-weight: 500 !important;
+    background-color: #f8b600 !important;
 }
 
 @media (min-width: 576px) {

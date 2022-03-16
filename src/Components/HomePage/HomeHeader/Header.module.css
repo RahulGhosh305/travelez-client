@@ -20,8 +20,8 @@
     font-family: 'Playfair Display', serif;
 }
 .headerContent button:hover {
-    background-color: rgb(241, 228, 45);
-    color: #000;
+    background-color: hsl(44, 100%, 49%);
+    color: #fff;
 }
 .mainHeading {
     font-family: 'Playfair Display', serif;

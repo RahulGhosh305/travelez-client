@@ -19,9 +19,9 @@ const NewsLetter = () => {
 
                             <div className="row">
                                 <div className="col-md-8">
-                                    <form class="d-flex">
-                                        <input class="form-control me-2" type="email" placeholder="E-Mail" />
-                                        <button class="btn btn-outline-success" type="submit">Send</button>
+                                    <form className="d-flex">
+                                        <input className="form-control me-2" type="email" placeholder="E-Mail" />
+                                        <button className={`btn ${styles.newsLetterBtn}`} type="submit">Send</button>
                                     </form>
                                 </div>
                             </div>
