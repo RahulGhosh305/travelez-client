@@ -12,7 +12,7 @@ const AllBlogs = () => {
             <div className="row">
                 <div className="d-flex justify-content-center mb-5">
                     <div className="text-center">
-                        <p className="lead mb-0">See Our</p>
+                        <p className="lead mt-5 mb-0">See Our</p>
                         <h4 className="display-4">Memories</h4>
                     </div>
                 </div>

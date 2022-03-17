@@ -42,7 +42,7 @@ const SignIn = () => {
                                 </div>
 
                             </form>
-                            <p onClick={() => handleSignUp()} className={styles.notRegistered}>*Not Registered! <u className="text-primary">Sign-Up</u> </p>
+                            <p onClick={() => handleSignUp()} className={styles.notRegistered}>*Not Register! <u className="text-primary">Sign-Up</u> </p>
 
                             <div className={styles.googleBtnWrapper}>
                                 <h4> <u> Or Sign In with </u> </h4>
