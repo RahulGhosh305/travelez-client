@@ -159,7 +159,7 @@ const AllBlogs = () => {
 
                             <a href="#" className={`btn d-block ${styles.siteBarBtn}`}><h5>TagClouds</h5></a>
 
-                            <div className="my-3 d-flex flex-wrap">
+                            <div className="my-3 d-flex flex-wrap justify-content-between">
                                 <h5>
                                     <span className="badge text-dark bg-light">Technology</span>
                                 </h5>
@@ -174,9 +174,6 @@ const AllBlogs = () => {
                                 </h5>
                                 <h5>
                                     <span class="badge text-dark bg-light">Food</span>
-                                </h5>
-                                <h5>
-                                    <span class="badge text-dark bg-light">Technology</span>
                                 </h5>
                                 <h5>
                                     <span class="badge text-dark bg-light">Lifestyle</span>

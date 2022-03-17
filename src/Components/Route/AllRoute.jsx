@@ -8,6 +8,7 @@ import Dashboard from '../DashboardPage/Dashboard';
 import Contact from '../ContactPage/Contact';
 import SignIn from '../SignUpSignInPage/SignIn/SignIn';
 import SignUp from '../SignUpSignInPage/SignUp/SignUp';
+import SingleBlog from '../SingleBlogPage/SingleBlog';
 
 const AllRoute = () => {
     return (
@@ -16,6 +17,7 @@ const AllRoute = () => {
             <Route path="/about" element={<About />} />
             <Route path="/tour" element={<Tour />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/singleBlog" element={<SingleBlog />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<SignIn />} />

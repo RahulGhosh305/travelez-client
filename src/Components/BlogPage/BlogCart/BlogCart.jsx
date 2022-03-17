@@ -4,7 +4,13 @@ import blogPostImg1 from '../../../assets/blogPostImg1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendar, faComment, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faEye } from '@fortawesome/free-regular-svg-icons';
+import { useNavigate } from 'react-router-dom';
+
 const BlogCart = () => {
+    const navigate = useNavigate()
+    const handleSingleBlogPage = () => {
+        navigate('/singleBlog')
+    }
     return (
 
             <div data-aos="fade-up" data-aos-duration="2000" className="row mb-4">
@@ -35,7 +41,7 @@ const BlogCart = () => {
                         <div className="my-3">
                             <h2 className={styles.blogCartTitle}>Astronomy Binoculars A Great Alternative</h2>
                             <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente a consectetur nam laborum eum temporibus, quia tempore obcaecati velit, quaerat vero blanditiis, ab aliquid ut tempora illum perspiciatis dolorum deserunt sequi.</p>
-                            <button className={`btn ${styles.blogCartBtn}`}>View more</button>
+                            <button onClick={() => handleSingleBlogPage()} className={`btn ${styles.blogCartBtn}`}>View more</button>
                         </div>
                     </div>
                 </div>

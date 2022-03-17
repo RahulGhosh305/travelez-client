@@ -11,7 +11,7 @@ const DestinationCard = (props) => {
     return (
         <div data-aos="zoom-in" data-aos-duration="2000" className="col-md-6 col-lg-4 mb-4">
             <div class="card">
-                <img src={photo} class="card-img-top" alt="..." />
+                <img src={photo} className="card-img-top" alt="..." />
                 <div class="card-body">
                     <h3 class={`card-title ${styles.tourTitle}`}>{name}</h3>
                     {/* <p class={`card-text ${styles.tourMessage}`}>{message}</p> */}
