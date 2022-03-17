@@ -1,0 +1,25 @@
+.imgDiv {
+    position: relative;
+    text-align: center;
+}
+.cardCustom {
+    cursor: pointer;
+}
+.imgPack {
+    position: absolute;
+    padding: 10px;
+    background-color: #f8b600;
+    color: #fff;
+    font-weight: 600;
+    font-size: 26px;
+    border-top-right-radius: 15px;
+    bottom: 0;
+    font-family: 'Playfair Display', serif;
+}
+.tourTitle {
+    font-family: 'Playfair Display', serif;
+}
+.tourText {
+    font-family: 'Playfair Display', serif;
+    color: rgb(100, 100, 100);
+}

@@ -7,7 +7,7 @@ import { faEye } from '@fortawesome/free-regular-svg-icons';
 const BlogCart = () => {
     return (
 
-            <div className="row mb-4">
+            <div data-aos="fade-up" data-aos-duration="2000" className="row mb-4">
                 <div className="col-md-3">
                     <div className="d-flex justify-content-end">
                         <p>#Food, #Lifestyle</p>

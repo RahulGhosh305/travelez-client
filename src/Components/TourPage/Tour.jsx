@@ -1,13 +1,15 @@
 import React from 'react';
-import Navbar from '../Shared/Navbar/Navbar';
+import Packages from './Packages/Packages';
 import TourHeader from './TourHeader/TourHeader';
+import Footer from '../Shared/Footer/Footer';
 
 const Tour = () => {
     return (
-        <div>
-            <Navbar/>
+        <>
             <TourHeader/>
-        </div>
+            <Packages />
+            <Footer />
+        </>
     );
 };
 
