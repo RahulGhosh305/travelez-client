@@ -9,6 +9,7 @@ import Contact from '../ContactPage/Contact';
 import SignIn from '../SignUpSignInPage/SignIn/SignIn';
 import SignUp from '../SignUpSignInPage/SignUp/SignUp';
 import SingleBlog from '../SingleBlogPage/SingleBlog';
+import TourSingle from '../TourSInglePage/TourSingle';
 
 const AllRoute = () => {
     return (
@@ -16,6 +17,7 @@ const AllRoute = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/tour" element={<Tour />} />
+            <Route path="/singleTour" element={<TourSingle />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/singleBlog" element={<SingleBlog />} />
             <Route path="/dashboard" element={<Dashboard />} />

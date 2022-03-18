@@ -19,26 +19,26 @@ const BlogDetails = () => {
                 <div className="row">
                     <div className="col-md-8">
                         <div>
-                            <h2>Second divided from form fish beast made every of seas all gathered us saying he our</h2>
+                            <h2 className={styles.singleBlogTitle}>Second divided from form fish beast made every of seas all gathered us saying he our</h2>
                             <div className="d-flex align-items-center mt-3">
                                 <FontAwesomeIcon className="mb-3 me-1" icon={faUserAlt} />
-                                <p>Travel, lifestyle</p>
+                                <p className="lead">Travel, lifestyle</p>
                                 <p className="ms-3">|</p>
                                 <FontAwesomeIcon className="mb-3 ms-3 me-1" icon={faComment} />
-                                <p>03 Comments</p>
+                                <p className="lead">03 Comments</p>
                             </div>
                         </div>
 
                         <div>
                             <img src={singleBlogDetailsImg} alt="" className="img-fluid mb-4" />
 
-                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
+                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
 
-                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually</p>
+                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually</p>
 
-                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
+                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
 
-                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
+                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
                         </div>
 
                         <hr />
@@ -61,8 +61,8 @@ const BlogDetails = () => {
                             <div className="d-flex align-items-center">
                                 <img src={author} alt="" className="img-fluid" />
                                 <div className="my-auto ms-3">
-                                    <h6>Harvard milan</h6>
-                                    <p className="mb-0">Second divided from form fish beast made. Every of seas all gathered use saying you're, he our dominion twon Second divided from</p>
+                                    <h6 className={styles.authorName}>Harvard milan</h6>
+                                    <p className="mb-0 lead">Second divided from form fish beast made. Every of seas all gathered use saying you're, he our dominion twon Second divided from</p>
                                 </div>
                             </div>
                         </div>
@@ -70,12 +70,12 @@ const BlogDetails = () => {
                         <hr />
 
                         <div>
-                            <h5 className="mb-4">05 Comments</h5>
+                            <h5 className={styles.commentHeader}>05 Comments</h5>
 
                             <div className="d-flex align-items-center mb-4">
                                 <img src={commmentMan} alt="" className="img-fluid" />
                                 <div className="ms-3">
-                                    <p>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
+                                    <p className={styles.commentText}>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
                                     <div className="d-flex flex-wrap">
                                         <p>Emilly Blunt</p>
                                         <p className="ms-3">December 4, 2017 at 3:12 pm</p>
@@ -85,7 +85,7 @@ const BlogDetails = () => {
                             <div className="d-flex align-items-center mb-4">
                                 <img src={commmentMan} alt="" className="img-fluid" />
                                 <div className="ms-3">
-                                    <p>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
+                                    <p className={styles.commentText}>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
                                     <div className="d-flex flex-wrap">
                                         <p>Emilly Blunt</p>
                                         <p className="ms-3">December 4, 2017 at 3:12 pm</p>
@@ -95,7 +95,7 @@ const BlogDetails = () => {
                             <div className="d-flex align-items-center mb-4">
                                 <img src={commmentMan} alt="" className="img-fluid" />
                                 <div className="ms-3">
-                                    <p>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
+                                    <p className={styles.commentText}>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
                                     <div className="d-flex flex-wrap">
                                         <p>Emilly Blunt</p>
                                         <p className="ms-3">December 4, 2017 at 3:12 pm</p>
@@ -106,7 +106,7 @@ const BlogDetails = () => {
                             <hr />
 
                             <div className="mb-3">
-                                <h5 className="mb-4">Leave a Reply</h5>
+                                <h5 className={styles.replyHeader}>Leave a Reply</h5>
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     <textarea type="text" className="form-control mb-3 border-0 border-bottom" placeholder="Comment" {...register("comment", { required: true })} />
                                     {errors.comment && <span className="text-danger">*This field is required</span>}

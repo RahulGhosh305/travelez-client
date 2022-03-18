@@ -8,7 +8,8 @@
 .imgPack {
     position: absolute;
     padding: 10px;
-    background-color: #f8b600;
+    /* background-color: #f8b600; */
+    background-color: #00bbf0;
     color: #fff;
     font-weight: 600;
     font-size: 26px;

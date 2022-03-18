@@ -6,11 +6,16 @@ import tour1 from '../../../assets/tour1.jpg'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useNavigate } from 'react-router-dom';
 AOS.init();
 
 const PackageCart = () => {
+    const navigate = useNavigate()
+    const handleSingleTourPage = () => {
+        navigate('/singleTour')
+    }
     return (
-        <div data-aos="fade-up" data-aos-duration="2000" className="col-md-6 mb-4">
+        <div onClick={ ()=> handleSingleTourPage() } data-aos="fade-up" data-aos-duration="2000" className="col-md-6 mb-4">
             <div className="card border-0">
                 <div className={styles.cardCustom}>
                     <div className={styles.imgDiv}>

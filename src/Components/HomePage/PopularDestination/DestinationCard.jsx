@@ -12,11 +12,11 @@ const DestinationCard = (props) => {
         <div data-aos="zoom-in" data-aos-duration="2000" className="col-md-6 col-lg-4 mb-4">
             <div class="card">
                 <img src={photo} className="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h3 class={`card-title ${styles.tourTitle}`}>{name}</h3>
+                <div className="card-body">
+                    <h3 className={`card-title ${styles.tourTitle}`}>{name}</h3>
                     {/* <p class={`card-text ${styles.tourMessage}`}>{message}</p> */}
-                    <h4 class={`card-text ${styles.tourMessage}`}>Tk {packagePrice}</h4>
-                    <div class={`card-text ${styles.tourMessage}`}>
+                    <h4 className={`card-text ${styles.tourMessage}`}>Tk {packagePrice}</h4>
+                    <div className={`card-text ${styles.tourMessage}`}>
                         {rating}
                         <i><FontAwesomeIcon className="ms-2" icon={faStar} /></i>
                         <i><FontAwesomeIcon icon={faStar} /></i>
