@@ -84,6 +84,16 @@ const ImgOverview = () => {
 
                 <div className="row">
                     <h4>Package Itinerary</h4>
+                    <h2>Day 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
+                    <h2>Day 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
+                    <h2>Day 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
+                    <h2>Day 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
+                    <h2>Day 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
                     <hr />
                 </div>
 

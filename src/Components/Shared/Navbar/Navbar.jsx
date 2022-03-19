@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className='pt-3'>
             <nav className={navbarColor ? `navbar navbar-expand-lg fixed-top navbar-light bg-light ${styles.navStyle}` : "navbar navbar-expand-lg navbar-light"}>
                 <div className="container">
-                    <NavLink className="navbar-brand fw-bold" to="/">Travelerz</NavLink>
+                    <Link className="navbar-brand fw-bold " to="/">Travelerz</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
