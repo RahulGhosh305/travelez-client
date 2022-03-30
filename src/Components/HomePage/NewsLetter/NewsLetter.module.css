@@ -9,9 +9,9 @@
   border-radius: 15px;
 }
 .newsLetterBtn {
-  background-color: #f8b600;
-  color: #fff;
-  font-weight: 500;
+  background-color: #f8b600 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
 }
 
 

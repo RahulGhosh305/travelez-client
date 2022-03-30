@@ -10,6 +10,7 @@ import SignIn from '../SignUpSignInPage/SignIn/SignIn';
 import SignUp from '../SignUpSignInPage/SignUp/SignUp';
 import SingleBlog from '../SingleBlogPage/SingleBlog';
 import TourSingle from '../TourSInglePage/TourSingle';
+import BookNow from '../BookNow/BookNow';
 
 const AllRoute = () => {
     return (
@@ -24,6 +25,7 @@ const AllRoute = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/bookNow" element={<BookNow />} />
         </Routes>
     );
 };

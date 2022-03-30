@@ -61,7 +61,7 @@ const ImgCarosel = () => {
                 }}>
                     <Carousel
                         data={data}
-                        time={1000}
+                        time={2000}
                         width="100%"
                         // height="500px"
                         captionStyle={captionStyle}

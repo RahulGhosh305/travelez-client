@@ -43,19 +43,19 @@ const Packages = () => {
 
                             <form>
                                 <div className="mb-3">
-                                    <label for="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Where:</label>
+                                    <label htmlFor="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Where:</label>
                                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                 </div>
                                 <div className="mb-3">
-                                    <label for="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Check-in:</label>
+                                    <label htmlFor="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Check-in:</label>
                                     <input type="date" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                 </div>
                                 <div className="mb-3">
-                                    <label for="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Check-out:</label>
+                                    <label htmlFor="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Check-out:</label>
                                     <input type="date" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                 </div>
                                 <div clasName="mb-3">
-                                    <label for="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Guest:</label>
+                                    <label htmlFor="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Guest:</label>
                                     <input type="number" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                 </div>
                                 <div>

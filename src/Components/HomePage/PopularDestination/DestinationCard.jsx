@@ -4,13 +4,19 @@ import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import styles from './DestinationCart.module.css'
+import { useNavigate } from 'react-router-dom';
 
 AOS.init();
+
 const DestinationCard = (props) => {
+    const navigate = useNavigate()
+    const handleSingleTourPage = () => {
+        navigate('/singleTour')
+    }
     const { photo, name, message, packagePrice, rating } = props.singleData
     return (
-        <div data-aos="zoom-in" data-aos-duration="2000" className="col-md-6 col-lg-4 mb-4">
-            <div class="card">
+        <div onClick={() => handleSingleTourPage()} data-aos="zoom-in" data-aos-duration="2000" className="col-md-6 col-lg-4 mb-4">
+            <div className={`card ${styles.customCard}`}>
                 <img src={photo} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h3 className={`card-title ${styles.tourTitle}`}>{name}</h3>

@@ -1,11 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './EventCart.module.css'
 
 
 const EventCart = (props) => {
+    const navigate = useNavigate()
+    const handleSingleTourPage = () => {
+        navigate('/singleTour')
+    }
     const { photo, name, plan, message } = props.singleData
     return (
-        <div className={styles.containerDetails}>
+        <div onClick={() => handleSingleTourPage()} className={styles.containerDetails}>
             <div className={styles.image}>
                 <img src={photo} alt="" className="img-fluid" />
             </div>

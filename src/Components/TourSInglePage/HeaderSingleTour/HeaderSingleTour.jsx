@@ -1,7 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../../Shared/Navbar/Navbar'
 import styles from './HeaderSingleTour.module.css';
+
 const HeaderSingleTour = () => {
+    const navigate = useNavigate()
+    const handleBookNow = () => {
+        navigate('/bookNow')
+    }
+    const handleHostContact = () => {
+        navigate('/hostContact')
+    }
     return (
         <>
             <Navbar />
@@ -23,8 +32,8 @@ const HeaderSingleTour = () => {
                         </div>
                         <div className="col-md-6">
                             <div className="d-flex align-items-end">
-                                <button className={`btn me-2 ${styles.singleTourBtn}`}>Book Now</button>
-                                <button className={`btn ${styles.singleTourBtn}`}>Conact Host</button>
+                                <button onClick={() => handleBookNow()} className={`btn me-2 ${styles.singleTourBtn}`}>Book Now</button>
+                                <button onClick={() => handleHostContact()} className={`btn ${styles.singleTourBtn}`}>Conact Host</button>
                             </div>
                         </div>
                     </div>
