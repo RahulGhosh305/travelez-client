@@ -15,3 +15,17 @@
 .customCard {
     cursor: pointer;
 }
+.imgDiv {
+    position: relative;
+    text-align: center;
+}
+.imgPack {
+    position: absolute;
+    padding: 10px;
+    /* background-color: #f8b600; */
+    background-color: #00bbf0;
+    color: #fff;
+    border-top-right-radius: 15px;
+    bottom: 0;
+    font-family: 'Playfair Display', serif;
+}

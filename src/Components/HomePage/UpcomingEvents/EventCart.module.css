@@ -23,7 +23,8 @@
 .overlayText {
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  justify-content: center;
+  padding: 0 5px; 
 }
 .eventPlanText {
   font-family: 400;

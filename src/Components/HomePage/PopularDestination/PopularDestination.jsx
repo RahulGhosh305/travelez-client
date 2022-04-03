@@ -8,7 +8,7 @@ const PopularDestination = () => {
             <div className="d-flex justify-content-center mb-5">
                 <div className={styles.textContent}>
                     <div className="text-center">
-                        <p className="lead mb-0">SIMPLY AMAZING PLACES</p>
+                        <p className="lead mb-0">Simply Amazing Places</p>
                         <h4 className="display-4">Popular Destinations</h4>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import styles from './DestinationCart.module.css'
@@ -13,15 +13,17 @@ const DestinationCard = (props) => {
     const handleSingleTourPage = () => {
         navigate('/singleTour')
     }
-    const { photo, name, message, packagePrice, rating } = props.singleData
+    const { displayPhoto, totaldays, name, packageGroupPeoples, packagePresentPrice, rating } = props.singleData
     return (
         <div onClick={() => handleSingleTourPage()} data-aos="zoom-in" data-aos-duration="2000" className="col-md-6 col-lg-4 mb-4">
             <div className={`card ${styles.customCard}`}>
-                <img src={photo} className="card-img-top" alt="..." />
+                <div className={styles.imgDiv}>
+                    <img src={displayPhoto} className="card-img-top" alt="..." />
+                    <div className={styles.imgPack}><h4>{packageGroupPeoples} persons/{totaldays} days</h4></div>
+                </div>
                 <div className="card-body">
                     <h3 className={`card-title ${styles.tourTitle}`}>{name}</h3>
-                    {/* <p class={`card-text ${styles.tourMessage}`}>{message}</p> */}
-                    <h4 className={`card-text ${styles.tourMessage}`}>Tk {packagePrice}</h4>
+                    <h4 className={`card-text ${styles.tourMessage}`}>Tk {packagePresentPrice}</h4>
                     <div className={`card-text ${styles.tourMessage}`}>
                         {rating}
                         <i><FontAwesomeIcon className="ms-2" icon={faStar} /></i>

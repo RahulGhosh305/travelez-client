@@ -9,7 +9,7 @@ const GetTouch = () => {
         <div className={styles.touchWrapper}>
             <div className="d-flex justify-content-center">
                 <div className="text-center">
-                    <p className="lead mb-0">JOURNEY</p>
+                    <p className="lead mb-0">Journey</p>
                     <h4 className="display-4">Your Journey Starts Here</h4>
                 </div>
             </div>

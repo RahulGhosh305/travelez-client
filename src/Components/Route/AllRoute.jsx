@@ -11,6 +11,8 @@ import SignUp from '../SignUpSignInPage/SignUp/SignUp';
 import SingleBlog from '../SingleBlogPage/SingleBlog';
 import TourSingle from '../TourSInglePage/TourSingle';
 import BookNow from '../BookNow/BookNow';
+import UpCommingEventDetails from '../HomePage/UpcomingEventDetails/UpCommingEventDetails';
+import NoPageFound from '../NoPageFound/NoPageFound';
 
 const AllRoute = () => {
     return (
@@ -26,6 +28,8 @@ const AllRoute = () => {
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/bookNow" element={<BookNow />} />
+            <Route path="/upComingEventDetails" element={<UpCommingEventDetails />} />
+            <Route path="*" element={<NoPageFound />} />
         </Routes>
     );
 };
