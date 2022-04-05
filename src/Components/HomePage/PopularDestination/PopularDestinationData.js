@@ -28,6 +28,22 @@ import srilonkaSlider1 from '../../../assets/sriLankslider1.jpg'
 import srilonkaSlider2 from '../../../assets/sriLankslider2.jpg'
 import srilonkaSlider3 from '../../../assets/sriLankslider3.webp'
 import srilonkaSlider4 from '../../../assets/sriLankslider4.jpg'
+import kolkataBridge from '../../../assets/kolkataBridge.jpg'
+import kolkataSlider1 from '../../../assets/KolkataSlider1.jpg'
+import kolkataSlider2 from '../../../assets/KolkataSlider2.jpg'
+import kolkataSlider3 from '../../../assets/KolkataSlider3.jpg'
+import kolkataSlider4 from '../../../assets/KolkataSlider4.webp'
+import maldeep from '../../../assets/maldeep.jpg'
+import maldeepSlider1 from '../../../assets/maldeepSlider1.webp'
+import maldeepSlider2 from '../../../assets/maldeepSlider2.webp'
+import maldeepSlider3 from '../../../assets/maldeepSlider3.webp'
+import maldeepSlider4 from '../../../assets/maldeepSlider4.webp'
+import malaysia from '../../../assets/malaysia.jpg';
+import maloysiaSlider1 from '../../../assets/malaysiaSlider1.jpg'
+import maloysiaSlider2 from '../../../assets/malaysiaSlider2.jpg'
+import maloysiaSlider3 from '../../../assets/malaysiaSlider3.jpg'
+import maloysiaSlider4 from '../../../assets/meghaloySlider4.jpg'
+
 const PopularDestinationData = [
     {
         displayPhoto: maghaloya,
@@ -382,6 +398,231 @@ const PopularDestinationData = [
                 describe: `Time to say our final goodbyes with the friends you have just made over the course of an incredible 12 days. For some of you, this means continuing your holiday on the phenomenal beaches of the Maldives with our add on package, for others, it's either back home or to continue your travels. Whatever your next destination may be, we hope we have educated you on a country that provides so much, that possess incredible variation in exploration and we hope we have inspired you to explore more. `
             }
         ]
-    }
+    },
+    {
+        displayPhoto: kolkataBridge,
+        slider1: kolkataSlider1,
+        caption1: 'Kolkata',
+        slider2: kolkataSlider2,
+        caption2: 'kolkata City',
+        slider3: kolkataSlider3,
+        caption3: 'Science City',
+        slider4: kolkataSlider4,
+        caption4: "Victoria Memorial",
+        name: "Dhaka-Kolkata-Dhaka",
+        packageName: "West Bengal - The city of Kolkata Tour Package",
+        message: "There’s a sunrise and sunset every single day, and they’re absolutely free. Don’t miss so many of them.",
+        rating: "4.9",
+        packagePresentPrice: "40000",
+        prePackagePrice: "50000",
+        packageGroupPeoples: 4,
+        totaldays: 5,
+        stayPlanDays: '3',
+        stayPlanNight: '2',
+        discount: '5%',
+        overView: "Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site.",
+        tourPlanDays: [
+            {
+                day: 'DAY 01: DHAKA- KOLKATA',
+                describe: `Check your baggage to confirm all important things such as passport, Tickets, Receipt of Hotel booking, medications etc. Reach at Kallayanpur Bus station yourself within 7:30 pm journey will start at 8:00pm. A Dinner break will be provided at Food Village Bogra on the way to Kolkata. Overnight bus journey.`
+            },
+            {
+                day: 'DAY 02: KOLKATA',
+                describe: `At Kolkata bus stands you will received by our local representative. He will guide you to the hotel we reserved for you. Check in hotel. Take time for relaxation and freshness. After Lunch there is lots of free time for you. So you can go out for sightseeing or shopping yourself. Night halt at hotel.`
+            },
+            {
+                day: 'DAY 03: KOLKATA CITY TOUR',
+                describe: `After Breakfast go out for half day city tour in Kolkata city. During the tour you will visit Kalighat, Jorasanko Tagore House, Drive pass GPO, Writers Building, Akashbani Bhawan, Eden Garden Stadium, Rajbhawan, Visit Town Hall, Indian Museum, St. Paul Cathedral Church, Victoria Memorial Hall, Mother House, St. James Princep Ghat . Overnight stay will be at Kolkata. Victoria Memorial Hall: The Victoria Memorial is a large marble building in Kolkata (formerly Calcutta), West Bengal, India, which was built between 1906 and 1921. It is dedicated to the memory of Queen Victoria (1819–1901) and is now a museum and tourist destination under the auspices of the Ministry of Culture. [2] The Memorial lies on the Maidan (grounds) by the bank of the Hooghly River, near Jawaharlal Nehru road. Indian Museum: The Indian Museum is the largest and oldest museum in India and has rare collections of antiques, armor and ornaments, fossils, skeletons, mummies, and Mughal paintings. It was founded by the Asiatic Society of Bengal in Kolkata (Calcutta), India, in 1814. The founder curator was Dr Nathaniel Wallich, a Danish botanist. It has six sections comprising thirty five galleries of cultural and scientific artifacts namely Art, Archaeology, Anthropology, Geology, Zoology and Economic Botany. At present, it includes six cultural and scientific sections, viz. Art, Archaeology, Anthropology, geology, zoology and economic botany, with a number of galleries under each section. Many rare and unique specimens, both Indian and trans-Indian, relating to humanities and natural sciences, are preserved and displayed in the galleries of these sections. the administrative control of the Cultural sections, viz. Art, Archaeology and Anthropology rests with the Board of Trustees under its Directorate, and that of the three other science sections is with the geological survey of India, the zoological survey of India and the Botanical survey of India. This multipurpose Institution with multidisciplinary activities is being included as an Institute of national importance in the seventh schedule of the Constitution of India. It is one of oldest museums in the world. This great museum is relentlessly exploring the sea of knowledge seeking a new configuration of the vast meeting ground of the people coming from various cultural and social backgrounds.`
+            },
+            {
+                day: 'DAY 04: KOLKATA SCIENCE CITY TOUR',
+                describe: `After breakfast it is time to visit the largest science centre in the Indian subcontinent “Science City”. The Science City, one of its kind in India, inaugurated on 1st July,1997 has been developed as a major attraction for the residents’ of Kolkata as well as for the national and international visitors to the metropolis. Developed by the National Council of Science Museums, it is one of the largest and finest in the world, presenting science and technology in a stimulating and engaging environment that is truly educational and enjoyable for the people of all ages. It has, over the years, become a place for memorable experience and enjoyment for both the young and the old. After visiting Science city back to hotel. Overnight at Hotel in Kolkata.`
+            },
+            {
+                day: 'DAY 05: TOWARDS DHAKA',
+                describe: `After breakfast you will guided to bus stoppage and then return bus journey toward suite home. Next morning you will be reached at Dhaka with some fascinating memories.`
+            }
+        ]
+    },
+    {
+        displayPhoto: maldeep,
+        slider1: maldeepSlider1,
+        caption1: 'Malvives',
+        slider2: maldeepSlider2,
+        caption2: 'Malvives',
+        slider3: maldeepSlider3,
+        caption3: 'Malvives',
+        slider4: maldeepSlider4,
+        caption4: "Malvives",
+        name: "Dhaka-Maldive-Dhaka",
+        packageName: "Beautiful sea in Maldives Tour Package",
+        message: "If we travel simply to indulge ourselves we are missing some of the greatest lessons life has to offer.",
+        rating: "4.9",
+        packagePresentPrice: "200000",
+        prePackagePrice: "300000",
+        packageGroupPeoples: 4,
+        totaldays: 4,
+        stayPlanDays: '2',
+        stayPlanNight: '2',
+        discount: '20%',
+        overView: "The Maldives, officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland.",
+        tourPlanDays: [
+            {
+                day: 'DAY 01: MALDIVES ARRIVAL',
+                describe: `Upon arrival at Maldives airport meet by our local representative transfer to hotel in Hulhumale. Over night stay at hotel.`
+            },
+            {
+                day: "DAY 02: HULHUMALE TO RESORT TRANSFER",
+                describe: `After having breakfast transfer to the tropical paradise of Maldives. Get transferred by a speedboat to your resort and check-in to your room, spend the day relaxing and admiring the views of crystal clear waters ebbing sandy beaches.`
+            },
+            {
+                day: "DAY 03: FULL DAY FREE",
+                describe: `After breakfast today, we have many recommendations for you. You may choose to take a sun bath on the beach, go for a swim or do absolutely nothing! If adventure is what you like, go for some water sports like snorkeling, wind surfing or have fun on a banana boat ride.`
+            },
+            {
+                day: "DAY 04 : DEPARTURE MALDIVES",
+                describe: `After having breakfast checkout from resort and transfer to Maldives airport. `
+            }
+        ]
+    },
+    {
+        displayPhoto: malaysia,
+        slider1: maloysiaSlider1,
+        caption1: 'Malaysia',
+        slider2: maloysiaSlider2,
+        caption2: 'Malaysia',
+        slider3: maloysiaSlider3,
+        caption3: 'Malaysia',
+        slider4: maloysiaSlider4,
+        caption4: "Malaysia",
+        name: "Dhaka-Malaysia-Dhaka",
+        packageName: "Malaysia Tour Package",
+        message: "Once a year, go someplace you’ve never been before.",
+        rating: "4.8",
+        packagePresentPrice: "250000",
+        prePackagePrice: "300000",
+        packageGroupPeoples: 4,
+        totaldays: 5,
+        stayPlanDays: '3',
+        stayPlanNight: '2',
+        discount: '10%',
+        overView: "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers. ",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 : DHAKA- LANKAWI AIRPORT - LANKAWI HOTEL',
+                describe: `Flight from Dhaka to Kuala Lumpur then Lankawi Airport. Arriving upon you will be welcome by our representative. Then transfer to hotel for check in, after check in free time for leisure. Overnight stay at Lankawi.`
+            },
+            {
+                day: 'DAY 2 : HALF DAY LANKAWI ISLAND HOPPING',
+                describe: `After having Breakfast at Hotel, get ready for the exciting tour of Island Hopping. A Trip on a speedboat through the southern water of Langkawi, where you will get a chance to maneuver around the many island of Langkawi. Among them the highlight are:-
+
+                Pregnant Maiden Island
+                Experience a cool dip in a fresh water lake situated in the Island. You even get the chance to soak your feet in waters full of fish and get a free massage from them.
+                Beras Basah Island
+                The white sandy beach and get the chance to do some of water activities such as para-sailing, banana boat riding etc but it is subject weather condition (cost on own)
+                Singa Besar Island
+                A stop over at bay of Singa Besar Island for Eagle Feeding. Here you have a chance to get close to see the different species of eagle such as Brahminy Kite and White Bellied Sea Eagles.`
+            },
+            {
+                day: 'DAY 3 : LANGKAWI TO PANANG',
+                describe: `Breakfast at hotel. Our driver will pick you up in a plenty of time to drop you at the ferry pier, then transfer by ferry to Penang. It will take three hours. From penang ferry pier you will be welcome by our representative who will drop you at Penang hotel. Rest of day free at your own.`
+            },
+            {
+                day: 'DAY 4 - PANANG - HALF DAY CITY TOUR',
+                describe: `After having breakfast at hotel, be ready for the half day City Tour. Enjoy a comprehensive tour Georgetown city. Experience the sights & sounds of this quaint city. Discover how a number of multi-cultured people can live harmoniously together in this city. Among the highlights of the tour are Fort Cornwallis, Weld Quay, Khoo Kong Si, Street of Harmony and Penang Museum & Art Gallery.`
+            },
+            {
+                day: 'DAY 5 - PANANG TO KUALA LIMPUR HOTEL',
+                describe: `Having Breakfast at hotel and be ready to fly for Kuala Lumpur. Our driver will pick you up in a plenty of time to drop you at the airport for your flight. From Kuala Lumpur airport you will be welcome by our representative then transfer to the hotel.`
+            }
+        ]
+    },
+    // {
+    //     displayPhoto: ,
+    //     slider1: ,
+    //     caption1: '',
+    //     slider2: ,
+    //     caption2: '',
+    //     slider3: ,
+    //     caption3: '',
+    //     slider4: ,
+    //     caption4: "",
+    //     name: "",
+    //     packageName: "",
+    //     message: "",
+    //     rating: "4.9",
+    //     packagePresentPrice: "",
+    //     prePackagePrice: "",
+    //     packageGroupPeoples: ,
+    //     totaldays: ,
+    //     stayPlanDays: '',
+    //     stayPlanNight: '',
+    //     discount: '',
+    //     overView: "",
+    //     tourPlanDays: [
+    //         {
+    //             day: '',
+    //             describe: ``
+    //         }
+    //     ]
+    // },
+    // {
+    //     displayPhoto: ,
+    //     slider1: ,
+    //     caption1: '',
+    //     slider2: ,
+    //     caption2: '',
+    //     slider3: ,
+    //     caption3: '',
+    //     slider4: ,
+    //     caption4: "",
+    //     name: "",
+    //     packageName: "",
+    //     message: "",
+    //     rating: "4.9",
+    //     packagePresentPrice: "",
+    //     prePackagePrice: "",
+    //     packageGroupPeoples: ,
+    //     totaldays: ,
+    //     stayPlanDays: '',
+    //     stayPlanNight: '',
+    //     discount: '',
+    //     overView: "",
+    //     tourPlanDays: [
+    //         {
+    //             day: '',
+    //             describe: ``
+    //         }
+    //     ]
+    // },
+    // {
+    //     displayPhoto: ,
+    //     slider1: ,
+    //     caption1: '',
+    //     slider2: ,
+    //     caption2: '',
+    //     slider3: ,
+    //     caption3: '',
+    //     slider4: ,
+    //     caption4: "",
+    //     name: "",
+    //     packageName: "",
+    //     message: "",
+    //     rating: "4.9",
+    //     packagePresentPrice: "",
+    //     prePackagePrice: "",
+    //     packageGroupPeoples: ,
+    //     totaldays: ,
+    //     stayPlanDays: '',
+    //     stayPlanNight: '',
+    //     discount: '',
+    //     overView: "",
+    //     tourPlanDays: [
+    //         {
+    //             day: '',
+    //             describe: ``
+    //         }
+    //     ]
+    // }
 ]
 export default PopularDestinationData;
