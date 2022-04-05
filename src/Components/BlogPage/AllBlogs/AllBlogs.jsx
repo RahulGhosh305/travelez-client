@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGoogle, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import bloggerMan from '../../../assets/bloggerMan.png'
 import recentPostImg from '../../../assets/recentPostImg1.webp'
-
+import BlogData from '../../HomePage/Blog/BlogData'
 const AllBlogs = () => {
     return (
         <div className="container">
@@ -18,11 +18,9 @@ const AllBlogs = () => {
                 </div>
 
                 <div className="col-lg-8">
-                    <BlogCart />
-                    <BlogCart />
-                    <BlogCart />
-                    <BlogCart />
-                    <BlogCart />
+                    {
+                        BlogData.slice(3,100).map(singleData => <BlogCart singleData={singleData} key={Math.random()} />)
+                    }
                 </div>
 
                 <div className="col-lg-4">

@@ -15,7 +15,7 @@ const PopularDestination = () => {
             </div>
             <div className="row">
                 {
-                    popularDestinationData.map(singleData => <DestinationCard singleData={singleData} key={Math.random()} />)
+                    popularDestinationData.slice(0,6).map(singleData => <DestinationCard singleData={singleData} key={Math.random()} />)
                 }
             </div>
         </div>

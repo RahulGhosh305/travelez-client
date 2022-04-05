@@ -6,7 +6,8 @@ import { faCalendar, faComment, faUser } from '@fortawesome/free-solid-svg-icons
 import { faEye } from '@fortawesome/free-regular-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-const BlogCart = () => {
+const BlogCart = (props) => {
+    const {photo, tag, date, authorName, title, subTitle} = props.singleData
     const navigate = useNavigate()
     const handleSingleBlogPage = () => {
         navigate('/singleBlog')
@@ -16,14 +17,14 @@ const BlogCart = () => {
             <div data-aos="fade-up" data-aos-duration="2000" className="row mb-4">
                 <div className="col-md-3">
                     <div className="d-flex justify-content-end">
-                        <p>#Food, #Lifestyle</p>
+                        <p>#{tag}</p>
                     </div>
                     <div className="d-flex align-items-center justify-content-end">
-                        <p className="me-2">Jone Doe</p>
+                        <p className="me-2">{authorName}</p>
                         <p><FontAwesomeIcon icon={faUser} /></p>
                     </div>
                     <div className="d-flex align-items-center justify-content-end">
-                        <p className="me-2">12 Dec, 2017</p>
+                        <p className="me-2">{date}</p>
                         <p><FontAwesomeIcon icon={faCalendar} /></p>
                     </div>
                     <div className="d-flex align-items-center justify-content-end">
@@ -37,10 +38,10 @@ const BlogCart = () => {
                 </div>
                 <div className="col-md-9">
                     <div>
-                        <img src={blogPostImg1} alt="" className="img-fluid" />
+                        <img src={photo} alt="" className="img-fluid" />
                         <div className="my-3">
-                            <h2 className={styles.blogCartTitle}>Astronomy Binoculars A Great Alternative</h2>
-                            <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente a consectetur nam laborum eum temporibus, quia tempore obcaecati velit, quaerat vero blanditiis, ab aliquid ut tempora illum perspiciatis dolorum deserunt sequi.</p>
+                            <h2 className={styles.blogCartTitle}>{title}</h2>
+                            <p className="lead">{subTitle}</p>
                             <button onClick={() => handleSingleBlogPage()} className={`btn ${styles.blogCartBtn}`}>View more</button>
                         </div>
                     </div>

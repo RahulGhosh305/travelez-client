@@ -53,6 +53,22 @@ import bandorbanSlider1 from '../../../assets/bandorbanSlider1.jpeg'
 import bandorbanSlider2 from '../../../assets/bandorbanSlider2.jpg'
 import bandorbanSlider3 from '../../../assets/bandorbanSlider3.jpg'
 import bandorbanSlider4 from '../../../assets/bandorbanSlider4.jpg'
+import turkey from '../../../assets/turkey.jpg'
+import turkeySlider1 from '../../../assets/turkeySlider1.jpg'
+import turkeySlider2 from '../../../assets/turkeySlider2.jpg'
+import turkeySlider3 from '../../../assets/turkeySlider3.jpg'
+import turkeySlider4 from '../../../assets/turkeySlider4.jpg'
+import bangkok from '../../../assets/bangkok.webp'
+import bangkokSlider1 from '../../../assets/bangkokSlider1.webp'
+import bangkokSlider2 from '../../../assets/bangkokSlider2.webp'
+import bangkokSlider3 from '../../../assets/bangkokSlider3.jpg'
+import bangkokSlider4 from '../../../assets/bangkokSlider4.jpg'
+import Uttarakhand from '../../../assets/uttrakhand.webp'
+import UttarakhandSlider1 from '../../../assets/uttrakhandSlider1.jpg'
+import UttarakhandSlider2 from '../../../assets/uttrakhandSlider2.jpg'
+import UttarakhandSlider3 from '../../../assets/uttrakhandSlider3.jpg'
+import UttarakhandSlider4 from '../../../assets/uttrakhandSlider4.webp'
+
 
 
 const PopularDestinationData = [
@@ -456,99 +472,6 @@ const PopularDestinationData = [
         ]
     },
     {
-        displayPhoto: maldeep,
-        slider1: maldeepSlider1,
-        caption1: 'Malvives',
-        slider2: maldeepSlider2,
-        caption2: 'Malvives',
-        slider3: maldeepSlider3,
-        caption3: 'Malvives',
-        slider4: maldeepSlider4,
-        caption4: "Malvives",
-        name: "Dhaka-Maldive-Dhaka",
-        packageName: "Beautiful sea in Maldives Tour Package",
-        message: "If we travel simply to indulge ourselves we are missing some of the greatest lessons life has to offer.",
-        rating: "4.9",
-        packagePresentPrice: "200000",
-        prePackagePrice: "300000",
-        packageGroupPeoples: 4,
-        totaldays: 4,
-        stayPlanDays: '2',
-        stayPlanNight: '2',
-        discount: '20%',
-        overView: "The Maldives, officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland.",
-        tourPlanDays: [
-            {
-                day: 'DAY 01: MALDIVES ARRIVAL',
-                describe: `Upon arrival at Maldives airport meet by our local representative transfer to hotel in Hulhumale. Over night stay at hotel.`
-            },
-            {
-                day: "DAY 02: HULHUMALE TO RESORT TRANSFER",
-                describe: `After having breakfast transfer to the tropical paradise of Maldives. Get transferred by a speedboat to your resort and check-in to your room, spend the day relaxing and admiring the views of crystal clear waters ebbing sandy beaches.`
-            },
-            {
-                day: "DAY 03: FULL DAY FREE",
-                describe: `After breakfast today, we have many recommendations for you. You may choose to take a sun bath on the beach, go for a swim or do absolutely nothing! If adventure is what you like, go for some water sports like snorkeling, wind surfing or have fun on a banana boat ride.`
-            },
-            {
-                day: "DAY 04 : DEPARTURE MALDIVES",
-                describe: `After having breakfast checkout from resort and transfer to Maldives airport. `
-            }
-        ]
-    },
-    {
-        displayPhoto: malaysia,
-        slider1: maloysiaSlider1,
-        caption1: 'Malaysia',
-        slider2: maloysiaSlider2,
-        caption2: 'Malaysia',
-        slider3: maloysiaSlider3,
-        caption3: 'Malaysia',
-        slider4: maloysiaSlider4,
-        caption4: "Malaysia",
-        name: "Dhaka-Malaysia-Dhaka",
-        packageName: "Malaysia Tour Package",
-        message: "Once a year, go someplace you’ve never been before.",
-        rating: "4.8",
-        packagePresentPrice: "250000",
-        prePackagePrice: "300000",
-        packageGroupPeoples: 4,
-        totaldays: 5,
-        stayPlanDays: '3',
-        stayPlanNight: '2',
-        discount: '10%',
-        overView: "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers. ",
-        tourPlanDays: [
-            {
-                day: 'DAY 1 : DHAKA- LANKAWI AIRPORT - LANKAWI HOTEL',
-                describe: `Flight from Dhaka to Kuala Lumpur then Lankawi Airport. Arriving upon you will be welcome by our representative. Then transfer to hotel for check in, after check in free time for leisure. Overnight stay at Lankawi.`
-            },
-            {
-                day: 'DAY 2 : HALF DAY LANKAWI ISLAND HOPPING',
-                describe: `After having Breakfast at Hotel, get ready for the exciting tour of Island Hopping. A Trip on a speedboat through the southern water of Langkawi, where you will get a chance to maneuver around the many island of Langkawi. Among them the highlight are:-
-
-                Pregnant Maiden Island
-                Experience a cool dip in a fresh water lake situated in the Island. You even get the chance to soak your feet in waters full of fish and get a free massage from them.
-                Beras Basah Island
-                The white sandy beach and get the chance to do some of water activities such as para-sailing, banana boat riding etc but it is subject weather condition (cost on own)
-                Singa Besar Island
-                A stop over at bay of Singa Besar Island for Eagle Feeding. Here you have a chance to get close to see the different species of eagle such as Brahminy Kite and White Bellied Sea Eagles.`
-            },
-            {
-                day: 'DAY 3 : LANGKAWI TO PANANG',
-                describe: `Breakfast at hotel. Our driver will pick you up in a plenty of time to drop you at the ferry pier, then transfer by ferry to Penang. It will take three hours. From penang ferry pier you will be welcome by our representative who will drop you at Penang hotel. Rest of day free at your own.`
-            },
-            {
-                day: 'DAY 4 - PANANG - HALF DAY CITY TOUR',
-                describe: `After having breakfast at hotel, be ready for the half day City Tour. Enjoy a comprehensive tour Georgetown city. Experience the sights & sounds of this quaint city. Discover how a number of multi-cultured people can live harmoniously together in this city. Among the highlights of the tour are Fort Cornwallis, Weld Quay, Khoo Kong Si, Street of Harmony and Penang Museum & Art Gallery.`
-            },
-            {
-                day: 'DAY 5 - PANANG TO KUALA LIMPUR HOTEL',
-                describe: `Having Breakfast at hotel and be ready to fly for Kuala Lumpur. Our driver will pick you up in a plenty of time to drop you at the airport for your flight. From Kuala Lumpur airport you will be welcome by our representative then transfer to the hotel.`
-            }
-        ]
-    },
-    {
         displayPhoto: china,
         slider1: chinaSlider1,
         caption1: 'China',
@@ -606,6 +529,47 @@ const PopularDestinationData = [
         ]
     },
     {
+        displayPhoto: maldeep,
+        slider1: maldeepSlider1,
+        caption1: 'Malvives',
+        slider2: maldeepSlider2,
+        caption2: 'Malvives',
+        slider3: maldeepSlider3,
+        caption3: 'Malvives',
+        slider4: maldeepSlider4,
+        caption4: "Malvives",
+        name: "Dhaka-Maldive-Dhaka",
+        packageName: "Beautiful sea in Maldives Tour Package",
+        message: "If we travel simply to indulge ourselves we are missing some of the greatest lessons life has to offer.",
+        rating: "4.9",
+        packagePresentPrice: "200000",
+        prePackagePrice: "300000",
+        packageGroupPeoples: 4,
+        totaldays: 4,
+        stayPlanDays: '2',
+        stayPlanNight: '2',
+        discount: '20%',
+        overView: "The Maldives, officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland.",
+        tourPlanDays: [
+            {
+                day: 'DAY 01: MALDIVES ARRIVAL',
+                describe: `Upon arrival at Maldives airport meet by our local representative transfer to hotel in Hulhumale. Over night stay at hotel.`
+            },
+            {
+                day: "DAY 02: HULHUMALE TO RESORT TRANSFER",
+                describe: `After having breakfast transfer to the tropical paradise of Maldives. Get transferred by a speedboat to your resort and check-in to your room, spend the day relaxing and admiring the views of crystal clear waters ebbing sandy beaches.`
+            },
+            {
+                day: "DAY 03: FULL DAY FREE",
+                describe: `After breakfast today, we have many recommendations for you. You may choose to take a sun bath on the beach, go for a swim or do absolutely nothing! If adventure is what you like, go for some water sports like snorkeling, wind surfing or have fun on a banana boat ride.`
+            },
+            {
+                day: "DAY 04 : DEPARTURE MALDIVES",
+                describe: `After having breakfast checkout from resort and transfer to Maldives airport. `
+            }
+        ]
+    },
+    {
         displayPhoto: bandorbar,
         slider1: bandorbanSlider1,
         caption1: 'Bandarban',
@@ -646,92 +610,246 @@ const PopularDestinationData = [
             }
         ]
     },
-    // {
-    //     displayPhoto: ,
-    //     slider1: ,
-    //     caption1: '',
-    //     slider2: ,
-    //     caption2: '',
-    //     slider3: ,
-    //     caption3: '',
-    //     slider4: ,
-    //     caption4: "",
-    //     name: "",
-    //     packageName: "",
-    //     message: "",
-    //     rating: "4.9",
-    //     packagePresentPrice: "",
-    //     prePackagePrice: "",
-    //     packageGroupPeoples: ,
-    //     totaldays: ,
-    //     stayPlanDays: '',
-    //     stayPlanNight: '',
-    //     discount: '',
-    //     overView: "",
-    //     tourPlanDays: [
-    //         {
-    //             day: '',
-    //             describe: ``
-    //         }
-    //     ]
-    // },
-    // {
-    //     displayPhoto: ,
-    //     slider1: ,
-    //     caption1: '',
-    //     slider2: ,
-    //     caption2: '',
-    //     slider3: ,
-    //     caption3: '',
-    //     slider4: ,
-    //     caption4: "",
-    //     name: "",
-    //     packageName: "",
-    //     message: "",
-    //     rating: "4.9",
-    //     packagePresentPrice: "",
-    //     prePackagePrice: "",
-    //     packageGroupPeoples: ,
-    //     totaldays: ,
-    //     stayPlanDays: '',
-    //     stayPlanNight: '',
-    //     discount: '',
-    //     overView: "",
-    //     tourPlanDays: [
-    //         {
-    //             day: '',
-    //             describe: ``
-    //         }
-    //     ]
-    // },
-    // {
-    //     displayPhoto: ,
-    //     slider1: ,
-    //     caption1: '',
-    //     slider2: ,
-    //     caption2: '',
-    //     slider3: ,
-    //     caption3: '',
-    //     slider4: ,
-    //     caption4: "",
-    //     name: "",
-    //     packageName: "",
-    //     message: "",
-    //     rating: "4.9",
-    //     packagePresentPrice: "",
-    //     prePackagePrice: "",
-    //     packageGroupPeoples: ,
-    //     totaldays: ,
-    //     stayPlanDays: '',
-    //     stayPlanNight: '',
-    //     discount: '',
-    //     overView: "",
-    //     tourPlanDays: [
-    //         {
-    //             day: '',
-    //             describe: ``
-    //         }
-    //     ]
-    // },
+    {
+        displayPhoto: malaysia,
+        slider1: maloysiaSlider1,
+        caption1: 'Malaysia',
+        slider2: maloysiaSlider2,
+        caption2: 'Malaysia',
+        slider3: maloysiaSlider3,
+        caption3: 'Malaysia',
+        slider4: maloysiaSlider4,
+        caption4: "Malaysia",
+        name: "Dhaka-Malaysia-Dhaka",
+        packageName: "Malaysia Tour Package",
+        message: "Once a year, go someplace you’ve never been before.",
+        rating: "4.8",
+        packagePresentPrice: "250000",
+        prePackagePrice: "300000",
+        packageGroupPeoples: 4,
+        totaldays: 5,
+        stayPlanDays: '3',
+        stayPlanNight: '2',
+        discount: '10%',
+        overView: "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers. ",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 : DHAKA- LANKAWI AIRPORT - LANKAWI HOTEL',
+                describe: `Flight from Dhaka to Kuala Lumpur then Lankawi Airport. Arriving upon you will be welcome by our representative. Then transfer to hotel for check in, after check in free time for leisure. Overnight stay at Lankawi.`
+            },
+            {
+                day: 'DAY 2 : HALF DAY LANKAWI ISLAND HOPPING',
+                describe: `After having Breakfast at Hotel, get ready for the exciting tour of Island Hopping. A Trip on a speedboat through the southern water of Langkawi, where you will get a chance to maneuver around the many island of Langkawi. Among them the highlight are:-
+
+                Pregnant Maiden Island
+                Experience a cool dip in a fresh water lake situated in the Island. You even get the chance to soak your feet in waters full of fish and get a free massage from them.
+                Beras Basah Island
+                The white sandy beach and get the chance to do some of water activities such as para-sailing, banana boat riding etc but it is subject weather condition (cost on own)
+                Singa Besar Island
+                A stop over at bay of Singa Besar Island for Eagle Feeding. Here you have a chance to get close to see the different species of eagle such as Brahminy Kite and White Bellied Sea Eagles.`
+            },
+            {
+                day: 'DAY 3 : LANGKAWI TO PANANG',
+                describe: `Breakfast at hotel. Our driver will pick you up in a plenty of time to drop you at the ferry pier, then transfer by ferry to Penang. It will take three hours. From penang ferry pier you will be welcome by our representative who will drop you at Penang hotel. Rest of day free at your own.`
+            },
+            {
+                day: 'DAY 4 - PANANG - HALF DAY CITY TOUR',
+                describe: `After having breakfast at hotel, be ready for the half day City Tour. Enjoy a comprehensive tour Georgetown city. Experience the sights & sounds of this quaint city. Discover how a number of multi-cultured people can live harmoniously together in this city. Among the highlights of the tour are Fort Cornwallis, Weld Quay, Khoo Kong Si, Street of Harmony and Penang Museum & Art Gallery.`
+            },
+            {
+                day: 'DAY 5 - PANANG TO KUALA LIMPUR HOTEL',
+                describe: `Having Breakfast at hotel and be ready to fly for Kuala Lumpur. Our driver will pick you up in a plenty of time to drop you at the airport for your flight. From Kuala Lumpur airport you will be welcome by our representative then transfer to the hotel.`
+            }
+        ]
+    },
+    {
+        displayPhoto: Uttarakhand,
+        slider1: UttarakhandSlider1,
+        caption1: 'Uttarakhand',
+        slider2: UttarakhandSlider2,
+        caption2: 'Uttarakhand',
+        slider3: UttarakhandSlider3,
+        caption3: 'Uttarakhand',
+        slider4: UttarakhandSlider4,
+        caption4: "Uttarakhand",
+        name: "Cumilla-Uttarakhand-Cumilla",
+        packageName: "Uttarakhand - The place of peace in India",
+        message: "To travel is to discover that everyone is wrong about other countries.",
+        rating: "5",
+        packagePresentPrice: "200000",
+        prePackagePrice: "250000",
+        packageGroupPeoples: 4,
+        totaldays: 6,
+        stayPlanDays: '3',
+        stayPlanNight: '3',
+        discount: '16%',
+        overView: "Uttarakhand is an area in Northern India which is renowned for its adventures, pilgrimage, wildlife, bird watching and a perfect center for yoga and meditation. You can't get enough of Uttarakhand for it has serenity, thrill, romance and lots more, that can be explored well through a wonderfully customized Uttarakhand Tour Package planned and presented by Swan Tours.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 : Delhi to Mussoorie | Drive Through the Scenic Trails to the Queen of Hills',
+                describe: `Your amazing Mussoorie Tour Package starts from Delhi.
+                Head to the pickup point in Delhi from where a representative will help you get transferred to Mussoorie.
+                On your way to Mussoorie, you will pass through Dehradun where you can visit the Robber's cave which is a natural river cave formation in the Himalayas.
+                You can also take a detour to visit Sahastradhara, a waterfall that is believed to have various medicinal properties.
+                After having a rejuvenating bath in the healing waters you can continue your journey towards Mussoorie.
+                Upon reaching Mussoorie, check-in to the hotel and take some rest.
+                The rest of the day can be spent indulging in leisure activities or you can take a stroll across the pretty streets and enjoy the beautiful landscapes of the hill station.
+                Later in the evening, you can return back to the hotel.
+                Overnight stay at the hotel in Mussoorie.`
+            },
+            {
+                day: 'DAY 2 : Sightseeing in Mussoorie | Witness the somersault of the milky streams from the Gigantic Kempty Waterfalls',
+                describe: `After having a hearty breakfast, head out to explore the beautiful town of Mussoorie.
+                Travel to the highest point in Mussoorie at Cloud Ends and feel like on top of the world as you gaze at the fluffy clouds floating down below.
+                You can then visit Camels Back Road where rocks are shaped like a hump of the camel at the end of the road.
+                Then you can proceed for a picnic to the cascading Kempty Waterfalls which is a popular tourist attraction near Mussoorie.
+                You can also trek through the tall dense trees to Gun Hill or take a round-trip cable car ride to the top.
+                Gun Hill offers unobstructed views of the Majestic Himalayas and is perfect to spend a leisurely afternoon.
+                In the evening, stroll through Mall Road to shop for souvenirs while enjoying stunning views of the Doon valley.
+                Later you can head back to your hotel.
+                Overnight stay at the hotel in Mussoorie.`
+            },
+            {
+                day: 'DAY 3: Mussoorie to Joshimath | Enter a Gateway for Trekking Expeditions',
+                describe: `Wake up to a beautiful morning and have a delicious breakfast.
+                You can then travel to Joshimath which is situated in the foothills of the Nanda Devi National Park.
+                Drive past the thick oak forests and the beautiful hill stations and take a short stopover at the beautiful Tehri Lake.
+                You can then proceed along the Alaknanda River and pass through Rudraprayag, and Karnaprayag to ultimately reach Joshimath.
+                Upon reaching Joshimath, check-in to the hotel and take some rest.
+                The rest of the day is at leisure and you are free to explore the surroundings at your own pace.
+                Overnight stay at the hotel in Joshimath.`
+            },
+            {
+                day: 'DAY 4: Excursion to Auli | Explore the Famous Ski Destination of India',
+                describe: `Wake up early to a beautiful morning and have a healthy breakfast.
+                You can then get ready to embark on a full-day scenic tour to Auli.
+                You can choose to drive to Auli by road or can also take the 4 KM long Gondola Ride from Joshimath to Auli.
+                The Ropeway to Auli greets you with some of the best views of the Snow-Capped Himalayas and the dense oak forests that surround the beautiful ski resort.
+                On reaching Auli, you can spend a great time walking along the beautiful Auli Lake and admire the refreshing breeze and magnificent panorama. 
+                Here you can also indulge in various adventures activities or try your hands at Skiing through the snow.
+                While in Auli, you can also choose to take a short trek up to the Gorson Bugyal that lies at an altitude of 3056 mts.
+                You can also trek further up to Chattarkund, located in the center of a dense forest, which is famous for its sweet water.
+                Later in the evening, start the journey back to Joshimath after a day full of fun and adventure.
+                Overnight stay at the hotel in Joshimath.`
+            },
+            {
+                day: 'DAY 5: Joshimath to Rishikesh | Explore the Spiritual Town of Sages',
+                describe: `Have a delicious breakfast and check out from the hotel.
+                You can then set off on your journey towards Rishikesh and bid adieu to the majestic Nanda Devi Parbat.
+                Upon reaching Rishikesh, check-in to the hotel and take some rest before leaving for a local sightseeing tour.
+                Once you are ready, visit one of the most revered sights in Rishikesh - Neelkanth Mahadev Temple, which according to mythological beliefs is a place where Lord Shiva drank the poison that turned his throat blue.
+                Later, you can spend some time meditating at the Beatles Ashram, where the famous band learned meditation and composed a number of songs.
+                You can also head to the Triveni Ghat that turns into a riot of colors in the evening for the auspicious Ganga Aarti.
+                After witnessing a surreal Ganga Aarti, return back to the hotel and call it a day.
+                Overnight stay at the hotel in Rishikesh.`
+            },
+            {
+                day: 'DAY 6: Rishikesh Sightseeing and Departure to Delhi | Indulge in Thrilling Rafting Session',
+                describe: `Wake up to a beautiful morning in the mountains and have a delicious breakfast.
+                Before heading back to Delhi, you can visit a few important places in Rishikesh.
+                Once you are ready to experience water adventure, travel to Shivpuri, from where you can head out for a rafting session till Laxman Jhula and get face to face with the thrilling rapids in the glaciated Ganga.
+                You can also level up your adventure by daring to cliff jump into the cold water of the river and can also enjoy having a bowl of hot Maggi during the short stopover while rafting.
+                On reaching Laxman Jhula, facing another round of rapids, you can return back to the hotel to dry up and head out again to explore the bustling Rishikesh.
+                Later, one can choose to explore the different parts of Rishikesh like the iconic Ram Jhula and Laxman Jhula or go shopping in the local markets in the surrounding areas.
+                You can also spend some time by the river beach or go café hopping in the vibrant cafes that line the banks of Ganga.
+                You can then set off on your journey back towards Delhi.
+                Conclude the tour with beautiful memories on reaching your desired destination in Delhi for your onward journey.`
+            }
+        ]
+    },
+    {
+        displayPhoto: bangkok,
+        slider1: bangkokSlider1,
+        caption1: 'Bangkok',
+        slider2: bangkokSlider2,
+        caption2: 'Bangkok',
+        slider3: bangkokSlider3,
+        caption3: 'Bangkok',
+        slider4: bangkokSlider4,
+        caption4: "Bangkok",
+        name: "Dhaka-Bangkok-Dhaka",
+        packageName: "Bangkok Tour Package",
+        message: "It is not the destination where you end up but the mishaps and memories you create along the way.",
+        rating: "4.9",
+        packagePresentPrice: "150000",
+        prePackagePrice: "180000",
+        packageGroupPeoples: 3,
+        totaldays: 2,
+        stayPlanDays: '2',
+        stayPlanNight: '1',
+        discount: '12%',
+        overView: "Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple. Nearby is Wat Pho Temple with an enormous reclining Buddha and, on the opposite shore, Wat Arun Temple with its steep steps and Khmer-style spire.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1: DHAKA – BANGKOK – HUA HIN',
+                describe: `Arrival at Bangkok airport, meet and greet at airport and transfer to Hua Hin by private car and then check in hotel at Hua Hin. Over night at hotel.`
+            },
+            {
+                day: 'DAY 2: HALF DAY HUA HIN CITY TOUR',
+                describe: `After breakfast then go out for half day city tour. During the tour will Visit Khao Takiab (Monkey Mountain), Wat Huay Monkol, and the Hua Hin Hills Vineyard or a comprehensive experience of the popular area then drop to hotel and free time for oneself for shopping, roaming and other activities. Over night at Hua Hin.`
+            },
+            {
+                day: 'DAY 3: HUA HIN TO BANGKOK',
+                describe: `After having breakfast check out from hotel and start journey toward Bangkok, Check in hotel in Bangkok and then free time for enjoying oneself. At afternoon go out for attend river cruise at Bangkok with cultural show.  Night halt at hotel.`
+            },
+            {
+                day: 'DAY 4: FULL DAY SAFARI WORLD AND MARINE PARK TOUR',
+                describe: `After having breakfast pickup from hotel at 8.00am towards whole day safari World tour during the tour will take an adventure drive into safari park and explore wildlife up-close and personal. Will see the Orang Utan Boxing Show, Dolphin Show, Sea Lion Show, Bird Show, Spy War, Cowboy show. After lunch enter to marine park to see the face-to-face with herds of Giraffes, Zebras, Tigers, Lions and many more. At 15.30 hrs Depart from Safari World to Bangkok. Reach at 17:00 hrs Return to the hotel After that drop to hotel.`
+            },
+            {
+                day: 'DAY 5: BANGKOK DEPARTURE',
+                describe: `Having breakfast time for free movement and check out from hotel and then drop to airport for coming back to suit home.`
+            }
+        ]
+    },
+    {
+        displayPhoto: turkey,
+        slider1: turkeySlider1,
+        caption1: 'Turkey',
+        slider2: turkeySlider2,
+        caption2: 'Turkey',
+        slider3: turkeySlider3,
+        caption3: 'Turkey',
+        slider4: turkeySlider4,
+        caption4: "Turkey",
+        name: "Dhaka-Turkey-Dhaka",
+        packageName: "Turkey Tour Package",
+        message: "When you travel, remember that a foreign country is not designed to make you comfortable. It is designed to make its own people comfortable.",
+        rating: "4.9",
+        packagePresentPrice: "250000",
+        prePackagePrice: "350000",
+        packageGroupPeoples: 4,
+        totaldays: 3,
+        stayPlanDays: '2',
+        stayPlanNight: '1',
+        discount: '12%',
+        overView: "Turkey, officially the Republic of Turkey, is a transcontinental country located mainly on Anatolia in Western Asia, with a portion on the Balkans in Southeast Europe.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 : Arrive in Istanbul airport',
+                describe: `meet with our driver holding a name sign outside the luggage claim area at the Airport and transfer to hotel, Dinner Cruise : Transfer to local Pier for Bosphorus Dinner Cruise & Shows at 7:30 PM, set menu dinner will be served, 11:45 PM transfer back to hotel, overnight at hotel in Istanbul`
+            },
+            {
+                day: 'DAY 2 : Istanbul Old City Tour',
+                describe: `Breakfast at hotel, full day guided old city tour visits at Hippodrome / Blue Mosque, lunch at a local restaurant, set menu will be served, drinks extra. Topkapi Palace / Grand Bazaar dinner on your own, overnight at hotel in Istanbul`
+            },
+            {
+                day: 'DAY 3 : Full Day Active & Sea Life',
+                describe: `Breakfast at hotel then full day Tour Visit at Pierre Loti Hill / Eyup Sultan Mosque / Abu Ayub Al Ansari / Olivium Outlet / Bosphorus on Boat, then transfer back to Hotel`
+            },
+            {
+                day: 'DAY 4 : Departure',
+                describe: `Breakfast at hotel, private transfer to Istanbul airport, KayserI Arrival : arrive in Kayseri airport, meet with our guide and transfer to Cappadocia hotel`
+            },
+            {
+                day: 'DAY 5 : North Cappadocia Sightseeing ',
+                describe: ` Breakfast at hotel. Today you will explore the Cappadocia Region. Visit Devrent Valley (lmagination Valley), Pasabagi (Monk's Valley), Avanos (Pottery Center), Goreme Open Air Museum, Esentepe , Uchisar Castle; Local lunch then back to your hotel. Overnight at hotel in Cappadocia.`
+            },
+            {
+                day: 'DAY 6 : Kayseri Departure',
+                describe: ` Check out from the hotel and wait until pick up time, transfer to Kayseri airport`
+            }
+        ]
+    }
 ]
 export default PopularDestinationData;

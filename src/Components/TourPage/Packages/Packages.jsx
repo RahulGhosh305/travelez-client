@@ -8,6 +8,7 @@ import instra3 from '../../../assets/instra3.webp'
 import instra4 from '../../../assets/instra4.webp'
 import instra5 from '../../../assets/insta5.webp'
 import instra6 from '../../../assets/instra6.webp'
+import popularDestinationData from '../../HomePage/PopularDestination/PopularDestinationData'
 
 const Packages = () => {
     return (
@@ -24,14 +25,9 @@ const Packages = () => {
             <div className="row">
                 <div className="col-lg-9">
                     <div className="row">
-                        <PackageCart />
-                        <PackageCart />
-                        <PackageCart />
-                        <PackageCart />
-                        <PackageCart />
-                        <PackageCart />
-                        <PackageCart />
-                        <PackageCart />
+                        {
+                            popularDestinationData.slice(6, 14).map(singleData => <PackageCart singleData={singleData} key={Math.random()} />)
+                        }
                     </div>
                 </div>
 
@@ -39,8 +35,6 @@ const Packages = () => {
                     <div className={`card ${styles.tourSiteCard}`}>
                         <div className="card-body">
                             <h5 className={`card-title ${styles.siteTitle}`}>Find your tour</h5>
-
-
                             <form>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Where:</label>
