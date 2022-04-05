@@ -43,6 +43,17 @@ import maloysiaSlider1 from '../../../assets/malaysiaSlider1.jpg'
 import maloysiaSlider2 from '../../../assets/malaysiaSlider2.jpg'
 import maloysiaSlider3 from '../../../assets/malaysiaSlider3.jpg'
 import maloysiaSlider4 from '../../../assets/meghaloySlider4.jpg'
+import china from '../../../assets/china.jpg'
+import chinaSlider1 from '../../../assets/chinaSlider1.webp'
+import chinaSlider2 from '../../../assets/chinaSlider2.jpg'
+import chinaSlider3 from '../../../assets/chinaSlider3.jpg'
+import chinaSlider4 from '../../../assets/chinaSlider4.jpg'
+import bandorbar from '../../../assets/bandorban.jpg'
+import bandorbanSlider1 from '../../../assets/bandorbanSlider1.jpeg'
+import bandorbanSlider2 from '../../../assets/bandorbanSlider2.jpg'
+import bandorbanSlider3 from '../../../assets/bandorbanSlider3.jpg'
+import bandorbanSlider4 from '../../../assets/bandorbanSlider4.jpg'
+
 
 const PopularDestinationData = [
     {
@@ -537,6 +548,104 @@ const PopularDestinationData = [
             }
         ]
     },
+    {
+        displayPhoto: china,
+        slider1: chinaSlider1,
+        caption1: 'China',
+        slider2: chinaSlider2,
+        caption2: 'China',
+        slider3: chinaSlider3,
+        caption3: 'China',
+        slider4: chinaSlider4,
+        caption4: "China",
+        name: "Dhaka-China-Dhaka",
+        packageName: "China Tour Package",
+        message: "Own only what you can always carry with you: known languages, known countries, known people. Let your memory be your travel bag",
+        rating: "4.9",
+        packagePresentPrice: "300000",
+        prePackagePrice: "350000",
+        packageGroupPeoples: 4,
+        totaldays: 4,
+        stayPlanDays: '2',
+        stayPlanNight: '2',
+        discount: '10%',
+        overView: "China, officially the People's Republic of China, is a country in East Asia. It is the world's most populous country, with a population of more than 1.4 billion. China spans five geographical time zones and borders 14 countries, the second most of any country in the world after Russia.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 : DEPARTURE FROM DHAKA',
+                describe: `Breakfast at hotel. Morning transfer to airport, fly to Kunming, Arrive in Kunming Upon your arrival, the guide will pick you up at the airport and then escort you to hotel. Over Night Airport.`
+            },
+            {
+                day: 'DAY 2 : KUNMING',
+                describe: `After breakfast, the guide will meet you at the hotel lobby and then transfer to visit Stone Forest, the “World Karst Landscape Museum”. e Stone Forest features towering peaks of limestone in some very bizarre shapes. Some of them are as tall as a 6 story building, and the entire area is over 200 acres. There’s a long path (about 1.2 miles) that winds through the deepest parts of the forest where you can spot caves, pavilions, and ponds many of which have their own associated legends.Walk among the towering stones at this scenic area and feel the magic power of nature. Then drive back to downtown area to stroll around the Bird-Flower Market.`
+            },
+            {
+                day: 'DAY 3 : KUNMING - BEIJING',
+                describe: `After breakfast Transfer to airport and board your flight for Beijing. On arrival, you will be met and transferred to hotel. Have a good rest in a comfortable hotel, then transfer to have Indian dinner.`
+            },
+            {
+                day: 'DAY 4 : BEIJING',
+                describe: `Depart from hotel in the morning to visit the biggest public square in the world, Tian’anmen Square conquers you with its grandeur at the first sight. Then you are leaded to Forbidden City. It is the imperial palace for 24 emperors during Ming and Qing Dynasties and the biggest ancient architecture complex in the world. You walk in the museum to see with your eyes, to touch with your hands and fell with your hearts. Lunch Stop at Indian Restaurant / Veg. Food Options (Coach will stop at restaurant during sightseeing and pax will do Lunch on their own) In the afternoon, you continue your trip to Summer Palace. Having the largest royal park and being well preserved, it was designated, in 1960 by the State Council, as a Key Cultural Relics Protection Site of China. Containing examples of the ancient arts, it also has graceful landscapes and magnificent constructions. Have a visit of the Chinese silk museum; Evening optional tour: Golden Mask show (not included. Plz check with local guides) Meals: Breakfast + Indian dinner.`
+            },
+            {
+                day: 'DAY 5 : BEIJING',
+                describe: `In the morning drive 75km to visit the Jade factory and Great Wall at Juyong pass which is the symbol of China and the wisdom of Chinese people. It is very unbelievable that Chinese succeeded in building such a great architecture with simple tools in ancient time. Lunch Stop at Indian Restaurant / Veg. Food Options (Coach will stop at restaurant during sightseeing and pax will do Lunch on their own) You will have a short stop and take photos in Beijing Olympic Park, where you can see the outside view of the National Stadium– Bird’s Nest and National Aquatics Center –Water Cube. Later, you will experience Chinese tea culture in Doctor Tea. Free time, have shopping in the local market. Meals: Breakfast+ Indian dinner.`
+            },
+            {
+                day: 'DAY 6 : BEIGING - SHANGHAI BULLET TRAIN BEIGING',
+                describe: `Morning take high speed train to Shanghai, on arrival, transfer to the hotel. Have a good rest in a comfortable hotel, then transfer to have Indian dinner. Meals: Breakfast + Indian dinner.`
+            },
+            {
+                day: 'DAY 7 : SHANGHAI',
+                describe: `Visit a Buddhism shrine – Jade Buddha Temple, located in a crowd of Shanghai City. It is named for its two bejeweled white jade Buddha. Carved from a whole piece of white jade, the sitting jade Buddha statue is translucent with a solemn expression, displaying the excellent skill and extraordinary art of Chinese people. Yuyuan Garden Market has many scenic courtyards decorated with baroque rockery, pools, and flora that are all connected by corridors and passageways. Lunch Stop at Indian Restaurant / Veg. Food Options (Coach will stop at restaurant during sightseeing and pax will do Lunch on their own) Then you will visit pearl factory and the shopping trip will begin in Nanjing Road which is starts at the Bund and runs westward, with People’s Square in the middle. Renowned for its bustling and modernization, Nanjing Road earns its reputation as the ‘First Commercial Road in China’, which is the good shopping heaven for your trip as the same as the Fifth Avenue in New York and Avenue des Champs-Elysées in Paris. Some of the traditional food and handicrafts of Shanghai can be found here. Then we come to the Bund, The Bund, also called the Zhongshan Road, is a famous waterfront and regarded as the symbol of Shanghai for hundreds of years. Walking along the Bund, which is at the west shore of the Huangpu River, the Oriental Pearl TV Tower can be seen on the opposite side and also the Jin Mao Tower.Being one of the Top Ten Shanghai Attractions, the Bund is a really beautiful and special place which is worth visiting. Evening optional tour: Huangpu River Cruise (not included. Plz check with local guides) Meals: Breakfast + Indian dinner.`
+            },
+            {
+                day: 'DAY 8 : DEPARTURE SHANGHAI TO DHAKA',
+                describe: `Breakfast at the hotel. Get transferred to the airport for Final Departure. Meals: Breakfast`
+            }
+        ]
+    },
+    {
+        displayPhoto: bandorbar,
+        slider1: bandorbanSlider1,
+        caption1: 'Bandarban',
+        slider2: bandorbanSlider2,
+        caption2: 'Bandarban',
+        slider3: bandorbanSlider3,
+        caption3: 'Bandarban',
+        slider4: bandorbanSlider4,
+        caption4: "Bandarban",
+        name: "Cumilla-Bandarban-Cumilla",
+        packageName: "Bandarban Tour Package",
+        message: "I travel because it makes me realize how much I haven’t seen, how much I’m not going to see, and how much I still need to see.",
+        rating: "4.9",
+        packagePresentPrice: "30000",
+        prePackagePrice: "35000",
+        packageGroupPeoples: 4,
+        totaldays: 4,
+        stayPlanDays: '3',
+        stayPlanNight: '4',
+        discount: '10%',
+        overView: "The three highest peaks of Bangladesh – Tahjindong (1280 meters, also known as Bijoy), Mowdok Mual (1052 meters), and Keokradong (883 metres) – are located in Bandarban district, as well as Raikhiang Lake, the highest lake in Bangladesh. Heights measured with Garmin GPSMAP60CSX GPS are Tahjindong (1280 meters), Mowdok Mual (1052 m), and Keokradong (1230 m). Chimbuk Peak and Boga Lake are two more highly noted features of the district. The Sangu River (also known as Sangpo or Shankha), the only river born inside Bangladesh territory, runs through Bandarban. The other rivers in the district are Matamuhuri and Bakkhali. Parts of Kaptai Lake, the biggest lake in Bangladesh, fall under the district.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 : GO TO BANDORBAN',
+                describe: `Leave Cumilla by reserved car/coach for Bandarban.`
+            },
+            {
+                day: 'DAY 2 : SIGHTSEEING',
+                describe: `Hotel check in and refresh. After lunch, short sightseeing of Bandarban. Evening.. Back to hotel. Overnight at Bandarban.`
+            },
+            {
+                day: 'DAY 3 : SIGHTSEEING',
+                describe: `Start our journey to Nilgiri, This day we also visit Chimbuk and Shoilopropat. Back to the hotel. Overnight at Bandarban.`
+            },
+            {
+                day: 'DAY 4 : SIGHTSEEING AND DEPARTURE',
+                describe: `This day we visit Sangu River, Swarna Mandir, Chakma Rajbari, Meghla Garden. At evening, leave Bandarban for Cumilla.`
+            }
+        ]
+    },
     // {
     //     displayPhoto: ,
     //     slider1: ,
@@ -623,6 +732,6 @@ const PopularDestinationData = [
     //             describe: ``
     //         }
     //     ]
-    // }
+    // },
 ]
 export default PopularDestinationData;
