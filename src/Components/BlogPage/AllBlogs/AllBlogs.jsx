@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BlogCart from '../BlogCart/BlogCart'
 import styles from './AllBlogs.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faGoogle, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import bloggerMan from '../../../assets/bloggerMan.png'
 import recentPostImg from '../../../assets/recentPostImg1.webp'
-import BlogData from '../../HomePage/Blog/BlogData'
+// import BlogData from '../../HomePage/Blog/BlogData'
 const AllBlogs = () => {
+    const [BlogData, setBlogData] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/addBlogs')
+            .then(res => res.json())
+            .then(data => setBlogData(data))
+    }, [])
     return (
         <div className="container">
             <div className="row">
@@ -19,7 +25,7 @@ const AllBlogs = () => {
 
                 <div className="col-lg-8">
                     {
-                        BlogData.slice(3,100).map(singleData => <BlogCart singleData={singleData} key={Math.random()} />)
+                        BlogData.slice(3, 100).map(singleData => <BlogCart singleData={singleData} key={Math.random()} />)
                     }
                 </div>
 
@@ -34,7 +40,7 @@ const AllBlogs = () => {
 
                             <hr className="my-4" />
                             <div className="d-flex justify-content-center">
-                                <img src={bloggerMan} class="card-img-top w-50" alt="..." />
+                                <img src={bloggerMan} className="card-img-top w-50" alt="..." />
                             </div>
 
                             <div className={styles.footerSocial}>
@@ -162,25 +168,25 @@ const AllBlogs = () => {
                                     <span className="badge text-dark bg-light">Technology</span>
                                 </h5>
                                 <h5>
-                                    <span class="badge text-dark bg-light">Fashion</span>
+                                    <span className="badge text-dark bg-light">Fashion</span>
                                 </h5>
                                 <h5>
-                                    <span class="badge text-dark bg-light">Architecture</span>
+                                    <span className="badge text-dark bg-light">Architecture</span>
                                 </h5>
                                 <h5>
-                                    <span class="badge text-dark bg-light">Fashion</span>
+                                    <span className="badge text-dark bg-light">Fashion</span>
                                 </h5>
                                 <h5>
-                                    <span class="badge text-dark bg-light">Food</span>
+                                    <span className="badge text-dark bg-light">Food</span>
                                 </h5>
                                 <h5>
-                                    <span class="badge text-dark bg-light">Lifestyle</span>
+                                    <span className="badge text-dark bg-light">Lifestyle</span>
                                 </h5>
                                 <h5>
-                                    <span class="badge text-dark bg-light">Art</span>
+                                    <span className="badge text-dark bg-light">Art</span>
                                 </h5>
                                 <h5>
-                                    <span class="badge text-dark bg-light">Adventure</span>
+                                    <span className="badge text-dark bg-light">Adventure</span>
                                 </h5>
                             </div>
 

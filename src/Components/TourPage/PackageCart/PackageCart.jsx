@@ -10,13 +10,13 @@ import { useNavigate } from 'react-router-dom';
 AOS.init();
 
 const PackageCart = (props) => {
-    const {displayPhoto, packagePresentPrice, totaldays, name} = props.singleData
+    const { displayPhoto, packagePresentPrice, totaldays, name, _id } = props.singleData
     const navigate = useNavigate()
-    const handleSingleTourPage = () => {
-        navigate('/singleTour')
+    const handleSingleTourPage = (id) => {
+        navigate(`/singleTour/${id}`)
     }
     return (
-        <div onClick={ ()=> handleSingleTourPage() } data-aos="fade-up" data-aos-duration="2000" className="col-md-6 mb-4">
+        <div onClick={() => handleSingleTourPage(_id)} data-aos="fade-up" data-aos-duration="2000" className="col-md-6 mb-4">
             <div className="card border-0">
                 <div className={styles.cardCustom}>
                     <div className={styles.imgDiv}>

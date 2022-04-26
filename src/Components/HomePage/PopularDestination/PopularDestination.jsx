@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import DestinationCard from './DestinationCard';
 import styles from './PopularDestination.module.css'
 import popularDestinationData from './PopularDestinationData'
+
 const PopularDestination = () => {
+    const [tourPackage, setTourPackage] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/allTourPackages')
+            .then(res => res.json())
+            .then(data => {
+                setTourPackage(data)
+            })
+    }, [])
+    // console.log(tourPackage);
     return (
         <div className="container">
             <div className="d-flex justify-content-center mb-5">
@@ -15,7 +25,7 @@ const PopularDestination = () => {
             </div>
             <div className="row">
                 {
-                    popularDestinationData.slice(0,6).map(singleData => <DestinationCard singleData={singleData} key={Math.random()} />)
+                    tourPackage.slice(0, 6).map(singleData => <DestinationCard singleData={singleData} key={Math.random()} />)
                 }
             </div>
         </div>

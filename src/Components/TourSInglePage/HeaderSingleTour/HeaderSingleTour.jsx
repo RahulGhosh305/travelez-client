@@ -1,10 +1,20 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import Navbar from '../../Shared/Navbar/Navbar'
 import styles from './HeaderSingleTour.module.css';
 
 const HeaderSingleTour = () => {
+    const [tours, setTours] = useState({})
     const navigate = useNavigate()
+    const { id } = useParams()
+    // console.log(id)
+    useEffect(() => {
+        fetch(`http://localhost:5000/singleTourPackage/${id}`)
+            .then(res => res.json())
+            .then(data => setTours(data))
+    }, [id])
+    // console.log(tours)
+    const { packageName, packagePresentPrice, prePackagePrice } = tours
     const handleBookNow = () => {
         navigate('/bookNow')
     }
@@ -20,13 +30,13 @@ const HeaderSingleTour = () => {
                         <div className="col-md-6">
                             <div className="d-flex justify-content-between flex-wrap">
                                 <div>
-                                    <h4>Shimla And Manali Tour Package</h4>
+                                    <h4>{packageName}</h4>
                                     <p>Seller : Travlez Tours Pvt Ltd </p>
                                 </div>
                                 <div>
                                     <p className="mb-0">Starting Forms</p>
-                                    <h4 className="mb-0">15000 Tk.</h4>
-                                    <h5 className="text-muted"><del>19000 Tk.</del></h5>
+                                    <h4 className="mb-0">{packagePresentPrice} Tk.</h4>
+                                    <h5 className="text-muted"><del>{prePackagePrice} Tk.</del></h5>
                                 </div>
                             </div>
                         </div>

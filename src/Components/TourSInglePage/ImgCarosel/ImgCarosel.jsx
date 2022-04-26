@@ -1,22 +1,24 @@
 import React from 'react';
 import { Carousel } from 'react-carousel-minimal';
-const ImgCarosel = () => {
+const ImgCarosel = (props) => {
+    const tour = props.tourData
+    const { slider1, slider2, slider3, slider4, caption1, caption2, caption3, caption4 } = tour
     const data = [
         {
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GoldenGateBridge-001.jpg/1200px-GoldenGateBridge-001.jpg",
-            caption: `<div>San Francisco <br/> Next line </div>`
+            image: slider1,
+            caption: caption1
         },
         {
-            image: "https://www.tusktravel.com/blog/wp-content/uploads/2020/07/Best-Time-to-Visit-Darjeeling-for-Honeymoon.jpg",
-            caption: "Darjeeling"
+            image: slider2,
+            caption: caption2
         },
         {
-            image: "https://www.omm.com/~/media/images/site/locations/san_francisco_780x520px.ashx",
-            caption: "San Francisco"
+            image: slider3,
+            caption: caption3
         },
         {
-            image: "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/02/summer-7.jpg",
-            caption: "Darjeeling"
+            image: slider4,
+            caption: caption4
         }
     ];
 

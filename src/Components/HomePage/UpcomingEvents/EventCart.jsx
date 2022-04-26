@@ -5,12 +5,12 @@ import styles from './EventCart.module.css'
 
 const EventCart = (props) => {
     const navigate = useNavigate()
-    const handleSingleTourPage = () => {
-        navigate('/upComingEventDetails')
+    const handleSingleEventDetailsPage = (id) => {
+        navigate(`/upComingEventDetails/${id}`)
     }
-    const { displayPhoto, name, days, nights, message } = props.singleData
+    const { displayPhoto, name, days, nights, message, _id } = props.singleData
     return (
-        <div onClick={() => handleSingleTourPage()} className={styles.containerDetails}>
+        <div onClick={() => handleSingleEventDetailsPage(_id)} className={styles.containerDetails}>
             <div className={styles.image}>
                 <img src={displayPhoto} alt="" className="img-fluid" />
             </div>

@@ -1,44 +1,54 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
+import { useParams } from "react-router-dom";
 import styles from './BlogDetails.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
-import singleBlogDetailsImg from '../../../assets/singleBlogDetailsImg.jpg'
-import commmentMan from '../../../assets/commentMan.png';
-import author from '../../../assets/author.png.webp'
 import recentPostImg from '../../../assets/recentPostImg1.webp'
 import { faFacebookF, faGoogle, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
-const BlogDetails = () => {
+
+
+const BlogDetails = (props) => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
+    let { id } = useParams();
+    // console.log(id)
+    const [singleBlog, setSingleBlog] = useState({})
+    const [comment, setComment] = useState([])
 
+    useEffect(() => {
+        fetch(`http://localhost:5000/singleBlog/${id}`)
+            .then(res => res.json())
+            .then(data => {
+                setSingleBlog(data)
+                setComment(data.comments)
+            })
+    }, [id])
+    // console.log(singleBlog)
+    // console.log(comment.length)
+    const { subTitle, tag, photo, authorName, authorMessage, authorPhoto, blogDescription, date } = singleBlog
+    // console.log(title, tag);
     return (
         <div className={styles.BlogDetailsWrapper}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-8">
                         <div>
-                            <h2 className={styles.singleBlogTitle}>Second divided from form fish beast made every of seas all gathered us saying he our</h2>
+                            <p className="lead">{date}</p>
+                            <h2 className={styles.singleBlogTitle}>{subTitle}</h2>
                             <div className="d-flex align-items-center mt-3">
                                 <FontAwesomeIcon className="mb-3 me-1" icon={faUserAlt} />
-                                <p className="lead">Travel, lifestyle</p>
+                                <p className="lead">{tag}</p>
                                 <p className="ms-3">|</p>
                                 <FontAwesomeIcon className="mb-3 ms-3 me-1" icon={faComment} />
-                                <p className="lead">03 Comments</p>
+                                <p className="lead">{comment.length > 1 ? `${comment.length} Comments` : `${comment.length} Comment`}</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src={singleBlogDetailsImg} alt="" className="img-fluid mb-4" />
-
-                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
-
-                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually</p>
-
-                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
-
-                            <p className={styles.singleBlogDescription}>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower</p>
+                            <img src={photo} alt="" className="img-fluid mb-4" />
+                            <p className={styles.singleBlogDescription}>{blogDescription}</p>
                         </div>
 
                         <hr />
@@ -59,10 +69,10 @@ const BlogDetails = () => {
 
                         <div className={styles.authorDes}>
                             <div className="d-flex align-items-center">
-                                <img src={author} alt="" className="img-fluid" />
+                                <img src={authorPhoto} alt="" className="img-fluid" />
                                 <div className="my-auto ms-3">
-                                    <h6 className={styles.authorName}>Harvard milan</h6>
-                                    <p className="mb-0 lead">Second divided from form fish beast made. Every of seas all gathered use saying you're, he our dominion twon Second divided from</p>
+                                    <h6 className={styles.authorName}>{authorName}</h6>
+                                    <p className="mb-0 lead">{authorMessage}</p>
                                 </div>
                             </div>
                         </div>
@@ -70,38 +80,22 @@ const BlogDetails = () => {
                         <hr />
 
                         <div>
-                            <h5 className={styles.commentHeader}>05 Comments</h5>
+                            <h5 className={styles.commentHeader}>{comment.length > 1 ? `${comment.length} Comments` : `${comment.length} Comment`}</h5>
 
-                            <div className="d-flex align-items-center mb-4">
-                                <img src={commmentMan} alt="" className="img-fluid" />
-                                <div className="ms-3">
-                                    <p className={styles.commentText}>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
-                                    <div className="d-flex flex-wrap">
-                                        <p>Emilly Blunt</p>
-                                        <p className="ms-3">December 4, 2017 at 3:12 pm</p>
+                            {
+                                comment.map(ele => (
+                                    <div key={Math.random()} className="d-flex align-items-center mb-4">
+                                        <img src={ele.commentorPhoto} alt="" className="img-fluid" />
+                                        <div className="ms-3">
+                                            <p className={styles.commentText}>{ele.commentMessage}</p>
+                                            <div className="d-flex flex-wrap">
+                                                <p>{ele.commentorName}</p>
+                                                <p className="ms-3">{ele.commentTime}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center mb-4">
-                                <img src={commmentMan} alt="" className="img-fluid" />
-                                <div className="ms-3">
-                                    <p className={styles.commentText}>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
-                                    <div className="d-flex flex-wrap">
-                                        <p>Emilly Blunt</p>
-                                        <p className="ms-3">December 4, 2017 at 3:12 pm</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center mb-4">
-                                <img src={commmentMan} alt="" className="img-fluid" />
-                                <div className="ms-3">
-                                    <p className={styles.commentText}>Multiply sea night grass fourth day sea lesser rule open subdue female fill which them Blessed, give fill lesser bearing multiply sea night grass fourth day sea lesser</p>
-                                    <div className="d-flex flex-wrap">
-                                        <p>Emilly Blunt</p>
-                                        <p className="ms-3">December 4, 2017 at 3:12 pm</p>
-                                    </div>
-                                </div>
-                            </div>
+                                ))
+                            }
 
                             <hr />
 
@@ -242,25 +236,25 @@ const BlogDetails = () => {
                                             <span className="badge text-dark bg-light">Technology</span>
                                         </h5>
                                         <h5>
-                                            <span class="badge text-dark bg-light">Fashion</span>
+                                            <span className="badge text-dark bg-light">Fashion</span>
                                         </h5>
                                         <h5>
-                                            <span class="badge text-dark bg-light">Architecture</span>
+                                            <span className="badge text-dark bg-light">Architecture</span>
                                         </h5>
                                         <h5>
-                                            <span class="badge text-dark bg-light">Fashion</span>
+                                            <span className="badge text-dark bg-light">Fashion</span>
                                         </h5>
                                         <h5>
-                                            <span class="badge text-dark bg-light">Food</span>
+                                            <span className="badge text-dark bg-light">Food</span>
                                         </h5>
                                         <h5>
-                                            <span class="badge text-dark bg-light">Lifestyle</span>
+                                            <span className="badge text-dark bg-light">Lifestyle</span>
                                         </h5>
                                         <h5>
-                                            <span class="badge text-dark bg-light">Art</span>
+                                            <span className="badge text-dark bg-light">Art</span>
                                         </h5>
                                         <h5>
-                                            <span class="badge text-dark bg-light">Adventure</span>
+                                            <span className="badge text-dark bg-light">Adventure</span>
                                         </h5>
                                     </div>
 

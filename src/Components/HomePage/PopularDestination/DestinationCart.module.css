@@ -14,10 +14,13 @@
 }
 .customCard {
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px !important;
 }
 .imgDiv {
     position: relative;
     text-align: center;
+    overflow: hidden;
 }
 .imgPack {
     position: absolute;

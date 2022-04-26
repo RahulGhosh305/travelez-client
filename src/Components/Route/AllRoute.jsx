@@ -20,15 +20,15 @@ const AllRoute = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/tour" element={<Tour />} />
-            <Route path="/singleTour" element={<TourSingle />} />
+            <Route path="/singleTour/:id" element={<TourSingle />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/singleBlog" element={<SingleBlog />} />
+            <Route path="/singleBlog/:id" element={<SingleBlog />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/bookNow" element={<BookNow />} />
-            <Route path="/upComingEventDetails" element={<UpCommingEventDetails />} />
+            <Route path="/upComingEventDetails/:id" element={<UpCommingEventDetails />} />
             <Route path="*" element={<NoPageFound />} />
         </Routes>
     );

@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 
 import styles from './UpcomingEvent.module.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import EventData from './EventData.js'
+// import EventData from './EventData.js'
 import EventCart from './EventCart';
 
 const UpcomingEvent = () => {
+    const [EventData, setEventData] = useState([])
+    useState(() => {
+        fetch('http://localhost:5000/upcommingevent')
+            .then(res => res.json())
+            .then(data => setEventData(data))
+    }, [])
     var settings = {
         // dots: true,
         infinite: true,

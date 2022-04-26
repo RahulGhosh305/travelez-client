@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Packages.module.css'
 import PackageCart from '../PackageCart/PackageCart';
 import travelPic from '../../../assets/travlePic.png';
@@ -8,9 +8,16 @@ import instra3 from '../../../assets/instra3.webp'
 import instra4 from '../../../assets/instra4.webp'
 import instra5 from '../../../assets/insta5.webp'
 import instra6 from '../../../assets/instra6.webp'
-import popularDestinationData from '../../HomePage/PopularDestination/PopularDestinationData'
+// import popularDestinationData from '../../HomePage/PopularDestination/PopularDestinationData'
 
 const Packages = () => {
+    const [popularDestination, setPopularDestination] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/allTourPackages')
+            .then(res => res.json())
+            .then(data => setPopularDestination(data))
+    }, [])
+
     return (
         <div className="container">
             <div className="row">
@@ -26,7 +33,7 @@ const Packages = () => {
                 <div className="col-lg-9">
                     <div className="row">
                         {
-                            popularDestinationData.slice(6, 14).map(singleData => <PackageCart singleData={singleData} key={Math.random()} />)
+                            popularDestination.slice(6, 14).map(singleData => <PackageCart singleData={singleData} key={Math.random()} />)
                         }
                     </div>
                 </div>
@@ -48,7 +55,7 @@ const Packages = () => {
                                     <label htmlFor="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Check-out:</label>
                                     <input type="date" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                 </div>
-                                <div clasName="mb-3">
+                                <div className="mb-3">
                                     <label htmlFor="exampleInputEmail1" className={`form-label ${styles.lavel}`}>Guest:</label>
                                     <input type="number" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                                 </div>

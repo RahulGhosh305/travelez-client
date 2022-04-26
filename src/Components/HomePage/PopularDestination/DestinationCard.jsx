@@ -10,12 +10,12 @@ AOS.init();
 
 const DestinationCard = (props) => {
     const navigate = useNavigate()
-    const handleSingleTourPage = () => {
-        navigate('/singleTour')
+    const handleSingleTourPage = (id) => {
+        navigate(`/singleTour/${id}`)
     }
-    const { displayPhoto, totaldays, name, packageGroupPeoples, packagePresentPrice, rating } = props.singleData
+    const { displayPhoto, totaldays, name, packageGroupPeoples, packagePresentPrice, rating, _id } = props.singleData
     return (
-        <div onClick={() => handleSingleTourPage()} data-aos="zoom-in" data-aos-duration="2000" className="col-md-6 col-lg-4 mb-4">
+        <div onClick={() => handleSingleTourPage(_id)} data-aos="zoom-in" data-aos-duration="2000" className="col-md-6 col-lg-4 mb-4">
             <div className={`card ${styles.customCard}`}>
                 <div className={styles.imgDiv}>
                     <img src={displayPhoto} className="card-img-top" alt="..." />

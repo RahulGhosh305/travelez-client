@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Footer from '../../Shared/Footer/Footer';
 import travelPic from '../../../assets/travlePic.png';
@@ -6,11 +6,23 @@ import tourSaintMartin from '../../../assets/tourSaintMartin.jpg'
 import styles from './UpCommingEventDetails.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faCalendarWeek, faUserAlt } from '@fortawesome/free-solid-svg-icons'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+
+
 const UpCommingEventDetails = () => {
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    const [event, setEvent] = useState({})
+    const { shortDescription, presentPrice, previousPrice, peoples, nights, days, name, message, eventDate, displayPhoto } = event
+    const { id } = useParams()
+    // console.log(id)
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/upcommingevent/${id}`)
+            .then(res => res.json())
+            .then(data => setEvent(data))
+    }, [id])
 
     const navigate = useNavigate()
     const handleBookNow = () => {
@@ -20,20 +32,21 @@ const UpCommingEventDetails = () => {
         <>
             <Navbar />
             <div className="container">
-                <h4 className="display-4">Saint's Martin</h4>
+                <h4 className="display-4">{name}</h4>
+                <h5 className="lead pb-2">{message}</h5>
                 <div className="row">
                     <div className="col-md-8">
-                        <img src={tourSaintMartin} alt="" className="img-fluid" />
+                        <img src={displayPhoto} alt="" className="img-fluid" />
                     </div>
                     <div className="col-md-4">
                         <div className={styles.packageInfo}>
                             <h4 className="mt-3 text-danger">Book This Tour</h4>
-                            <p className="lead">Starting Price 25000 Tk.</p>
-                            <button onClick={()=> handleBookNow()} className={`btn ${styles.bookNowBtn}`}>Book Now</button>
-                            <h3>Package : 25000 Tk. <del>30000 Tk.</del> </h3>
-                            <p className="lead"><FontAwesomeIcon className="me-2" icon={faBed} /> 3 Days 2 Night</p>
-                            <p className="lead"><FontAwesomeIcon className="me-3" icon={faCalendarWeek} />  12 May to 15 May </p>
-                            <p className="lead"><FontAwesomeIcon className="me-3" icon={faUserAlt} /> 3 Peoples</p>
+                            <p className="lead">Starting Price {presentPrice} Tk.</p>
+                            <button onClick={() => handleBookNow()} className={`btn ${styles.bookNowBtn}`}>Book Now</button>
+                            <h3>Package : {presentPrice} Tk. <del>{previousPrice} Tk.</del> </h3>
+                            <p className="lead"><FontAwesomeIcon className="me-2" icon={faBed} /> {days} Days {nights} Night</p>
+                            <p className="lead"><FontAwesomeIcon className="me-3" icon={faCalendarWeek} />  {eventDate} </p>
+                            <p className="lead"><FontAwesomeIcon className="me-3" icon={faUserAlt} /> {peoples} Peoples</p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +57,7 @@ const UpCommingEventDetails = () => {
             <div className="container">
                 <div className="row">
                     <div>
-                        <p className="lead"> St. Martin's Island is a small island in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip.</p>
+                        <p className="lead">{shortDescription}</p>
                     </div>
                 </div>
 

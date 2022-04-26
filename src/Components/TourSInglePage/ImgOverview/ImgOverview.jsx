@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './ImgOverview.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faBed, faBinoculars, faBus, faCar, faCoffee, faHeart, faMoneyCheckDollar, faSpoon } from '@fortawesome/free-solid-svg-icons'
 import ImgCarosel from '../ImgCarosel/ImgCarosel';
+import { useParams } from 'react-router-dom';
+
+
 const ImgOverview = () => {
+    const [tours, setTours] = useState({})
+    const [itinerary, setItinerary] = useState([])
+    const { id } = useParams()
+    // console.log(id)
+    useEffect(() => {
+        fetch(`http://localhost:5000/singleTourPackage/${id}`)
+            .then(res => res.json())
+            .then(data => {
+                setTours(data)
+                setItinerary(data.tourPlanDays)
+            })
+    }, [id])
+    // console.log(tours)
+    // console.log(itinerary);
+    const { overView, stayPlanDays, stayPlanNight, discount } = tours;
+    const { day, describe } = itinerary;
     return (
         <div>
             <div className="container">
                 <div className="row">
                     <div className="col-md-9">
                         <div>
-                            <ImgCarosel />
+                            <ImgCarosel tourData={tours} />
                         </div>
                     </div>
                     <div className="col-md-3 mt-4">
@@ -20,11 +39,11 @@ const ImgOverview = () => {
 
                             <hr />
                             <h4>Stay Plan</h4>
-                            <p className="mb-0">Shimla - 2 Nights</p>
-                            <p>Manali - 3 Nights</p>
+                            <p className="mb-0">{stayPlanDays} Days</p>
+                            <p>{stayPlanNight} Nights</p>
 
                             <hr />
-                            <p>371 eCash</p>
+                            <p>{discount} Discount</p>
                             <hr />
                         </div>
                     </div>
@@ -78,22 +97,20 @@ const ImgOverview = () => {
                 <div className="row">
                     <hr />
                     <h4>Overview</h4>
-                    <p>Explore beautiful hill stations of the state of Himachal Pradesh in India, this is 06 days travel plan of Shmla and Manali in this tour package Shimla is the first destination on your itinerary. This city one of the most popular hill stations in India and is famous for its snow-capped hills, old temples and clean roads. Kufri is another hill station, which glitters in pristine beauty and is less crowded than Shimla. The last city you will visit is Manali. This town is famous for the many adventure activities and some attractions like the Hidimba Devi Temple, Tibetan Monastery Van Vihar and much more! So experience the best all Shimla and Manali on this fantastic holiday!</p>
+                    <p>{overView}</p>
                     <hr />
                 </div>
 
                 <div className="row">
                     <h4>Package Itinerary</h4>
-                    <h2>Day 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
-                    <h2>Day 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
-                    <h2>Day 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
-                    <h2>Day 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
-                    <h2>Day 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non, laborum ut quas quidem, incidunt velit beatae impedit, facilis veniam amet. Nesciunt incidunt corporis, laboriosam tempora sed hic doloribus voluptate accusamus aliquid doloremque aut recusandae libero quis officia! Accusantium doloremque in explicabo, fugiat ea eum obcaecati quod aspernatur ad recusandae.</p>
+                    {
+                        itinerary.map(ele =>
+                            <div className="py-2">
+                                <h4>{ele.day}</h4>
+                                <p>{ele.describe}</p>
+                            </div>
+                        )
+                    }
                     <hr />
                 </div>
 

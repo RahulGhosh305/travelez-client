@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Blog.module.css'
 import blogSiteImage from '../../../assets/blogSiteImage.jpg'
 import BlogCart from './BlogCart';
-import BlogData from './BlogData'
+// import BlogData from './BlogData'
 const Blog = () => {
+    const [BlogData, setBlogData] = useState([])
+    useEffect(() => {
+        fetch('http://localhost:5000/addBlogs')
+            .then(res => res.json())
+            .then(data => setBlogData(data))
+    }, [])
     return (
         <div className={styles.blogWrapper}>
             <div className="text-center mb-5">
