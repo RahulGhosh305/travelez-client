@@ -73,6 +73,101 @@ import UttarakhandSlider4 from '../../../assets/uttrakhandSlider4.webp'
 
 const PopularDestinationData = [
     {
+        displayPhoto: nepal,
+        slider1: nepalSlider1,
+        caption1: 'Nepal Himalayan',
+        slider2: nepalSlider2,
+        caption2: 'Central Office',
+        slider3: nepalSlider3,
+        caption3: 'Temple',
+        slider4: nepalSlider4,
+        caption4: "Himaloyan",
+        name: "Dhaka-Nepal-Dhaka",
+        packageName: "Nepal Kathmandu Tour Package",
+        message: "Nepal is a popular destination amongst tourists, especially from India. Tourism in Nepal offers variety of sightseeing and entertainment options...",
+        rating: "4.8",
+        packagePresentPrice: "150000",
+        prePackagePrice: "190000",
+        packageGroupPeoples: 6,
+        totaldays: 4,
+        stayPlanDays: 'Kathmandu - 2',
+        stayPlanNight: 'Kathmandu - 2',
+        discount: '10%',
+        overView: "Embark on an intimate journey with your better half by booking a 3 nights 4 days Nepal honeymoon package that allows the newlyweds to explore this paradisiacal country in a planned, and organized manner. This romantic Nepal trip provides an opportunity to the couples to explore the busy streets of Nepal, pay a visit to the age-old temples, and peep into the simple lifestyle, and vibrant culture of the people of Nepal.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 - KATHMANDU: A ROMANTIC TRIP BEGINS',
+                describe: `On your arrival at the airport, you will be warmly welcomed by an agent’s representative. After a quick meet and greet session, you will be escorted to the hotel pre-booked for you. Check-in and relax before setting out on your Nepal sightseeing tour.
+                Day 1 of your Nepal trip includes a tour of the ‘Heart of Nepal’s tourism’, Thamel. This place is famous for its bustling narrow streets that are studded with craft shops, boutique cafes, restaurants, bars, and tourist-oriented shops.
+                Enjoy a shopping session at tiny, colorful shops stuffed with Asian artifacts, local souvenirs, and Mandala drawings, in the busy streets of the locality.
+                In the evening, you can try a relaxing shiatsu massage for couples, or savor authentic Nepalese cuisine, during a date with your spouse, at one of the many traditional Nepali restaurants located on the streets of Thamel. After a hectic day, head back to the hotel for a comfortable sleep.
+                `
+            },
+            {
+                day: 'DAY 2 - KATHMANDU: LOCAL SIGHTSEEING',
+                describe: `After relishing a filling breakfast, get ready for the 2nd day of your romantic Nepal trip. Today, your Nepal sightseeing tour comprises of a visit to the historic Durbar Square which is recognized as a UNESCO World Heritage Site. Enjoy a photography session with your better half at the ancient temples, palaces, courtyards, and streets of Durbar Square.
+                Proceed forward to visit Patan, the second largest town in Kathmandu Valley. Here you can indulge in various thrilling activities such as rafting on the Bagmati River, an aerial tour of the valley, mountain biking.
+                In the afternoon, experience the vibes of Hindu spirituality at the Pashupatinath Temple. Non-Hindu foreigners are not allowed in the temple, but they can admire the old stone shrines around the temple.
+                After a brief tour of the Pashupatinath Temple, pay a visit to the mystical Swayambhunath Buddhist temple that has remained unchanged since the last 700 years. Situated atop a hill, this temple is surrounded by different varieties of trees. Finally, enjoy the calmness of Kathmandu at twilight, before heading back to the hotel for an overnight stay.`
+            },
+            {
+                day: 'DAY 3 - NAGORKOT: ARRIVAL AND A SIGHTSEEING TOUR',
+                describe: `Kickstart your day with a scrumptious breakfast, followed by a hotel checkout, and get ready for a breathtaking journey to the hill town of Nagarkot.
+                During your journey, take a halt at the Bhaktapur Durbar Square and visit the conglomeration of a pagoda, and shikhara-style temples clustered around a huge palace of brick and wood.              
+                At the end of the day, enjoy the pleasing sunset, and head to the hotel. Complete check-in formalities for a restful overnight stay.
+                Distance from Kathmandu to Nagarkot: 27 km (approx.)        
+                Travel Time: 1 hour, 15 minutes (approx.)`
+            },
+            {
+                day: 'DAY 4 - NAGORKOT: THE TOUR CULMINATES',
+                describe: `Prior to your breakfast, relish the sight of an awe inspiring sunrise. Spend some quality time with your better half in the quiet surroundings of the hills. Enjoy an early morning walk, hand in hand with your partner, and then head back to the hotel to prepare for departure.
+                Pack your luggage after a delectable breakfast. Check out from the hotel and get transferred to the airport to board your flight back home. Bid adieu to the city that has given you memories to cherish for a lifetime.`
+            }
+        ]
+    },
+    {
+        displayPhoto: buttan,
+        slider1: bhutanSlider1,
+        caption1: 'Bhutan',
+        slider2: bhutanSlider2,
+        caption2: 'Bhutan',
+        slider3: bhutanSlider3,
+        caption3: 'Bhutan',
+        slider4: bhutanSlider4,
+        caption4: "Bhutan",
+        name: "Dhaka-Buttan-Dhaka",
+        packageName: "Bhutan Thimphu Tour Package",
+        message: "Bhutan tourism is famed for its stunning valleys, lush greenery, magnificent mountains and colourful culture that you can experience at Bhutan tourist places...",
+        rating: "4.9",
+        packagePresentPrice: "120000",
+        prePackagePrice: "150000",
+        packageGroupPeoples: 4,
+        totaldays: 4,
+        stayPlanDays: 'Thimphu - 3',
+        stayPlanNight: 'Thimphu - 2',
+        discount: '16%',
+        overView: "Thimphu tour packages invites you for an incredible trip to witness modernization meeting ancient traditions. Dotted with a typical Bhutanese style houses, government buildings, hotels, monasteries and museums along with modern pubs, bars, cafes, and markets, Thimphu offers delightful visuals in everyday life for anyone who has an eye for details as well as culture. With our well-designed Thimphu Bhutan holiday packages, we offer the best opportunity to explore and experience Thimphu.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 - PARO-THIMPHU',
+                describe: ` Arrival at Paro Airport (7,000ft), transfer to Thimphu hotel and visit the National Museum housed in an ancient Watchtower, which has a fine collection of ancient Thangka painting, Textiles, weapons and artifacts. Later drive you through the valley of Paro to Thimphu the capital city. Check in the Hotel.
+                Afternoon visit memorial Chorten built in the memory of Lt. His Majesty the King by Royal Queen Mother, then after visit Budha view point. Evening Free. Overnight Stay at Thimphu hotel`
+            },
+            {
+                day: 'DAY 2 - 	THIMPHU SIGHTSEEING',
+                describe: `Morning drive to Dochula pass (10,000ft) from where you can see the beautiful view of Eastern Himalayan range in the clear sunny day. Afternoon Changangkha Lhakhang, Motithang mini Zoo to see the National animal The Takin. Drive down to viewpoint from where you have magnificent view of Thimphu valley. Evening if possible you can visit Tashichodzong, the parliament house of the country.`
+            },
+            {
+                day: 'DAY 3 - THIMPHU -PARO',
+                describe: `Early morning transfer to Paro; hike to Taktsang monastery if you are interested otherwise just upto the viewpoint, one of the most sacred religious sites of the country. Later visit Drukgyul Dzong (ruin fortress) and later visit Kyichu Lhakhang. Evening scroll down town.`
+            },
+            {
+                day: 'DAY 4 - DEPARTURE',
+                describe: `After Breakfast transfer to Airport (own arrangement) for your onward flight.`
+            }
+        ]
+    },
+    {
         displayPhoto: maghaloya,
         slider1: meghaloySlider1,
         caption1: 'River Umngot',
@@ -82,7 +177,7 @@ const PopularDestinationData = [
         caption3: 'Meghaloy',
         slider4: meghaloySlider4,
         caption4: 'Seven sister fall',
-        name: "Dhaka-Meghalaya-Guwahati-Dhaka",
+        name: "Dhaka-Meghalaya-Dhaka",
         packageName: "Meghalaya And Guwahati Tour Package",
         message: "Meghalaya, the abode of clouds, is one of the most beautiful states in North-East India offering a variety of sights, activities, food and festivals to the ...",
         rating: "4.9",
@@ -147,6 +242,144 @@ const PopularDestinationData = [
                 day: 'DAY 7: CHERRAPUNJI TO GUWAHATI',
                 describe: `Post breakfast, check out from your hotel & then transfer to Guwahati airport with a sweet Holiday memory. Your Shillong Cherrapunji Meghalaya Package Tour ends here.
                 `
+            }
+        ]
+    },
+    {
+        displayPhoto: bangkok,
+        slider1: bangkokSlider1,
+        caption1: 'Bangkok',
+        slider2: bangkokSlider2,
+        caption2: 'Bangkok',
+        slider3: bangkokSlider3,
+        caption3: 'Bangkok',
+        slider4: bangkokSlider4,
+        caption4: "Bangkok",
+        name: "Dhaka-Bangkok-Dhaka",
+        packageName: "Bangkok Tour Package",
+        message: "It is not the destination where you end up but the mishaps and memories you create along the way.",
+        rating: "4.9",
+        packagePresentPrice: "150000",
+        prePackagePrice: "180000",
+        packageGroupPeoples: 3,
+        totaldays: 2,
+        stayPlanDays: '2',
+        stayPlanNight: '1',
+        discount: '12%',
+        overView: "Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple. Nearby is Wat Pho Temple with an enormous reclining Buddha and, on the opposite shore, Wat Arun Temple with its steep steps and Khmer-style spire.",
+        tourPlanDays: [
+            {
+                day: 'DAY 1: DHAKA – BANGKOK – HUA HIN',
+                describe: `Arrival at Bangkok airport, meet and greet at airport and transfer to Hua Hin by private car and then check in hotel at Hua Hin. Over night at hotel.`
+            },
+            {
+                day: 'DAY 2: HALF DAY HUA HIN CITY TOUR',
+                describe: `After breakfast then go out for half day city tour. During the tour will Visit Khao Takiab (Monkey Mountain), Wat Huay Monkol, and the Hua Hin Hills Vineyard or a comprehensive experience of the popular area then drop to hotel and free time for oneself for shopping, roaming and other activities. Over night at Hua Hin.`
+            },
+            {
+                day: 'DAY 3: HUA HIN TO BANGKOK',
+                describe: `After having breakfast check out from hotel and start journey toward Bangkok, Check in hotel in Bangkok and then free time for enjoying oneself. At afternoon go out for attend river cruise at Bangkok with cultural show.  Night halt at hotel.`
+            },
+            {
+                day: 'DAY 4: FULL DAY SAFARI WORLD AND MARINE PARK TOUR',
+                describe: `After having breakfast pickup from hotel at 8.00am towards whole day safari World tour during the tour will take an adventure drive into safari park and explore wildlife up-close and personal. Will see the Orang Utan Boxing Show, Dolphin Show, Sea Lion Show, Bird Show, Spy War, Cowboy show. After lunch enter to marine park to see the face-to-face with herds of Giraffes, Zebras, Tigers, Lions and many more. At 15.30 hrs Depart from Safari World to Bangkok. Reach at 17:00 hrs Return to the hotel After that drop to hotel.`
+            },
+            {
+                day: 'DAY 5: BANGKOK DEPARTURE',
+                describe: `Having breakfast time for free movement and check out from hotel and then drop to airport for coming back to suit home.`
+            }
+        ]
+    },
+    {
+        displayPhoto: maldeep,
+        slider1: maldeepSlider1,
+        caption1: 'Malvives',
+        slider2: maldeepSlider2,
+        caption2: 'Malvives',
+        slider3: maldeepSlider3,
+        caption3: 'Malvives',
+        slider4: maldeepSlider4,
+        caption4: "Malvives",
+        name: "Dhaka-Maldive-Dhaka",
+        packageName: "Beautiful sea in Maldives Tour Package",
+        message: "If we travel simply to indulge ourselves we are missing some of the greatest lessons life has to offer.",
+        rating: "4.9",
+        packagePresentPrice: "200000",
+        prePackagePrice: "300000",
+        packageGroupPeoples: 4,
+        totaldays: 4,
+        stayPlanDays: '2',
+        stayPlanNight: '2',
+        discount: '20%',
+        overView: "The Maldives, officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland.",
+        tourPlanDays: [
+            {
+                day: 'DAY 01: MALDIVES ARRIVAL',
+                describe: `Upon arrival at Maldives airport meet by our local representative transfer to hotel in Hulhumale. Over night stay at hotel.`
+            },
+            {
+                day: "DAY 02: HULHUMALE TO RESORT TRANSFER",
+                describe: `After having breakfast transfer to the tropical paradise of Maldives. Get transferred by a speedboat to your resort and check-in to your room, spend the day relaxing and admiring the views of crystal clear waters ebbing sandy beaches.`
+            },
+            {
+                day: "DAY 03: FULL DAY FREE",
+                describe: `After breakfast today, we have many recommendations for you. You may choose to take a sun bath on the beach, go for a swim or do absolutely nothing! If adventure is what you like, go for some water sports like snorkeling, wind surfing or have fun on a banana boat ride.`
+            },
+            {
+                day: "DAY 04 : DEPARTURE MALDIVES",
+                describe: `After having breakfast checkout from resort and transfer to Maldives airport. `
+            }
+        ]
+    },
+    {
+        displayPhoto: malaysia,
+        slider1: maloysiaSlider1,
+        caption1: 'Malaysia',
+        slider2: maloysiaSlider2,
+        caption2: 'Malaysia',
+        slider3: maloysiaSlider3,
+        caption3: 'Malaysia',
+        slider4: maloysiaSlider4,
+        caption4: "Malaysia",
+        name: "Dhaka-Malaysia-Dhaka",
+        packageName: "Malaysia Tour Package",
+        message: "Once a year, go someplace you’ve never been before.",
+        rating: "4.8",
+        packagePresentPrice: "250000",
+        prePackagePrice: "300000",
+        packageGroupPeoples: 4,
+        totaldays: 5,
+        stayPlanDays: '3',
+        stayPlanNight: '2',
+        discount: '10%',
+        overView: "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers. ",
+        tourPlanDays: [
+            {
+                day: 'DAY 1 : DHAKA- LANKAWI AIRPORT - LANKAWI HOTEL',
+                describe: `Flight from Dhaka to Kuala Lumpur then Lankawi Airport. Arriving upon you will be welcome by our representative. Then transfer to hotel for check in, after check in free time for leisure. Overnight stay at Lankawi.`
+            },
+            {
+                day: 'DAY 2 : HALF DAY LANKAWI ISLAND HOPPING',
+                describe: `After having Breakfast at Hotel, get ready for the exciting tour of Island Hopping. A Trip on a speedboat through the southern water of Langkawi, where you will get a chance to maneuver around the many island of Langkawi. Among them the highlight are:-
+
+                Pregnant Maiden Island
+                Experience a cool dip in a fresh water lake situated in the Island. You even get the chance to soak your feet in waters full of fish and get a free massage from them.
+                Beras Basah Island
+                The white sandy beach and get the chance to do some of water activities such as para-sailing, banana boat riding etc but it is subject weather condition (cost on own)
+                Singa Besar Island
+                A stop over at bay of Singa Besar Island for Eagle Feeding. Here you have a chance to get close to see the different species of eagle such as Brahminy Kite and White Bellied Sea Eagles.`
+            },
+            {
+                day: 'DAY 3 : LANGKAWI TO PANANG',
+                describe: `Breakfast at hotel. Our driver will pick you up in a plenty of time to drop you at the ferry pier, then transfer by ferry to Penang. It will take three hours. From penang ferry pier you will be welcome by our representative who will drop you at Penang hotel. Rest of day free at your own.`
+            },
+            {
+                day: 'DAY 4 - PANANG - HALF DAY CITY TOUR',
+                describe: `After having breakfast at hotel, be ready for the half day City Tour. Enjoy a comprehensive tour Georgetown city. Experience the sights & sounds of this quaint city. Discover how a number of multi-cultured people can live harmoniously together in this city. Among the highlights of the tour are Fort Cornwallis, Weld Quay, Khoo Kong Si, Street of Harmony and Penang Museum & Art Gallery.`
+            },
+            {
+                day: 'DAY 5 - PANANG TO KUALA LIMPUR HOTEL',
+                describe: `Having Breakfast at hotel and be ready to fly for Kuala Lumpur. Our driver will pick you up in a plenty of time to drop you at the airport for your flight. From Kuala Lumpur airport you will be welcome by our representative then transfer to the hotel.`
             }
         ]
     },
@@ -271,101 +504,6 @@ const PopularDestinationData = [
             {
                 day: 'DAY 10 - DEPARTURE',
                 describe: `In the morning, get transferred to the Kushok Bakula airport to board a flight for your onward journey.`
-            }
-        ]
-    },
-    {
-        displayPhoto: nepal,
-        slider1: nepalSlider1,
-        caption1: 'Nepal Himalayan',
-        slider2: nepalSlider2,
-        caption2: 'Central Office',
-        slider3: nepalSlider3,
-        caption3: 'Temple',
-        slider4: nepalSlider4,
-        caption4: "Himaloyan",
-        name: "Dhaka-Nepal-Dhaka",
-        packageName: "Nepal Kathmandu Tour Package",
-        message: "Nepal is a popular destination amongst tourists, especially from India. Tourism in Nepal offers variety of sightseeing and entertainment options...",
-        rating: "4.8",
-        packagePresentPrice: "150000",
-        prePackagePrice: "190000",
-        packageGroupPeoples: 6,
-        totaldays: 4,
-        stayPlanDays: 'Kathmandu - 2',
-        stayPlanNight: 'Kathmandu - 2',
-        discount: '10%',
-        overView: "Embark on an intimate journey with your better half by booking a 3 nights 4 days Nepal honeymoon package that allows the newlyweds to explore this paradisiacal country in a planned, and organized manner. This romantic Nepal trip provides an opportunity to the couples to explore the busy streets of Nepal, pay a visit to the age-old temples, and peep into the simple lifestyle, and vibrant culture of the people of Nepal.",
-        tourPlanDays: [
-            {
-                day: 'DAY 1 - KATHMANDU: A ROMANTIC TRIP BEGINS',
-                describe: `On your arrival at the airport, you will be warmly welcomed by an agent’s representative. After a quick meet and greet session, you will be escorted to the hotel pre-booked for you. Check-in and relax before setting out on your Nepal sightseeing tour.
-                Day 1 of your Nepal trip includes a tour of the ‘Heart of Nepal’s tourism’, Thamel. This place is famous for its bustling narrow streets that are studded with craft shops, boutique cafes, restaurants, bars, and tourist-oriented shops.
-                Enjoy a shopping session at tiny, colorful shops stuffed with Asian artifacts, local souvenirs, and Mandala drawings, in the busy streets of the locality.
-                In the evening, you can try a relaxing shiatsu massage for couples, or savor authentic Nepalese cuisine, during a date with your spouse, at one of the many traditional Nepali restaurants located on the streets of Thamel. After a hectic day, head back to the hotel for a comfortable sleep.
-                `
-            },
-            {
-                day: 'DAY 2 - KATHMANDU: LOCAL SIGHTSEEING',
-                describe: `After relishing a filling breakfast, get ready for the 2nd day of your romantic Nepal trip. Today, your Nepal sightseeing tour comprises of a visit to the historic Durbar Square which is recognized as a UNESCO World Heritage Site. Enjoy a photography session with your better half at the ancient temples, palaces, courtyards, and streets of Durbar Square.
-                Proceed forward to visit Patan, the second largest town in Kathmandu Valley. Here you can indulge in various thrilling activities such as rafting on the Bagmati River, an aerial tour of the valley, mountain biking.
-                In the afternoon, experience the vibes of Hindu spirituality at the Pashupatinath Temple. Non-Hindu foreigners are not allowed in the temple, but they can admire the old stone shrines around the temple.
-                After a brief tour of the Pashupatinath Temple, pay a visit to the mystical Swayambhunath Buddhist temple that has remained unchanged since the last 700 years. Situated atop a hill, this temple is surrounded by different varieties of trees. Finally, enjoy the calmness of Kathmandu at twilight, before heading back to the hotel for an overnight stay.`
-            },
-            {
-                day: 'DAY 3 - NAGORKOT: ARRIVAL AND A SIGHTSEEING TOUR',
-                describe: `Kickstart your day with a scrumptious breakfast, followed by a hotel checkout, and get ready for a breathtaking journey to the hill town of Nagarkot.
-                During your journey, take a halt at the Bhaktapur Durbar Square and visit the conglomeration of a pagoda, and shikhara-style temples clustered around a huge palace of brick and wood.              
-                At the end of the day, enjoy the pleasing sunset, and head to the hotel. Complete check-in formalities for a restful overnight stay.
-                Distance from Kathmandu to Nagarkot: 27 km (approx.)        
-                Travel Time: 1 hour, 15 minutes (approx.)`
-            },
-            {
-                day: 'DAY 4 - NAGORKOT: THE TOUR CULMINATES',
-                describe: `Prior to your breakfast, relish the sight of an awe inspiring sunrise. Spend some quality time with your better half in the quiet surroundings of the hills. Enjoy an early morning walk, hand in hand with your partner, and then head back to the hotel to prepare for departure.
-                Pack your luggage after a delectable breakfast. Check out from the hotel and get transferred to the airport to board your flight back home. Bid adieu to the city that has given you memories to cherish for a lifetime.`
-            }
-        ]
-    },
-    {
-        displayPhoto: buttan,
-        slider1: bhutanSlider1,
-        caption1: 'Bhutan',
-        slider2: bhutanSlider2,
-        caption2: 'Bhutan',
-        slider3: bhutanSlider3,
-        caption3: 'Bhutan',
-        slider4: bhutanSlider4,
-        caption4: "Bhutan",
-        name: "Dhaka-Buttan-Dhaka",
-        packageName: "Bhutan Thimphu Tour Package",
-        message: "Bhutan tourism is famed for its stunning valleys, lush greenery, magnificent mountains and colourful culture that you can experience at Bhutan tourist places...",
-        rating: "4.9",
-        packagePresentPrice: "120000",
-        prePackagePrice: "150000",
-        packageGroupPeoples: 4,
-        totaldays: 4,
-        stayPlanDays: 'Thimphu - 3',
-        stayPlanNight: 'Thimphu - 2',
-        discount: '16%',
-        overView: "Thimphu tour packages invites you for an incredible trip to witness modernization meeting ancient traditions. Dotted with a typical Bhutanese style houses, government buildings, hotels, monasteries and museums along with modern pubs, bars, cafes, and markets, Thimphu offers delightful visuals in everyday life for anyone who has an eye for details as well as culture. With our well-designed Thimphu Bhutan holiday packages, we offer the best opportunity to explore and experience Thimphu.",
-        tourPlanDays: [
-            {
-                day: 'DAY 1 - PARO-THIMPHU',
-                describe: ` Arrival at Paro Airport (7,000ft), transfer to Thimphu hotel and visit the National Museum housed in an ancient Watchtower, which has a fine collection of ancient Thangka painting, Textiles, weapons and artifacts. Later drive you through the valley of Paro to Thimphu the capital city. Check in the Hotel.
-                Afternoon visit memorial Chorten built in the memory of Lt. His Majesty the King by Royal Queen Mother, then after visit Budha view point. Evening Free. Overnight Stay at Thimphu hotel`
-            },
-            {
-                day: 'DAY 2 - 	THIMPHU SIGHTSEEING',
-                describe: `Morning drive to Dochula pass (10,000ft) from where you can see the beautiful view of Eastern Himalayan range in the clear sunny day. Afternoon Changangkha Lhakhang, Motithang mini Zoo to see the National animal The Takin. Drive down to viewpoint from where you have magnificent view of Thimphu valley. Evening if possible you can visit Tashichodzong, the parliament house of the country.`
-            },
-            {
-                day: 'DAY 3 - THIMPHU -PARO',
-                describe: `Early morning transfer to Paro; hike to Taktsang monastery if you are interested otherwise just upto the viewpoint, one of the most sacred religious sites of the country. Later visit Drukgyul Dzong (ruin fortress) and later visit Kyichu Lhakhang. Evening scroll down town.`
-            },
-            {
-                day: 'DAY 4 - DEPARTURE',
-                describe: `After Breakfast transfer to Airport (own arrangement) for your onward flight.`
             }
         ]
     },
@@ -529,47 +667,6 @@ const PopularDestinationData = [
         ]
     },
     {
-        displayPhoto: maldeep,
-        slider1: maldeepSlider1,
-        caption1: 'Malvives',
-        slider2: maldeepSlider2,
-        caption2: 'Malvives',
-        slider3: maldeepSlider3,
-        caption3: 'Malvives',
-        slider4: maldeepSlider4,
-        caption4: "Malvives",
-        name: "Dhaka-Maldive-Dhaka",
-        packageName: "Beautiful sea in Maldives Tour Package",
-        message: "If we travel simply to indulge ourselves we are missing some of the greatest lessons life has to offer.",
-        rating: "4.9",
-        packagePresentPrice: "200000",
-        prePackagePrice: "300000",
-        packageGroupPeoples: 4,
-        totaldays: 4,
-        stayPlanDays: '2',
-        stayPlanNight: '2',
-        discount: '20%',
-        overView: "The Maldives, officially the Republic of Maldives, is an archipelagic country in the Indian subcontinent of Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres from the Asian continent's mainland.",
-        tourPlanDays: [
-            {
-                day: 'DAY 01: MALDIVES ARRIVAL',
-                describe: `Upon arrival at Maldives airport meet by our local representative transfer to hotel in Hulhumale. Over night stay at hotel.`
-            },
-            {
-                day: "DAY 02: HULHUMALE TO RESORT TRANSFER",
-                describe: `After having breakfast transfer to the tropical paradise of Maldives. Get transferred by a speedboat to your resort and check-in to your room, spend the day relaxing and admiring the views of crystal clear waters ebbing sandy beaches.`
-            },
-            {
-                day: "DAY 03: FULL DAY FREE",
-                describe: `After breakfast today, we have many recommendations for you. You may choose to take a sun bath on the beach, go for a swim or do absolutely nothing! If adventure is what you like, go for some water sports like snorkeling, wind surfing or have fun on a banana boat ride.`
-            },
-            {
-                day: "DAY 04 : DEPARTURE MALDIVES",
-                describe: `After having breakfast checkout from resort and transfer to Maldives airport. `
-            }
-        ]
-    },
-    {
         displayPhoto: bandorbar,
         slider1: bandorbanSlider1,
         caption1: 'Bandarban',
@@ -607,58 +704,6 @@ const PopularDestinationData = [
             {
                 day: 'DAY 4 : SIGHTSEEING AND DEPARTURE',
                 describe: `This day we visit Sangu River, Swarna Mandir, Chakma Rajbari, Meghla Garden. At evening, leave Bandarban for Cumilla.`
-            }
-        ]
-    },
-    {
-        displayPhoto: malaysia,
-        slider1: maloysiaSlider1,
-        caption1: 'Malaysia',
-        slider2: maloysiaSlider2,
-        caption2: 'Malaysia',
-        slider3: maloysiaSlider3,
-        caption3: 'Malaysia',
-        slider4: maloysiaSlider4,
-        caption4: "Malaysia",
-        name: "Dhaka-Malaysia-Dhaka",
-        packageName: "Malaysia Tour Package",
-        message: "Once a year, go someplace you’ve never been before.",
-        rating: "4.8",
-        packagePresentPrice: "250000",
-        prePackagePrice: "300000",
-        packageGroupPeoples: 4,
-        totaldays: 5,
-        stayPlanDays: '3',
-        stayPlanNight: '2',
-        discount: '10%',
-        overView: "Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers. ",
-        tourPlanDays: [
-            {
-                day: 'DAY 1 : DHAKA- LANKAWI AIRPORT - LANKAWI HOTEL',
-                describe: `Flight from Dhaka to Kuala Lumpur then Lankawi Airport. Arriving upon you will be welcome by our representative. Then transfer to hotel for check in, after check in free time for leisure. Overnight stay at Lankawi.`
-            },
-            {
-                day: 'DAY 2 : HALF DAY LANKAWI ISLAND HOPPING',
-                describe: `After having Breakfast at Hotel, get ready for the exciting tour of Island Hopping. A Trip on a speedboat through the southern water of Langkawi, where you will get a chance to maneuver around the many island of Langkawi. Among them the highlight are:-
-
-                Pregnant Maiden Island
-                Experience a cool dip in a fresh water lake situated in the Island. You even get the chance to soak your feet in waters full of fish and get a free massage from them.
-                Beras Basah Island
-                The white sandy beach and get the chance to do some of water activities such as para-sailing, banana boat riding etc but it is subject weather condition (cost on own)
-                Singa Besar Island
-                A stop over at bay of Singa Besar Island for Eagle Feeding. Here you have a chance to get close to see the different species of eagle such as Brahminy Kite and White Bellied Sea Eagles.`
-            },
-            {
-                day: 'DAY 3 : LANGKAWI TO PANANG',
-                describe: `Breakfast at hotel. Our driver will pick you up in a plenty of time to drop you at the ferry pier, then transfer by ferry to Penang. It will take three hours. From penang ferry pier you will be welcome by our representative who will drop you at Penang hotel. Rest of day free at your own.`
-            },
-            {
-                day: 'DAY 4 - PANANG - HALF DAY CITY TOUR',
-                describe: `After having breakfast at hotel, be ready for the half day City Tour. Enjoy a comprehensive tour Georgetown city. Experience the sights & sounds of this quaint city. Discover how a number of multi-cultured people can live harmoniously together in this city. Among the highlights of the tour are Fort Cornwallis, Weld Quay, Khoo Kong Si, Street of Harmony and Penang Museum & Art Gallery.`
-            },
-            {
-                day: 'DAY 5 - PANANG TO KUALA LIMPUR HOTEL',
-                describe: `Having Breakfast at hotel and be ready to fly for Kuala Lumpur. Our driver will pick you up in a plenty of time to drop you at the airport for your flight. From Kuala Lumpur airport you will be welcome by our representative then transfer to the hotel.`
             }
         ]
     },
@@ -754,51 +799,6 @@ const PopularDestinationData = [
                 You can also spend some time by the river beach or go café hopping in the vibrant cafes that line the banks of Ganga.
                 You can then set off on your journey back towards Delhi.
                 Conclude the tour with beautiful memories on reaching your desired destination in Delhi for your onward journey.`
-            }
-        ]
-    },
-    {
-        displayPhoto: bangkok,
-        slider1: bangkokSlider1,
-        caption1: 'Bangkok',
-        slider2: bangkokSlider2,
-        caption2: 'Bangkok',
-        slider3: bangkokSlider3,
-        caption3: 'Bangkok',
-        slider4: bangkokSlider4,
-        caption4: "Bangkok",
-        name: "Dhaka-Bangkok-Dhaka",
-        packageName: "Bangkok Tour Package",
-        message: "It is not the destination where you end up but the mishaps and memories you create along the way.",
-        rating: "4.9",
-        packagePresentPrice: "150000",
-        prePackagePrice: "180000",
-        packageGroupPeoples: 3,
-        totaldays: 2,
-        stayPlanDays: '2',
-        stayPlanNight: '1',
-        discount: '12%',
-        overView: "Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple. Nearby is Wat Pho Temple with an enormous reclining Buddha and, on the opposite shore, Wat Arun Temple with its steep steps and Khmer-style spire.",
-        tourPlanDays: [
-            {
-                day: 'DAY 1: DHAKA – BANGKOK – HUA HIN',
-                describe: `Arrival at Bangkok airport, meet and greet at airport and transfer to Hua Hin by private car and then check in hotel at Hua Hin. Over night at hotel.`
-            },
-            {
-                day: 'DAY 2: HALF DAY HUA HIN CITY TOUR',
-                describe: `After breakfast then go out for half day city tour. During the tour will Visit Khao Takiab (Monkey Mountain), Wat Huay Monkol, and the Hua Hin Hills Vineyard or a comprehensive experience of the popular area then drop to hotel and free time for oneself for shopping, roaming and other activities. Over night at Hua Hin.`
-            },
-            {
-                day: 'DAY 3: HUA HIN TO BANGKOK',
-                describe: `After having breakfast check out from hotel and start journey toward Bangkok, Check in hotel in Bangkok and then free time for enjoying oneself. At afternoon go out for attend river cruise at Bangkok with cultural show.  Night halt at hotel.`
-            },
-            {
-                day: 'DAY 4: FULL DAY SAFARI WORLD AND MARINE PARK TOUR',
-                describe: `After having breakfast pickup from hotel at 8.00am towards whole day safari World tour during the tour will take an adventure drive into safari park and explore wildlife up-close and personal. Will see the Orang Utan Boxing Show, Dolphin Show, Sea Lion Show, Bird Show, Spy War, Cowboy show. After lunch enter to marine park to see the face-to-face with herds of Giraffes, Zebras, Tigers, Lions and many more. At 15.30 hrs Depart from Safari World to Bangkok. Reach at 17:00 hrs Return to the hotel After that drop to hotel.`
-            },
-            {
-                day: 'DAY 5: BANGKOK DEPARTURE',
-                describe: `Having breakfast time for free movement and check out from hotel and then drop to airport for coming back to suit home.`
             }
         ]
     },

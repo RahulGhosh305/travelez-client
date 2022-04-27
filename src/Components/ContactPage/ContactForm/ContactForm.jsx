@@ -2,9 +2,35 @@ import React from 'react';
 import contactUsSiteImg from '../../../assets/contactUsSiteImg.jpg'
 import styles from './ContactForm.module.css'
 import { useForm } from "react-hook-form";
+
 const ContactForm = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, resetField, formState: { errors } } = useForm(
+        {
+            mode: "onChange",
+            defaultValues: {
+                name: "",
+                email: "",
+                subject: "",
+                message: ""
+            }
+        }
+    );
+    const onSubmit = data => {
+        resetField("name")
+        resetField("email")
+        resetField("subject")
+        resetField("message")
+
+        fetch("http://localhost:5000/contactUsMessage", {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+            .then(res => res.json())
+            .then(data => alert(data))
+    };
 
     return (
         <div className={styles.formWrapper}>

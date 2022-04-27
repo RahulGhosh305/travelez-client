@@ -3,8 +3,32 @@ import styles from './GetTouch.module.css'
 import { useForm } from "react-hook-form";
 
 const GetTouch = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, resetField, formState: { errors } } = useForm({
+        mode: "onChange",
+        defaultValues: {
+            Name: "",
+            email: "",
+            subject: "",
+            message: ""
+        }
+    });
+    const onSubmit = data => {
+        resetField("Name")
+        resetField("email")
+        resetField("subject")
+        resetField("message")
+
+        fetch("http://localhost:5000/touchInTouchMessage", {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+            .then(res => res.json())
+            .then(data => alert(data))
+    }
+
     return (
         <div className={styles.touchWrapper}>
             <div className="d-flex justify-content-center">
@@ -25,8 +49,8 @@ const GetTouch = () => {
                                     <h2 className={styles.formTitle}>GET IN TOUCH</h2>
                                     <div className="row">
                                         <div className="col-md-6">
-                                            <input className="form-control border-0 border-bottom mb-3" placeholder='Name' {...register("name", { required: true })} />
-                                            {errors.name && <span className="text-danger">*This field is required</span>}
+                                            <input className="form-control border-0 border-bottom mb-3" placeholder='Name' {...register("Name", { required: true })} />
+                                            {errors.Name && <span className="text-danger">*This field is required</span>}
                                         </div>
                                         <div className="col-md-6">
                                             <input className="form-control border-0 border-bottom mb-3" placeholder="E-Mail" {...register("email", { required: true })} />
@@ -34,11 +58,11 @@ const GetTouch = () => {
                                         </div>
                                     </div>
 
-                                    <input className="form-control border-0 border-bottom mb-3" placeholder="Subject" {...register("name", { required: true })} />
-                                    {errors.name && <span>This field is required</span>}
+                                    <input className="form-control border-0 border-bottom mb-3" placeholder="Subject" {...register("subject", { required: true })} />
+                                    {errors.subject && <span>This field is required</span>}
 
-                                    <textarea className="form-control border-0 border-bottom" placeholder="Message" {...register("name", { required: true })} />
-                                    {errors.name && <span>This field is required</span>}
+                                    <textarea className="form-control border-0 border-bottom" placeholder="Message" {...register("message", { required: true })} />
+                                    {errors.message && <span>This field is required</span>}
                                     <br />
                                     <input type="submit" className="btn btn-light" value="Sent message" />
                                 </form>
