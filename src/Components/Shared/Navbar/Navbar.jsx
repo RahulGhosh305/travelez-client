@@ -1,13 +1,16 @@
+import { Button } from 'bootstrap';
 import React, { useState } from 'react';
 import { Outlet, NavLink, Link } from "react-router-dom";
+import useAuth from '../../SignUpSignInPage/UseAuthHook/useAuth';
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
+    const { isLoggedIn, SignOut } = useAuth()
     const [navbarColor, setNavbarColor] = useState(false)
     const changeNavbarColor = () => {
-        if(window.scrollY >= 100) {
+        if (window.scrollY >= 100) {
             setNavbarColor(true)
-        }else {
+        } else {
             setNavbarColor(false)
         }
     }
@@ -23,32 +26,35 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className={`nav-item ${styles.listItem}`}>
-                                <NavLink className={({isActive}) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/'>Home</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/'>Home</NavLink>
                             </li>
                             <li className={`nav-item ${styles.listItem}`}>
-                                <NavLink className={({isActive}) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/about'>About</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/about'>About</NavLink>
                             </li>
                             <li className={`nav-item ${styles.listItem}`}>
-                                <NavLink className={({isActive}) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/tour'>Tour</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/tour'>Tour</NavLink>
                             </li>
                             <li className={`nav-item ${styles.listItem}`}>
-                                <NavLink className={({isActive}) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/blog'>Blog</NavLink>                                   
+                                <NavLink className={({ isActive }) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/blog'>Blog</NavLink>
                             </li>
                             <li className={`nav-item ${styles.listItem}`}>
-                                <NavLink className={({isActive}) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/dashboard'>Dashboard</NavLink>                                   
+                                <NavLink className={({ isActive }) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/dashboard'>Dashboard</NavLink>
                             </li>
                             <li className={`nav-item ${styles.listItem}`}>
-                                <NavLink className={({isActive}) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/contact'>Contact</NavLink>
+                                <NavLink className={({ isActive }) => (isActive ? `nav-link ${styles.isActive}` : `nav-link ${styles.inActive}`)} to='/contact'>Contact</NavLink>
                             </li>
                         </ul>
                         <div>
-                            <NavLink to="/signin" className={`btn ${styles.inBtn}`} >SignIn</NavLink>
-                            {/* <button className={`btn ${styles.outBtn}`} >SignOut</button> */}
+                            {
+                                isLoggedIn.emailVerified === true ? <button onClick={SignOut} className={`btn ${styles.outBtn}`} >SignOut</button> : <NavLink to="/signin" className={`btn ${styles.inBtn}`} >SignIn</NavLink>
+                            }
+
+
                         </div>
                     </div>
                 </div>
             </nav>
-            <Outlet/>
+            <Outlet />
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import DestinationCard from './DestinationCard';
 import styles from './PopularDestination.module.css'
-import popularDestinationData from './PopularDestinationData'
+// import popularDestinationData from './PopularDestinationData'
 
 const PopularDestination = () => {
     const [tourPackage, setTourPackage] = useState([])

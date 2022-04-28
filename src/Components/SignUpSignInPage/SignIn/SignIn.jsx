@@ -6,14 +6,22 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons'
 import loginSiteImg from '../../../assets/loginSiteImg.png'
+import useAuth from '../UseAuthHook/useAuth';
+
+
 const SignIn = () => {
+    const { signInWithGoogle, signInEmailAndPassword, sentErrorMessage } = useAuth()
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+        console.log(data)
+        signInEmailAndPassword(data.email, data.password)
+    }
 
     const navigate = useNavigate()
     const handleSignUp = () => {
         navigate('/signup')
     }
+
     return (
         <>
             <Navbar />
@@ -41,16 +49,17 @@ const SignIn = () => {
                                     <input type="submit" className={styles.signInBtn} />
                                 </div>
 
+                                <div className="mt-2 text-center text-danger">{sentErrorMessage()}</div>
+
                             </form>
                             <p onClick={() => handleSignUp()} className={styles.notRegistered}>*Not Register! <u className="text-primary">Sign-Up</u> </p>
 
                             <div className={styles.googleBtnWrapper}>
                                 <h4> <u> Or Sign In with </u> </h4>
                                 <div className="d-flex justify-content-center">
-                                    <button className={`btn btn-sm ${styles.googleBtn}`}>Google</button>
+                                    <button onClick={signInWithGoogle} className={`btn btn-sm ${styles.googleBtn}`}>Google</button>
                                 </div>
                             </div>
-
                         </div>
 
                         <div className="col-md-7">

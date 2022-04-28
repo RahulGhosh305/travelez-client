@@ -9,7 +9,7 @@
 ul li:last-child {
     margin-right: 0px;
 }
-.inBtn {
+.inBtn, .outBtn {
     border-radius: 5px;
     color: #fff !important;
     font-size: 18px;

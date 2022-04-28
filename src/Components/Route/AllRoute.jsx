@@ -13,6 +13,7 @@ import TourSingle from '../TourSInglePage/TourSingle';
 import BookNow from '../BookNow/BookNow';
 import UpCommingEventDetails from '../HomePage/UpcomingEventDetails/UpCommingEventDetails';
 import NoPageFound from '../NoPageFound/NoPageFound';
+import PrivateRoute from '../SignUpSignInPage/PriveteRoute/PrivateRoute';
 
 const AllRoute = () => {
     return (
@@ -20,14 +21,14 @@ const AllRoute = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/tour" element={<Tour />} />
-            <Route path="/singleTour/:id" element={<TourSingle />} />
+            <Route path="/singleTour/:id" element={<PrivateRoute> <TourSingle /> </PrivateRoute>} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/singleBlog/:id" element={<SingleBlog />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/singleBlog/:id" element={<PrivateRoute> <SingleBlog /> </PrivateRoute>} />
+            <Route path="/dashboard" element={<PrivateRoute> <Dashboard /> </PrivateRoute>} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
-            <Route path="/bookNow" element={<BookNow />} />
+            <Route path="/bookNow" element={<PrivateRoute> <BookNow /> </PrivateRoute>} />
             <Route path="/upComingEventDetails/:id" element={<UpCommingEventDetails />} />
             <Route path="*" element={<NoPageFound />} />
         </Routes>
