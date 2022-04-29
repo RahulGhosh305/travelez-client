@@ -57,7 +57,6 @@ const AllBlogs = () => {
                             <p className={styles.bloggerMessage}>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                             <hr className="my-4" />
-
                             <a href="#" className={`btn d-block ${styles.siteBarBtn}`}><h5>Populra Posts</h5></a>
 
                             <div className="d-flex my-3">

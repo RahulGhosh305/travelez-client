@@ -1,6 +1,5 @@
 import React from 'react';
 import runningMan from '../../../assets/runnigMan.jpg'
-import styles from './OurStory.modul.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

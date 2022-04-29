@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Footer from '../../Shared/Footer/Footer';
 import travelPic from '../../../assets/travlePic.png';
-import tourSaintMartin from '../../../assets/tourSaintMartin.jpg'
 import styles from './UpCommingEventDetails.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faCalendarWeek, faUserAlt } from '@fortawesome/free-solid-svg-icons'
@@ -51,10 +50,10 @@ const UpCommingEventDetails = () => {
                     </div>
                 </div>
             </div>
-            <marquee className={styles.marqueeStyle}>
+            {/* <marquee className={styles.marqueeStyle}>
                 <h4>You want to go beautiful place with your friends, family or partner. We are coming for you with your best destination. For Query Call Us: +880 1521 555 222</h4>
-            </marquee>
-            <div className="container">
+            </marquee> */}
+            <div className="container mt-3">
                 <div className="row">
                     <div>
                         <p className="lead">{shortDescription}</p>

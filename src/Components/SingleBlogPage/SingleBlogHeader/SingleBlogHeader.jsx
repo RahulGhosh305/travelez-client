@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
-import styles from './SingleBlogHeader.module.css';
 import singleBlogPostImg from '../../../assets/singleBlogPageImg.jpg'
 const SingleBlogHeader = () => {
     return (
@@ -15,7 +14,7 @@ const SingleBlogHeader = () => {
                         </div>
                     </div>
                     <div className="col-md-6 my-4">
-                        <img src={singleBlogPostImg} alt=""  className="img-fluid"/>
+                        <img src={singleBlogPostImg} alt="" className="img-fluid" />
                     </div>
                 </div>
             </div>

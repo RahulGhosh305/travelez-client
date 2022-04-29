@@ -10,7 +10,7 @@ import { faFacebookF, faGoogle, faInstagram, faLinkedinIn, faTwitter } from '@fo
 
 
 const BlogDetails = (props) => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     let { id } = useParams();
     // console.log(id)
