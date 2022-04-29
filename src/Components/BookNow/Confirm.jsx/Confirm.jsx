@@ -1,43 +1,45 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-// import useCart from '../AddCart/useCartHook';
-import Navbar from '../../Shared/Navbar/Navbar';
+import useTourPlan from '../../CartTourPlan/useTourPlan';
 
 const Confirm = ({ nextStep, prevStep, values }) => {
-    // const {handleCartClearance} = useCart()
-    const { fullName, email, phone, address, city, cardName, cardNumber, cvc, expireDate, cartItems, logInEmail, isLoggedInEmailName, Bill } = values
+    // console.log(values);
+    const { handleCartClearance } = useTourPlan()
+    const { fullName, email, phone, address, city, cardName, cardNumber, cvc, expireDate, logInEmail, displayPhoto, name, packageGroupPeoples, packagePresentPrice, totaldays } = values
     const { handleSubmit } = useForm();
     const onSubmit = data => {
-        const  values = { 
-            status : "Pending", 
+        const values = {
+            status: "Pending",
             fullName,
-            email, 
-            phone, 
-            address, 
-            city, 
-            cardName, 
-            cardNumber, 
-            cvc, 
-            expireDate, 
-            // cartItems, 
-            // logInEmail, 
-            // isLoggedInEmailName, 
-            // Bill 
+            email,
+            phone,
+            address,
+            city,
+            cardName,
+            cardNumber,
+            cvc,
+            expireDate,
+            logInEmail,
+            displayPhoto,
+            name,
+            packageGroupPeoples,
+            packagePresentPrice,
+            totaldays
         }
-        // console.log(values);
+        console.log(values);
         //* PROCESS TO SERVER FORM 
-        // fetch('https://sheltered-crag-23788.herokuapp.com/makeFoodOrder', {
-        //     method: 'POST',
-        //     body: JSON.stringify(values),
-        //     headers: {
-        //         'Content-type': 'application/json; charset=UTF-8',
-        //     },
-        // })
-        // .then(res => res.json())
-        // .then(data => {
-        //     // handleCartClearance()
-        //     // console.log(data);
-        // })
+        fetch('http://localhost:5000/bookTour', {
+            method: 'POST',
+            body: JSON.stringify(values),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+            .then(res => res.json())
+            .then(data => {
+                handleCartClearance()
+                // console.log(data);
+            })
         nextStep()
     }
 
@@ -45,7 +47,7 @@ const Confirm = ({ nextStep, prevStep, values }) => {
         prevStep()
     }
     return (
-        <div style={{marginBottom: 100}}>
+        <div style={{ marginBottom: 100 }}>
             {/* <Navbar /> */}
             <div className="container">
                 <div className="">
@@ -55,7 +57,7 @@ const Confirm = ({ nextStep, prevStep, values }) => {
                     <div className='row p-3'>
                         <div className="offset-md-2 col-md-8 border shadow-lg p-4">
                             <h5>Login Information</h5>
-                            {/* <p className="mb-0">Email : {logInEmail}</p> */}
+                            <p className="text-danger fw-bold">Email : {logInEmail}</p>
                             {/* <p>Name : {isLoggedInEmailName}</p> */}
 
                             <h5>Tour Package Information</h5>
@@ -64,28 +66,27 @@ const Confirm = ({ nextStep, prevStep, values }) => {
                                 <table className="table table-sm table-hover bg-white">
                                     <thead className="text-center">
                                         <tr>
-                                            <th scope="col">No</th>
+                                            {/* <th scope="col"></th> */}
                                             <th scope="col">Img</th>
                                             <th scope="col">Name</th>
-                                            <th scope="col">Quantity</th>
-                                            <th scope="col">Type</th>
+                                            <th scope="col">Peoples</th>
+                                            <th scope="col">Days</th>
                                         </tr>
                                     </thead>
 
                                     <tbody className="">
-                                        {/* {
-                                            cartItems.map((item, index) => <tr className="text-center" key={Math.random()}>
-                                                <td>{index + 1}</td>
-                                                <td>
-                                                    <img style={{ minWidth: 75, height: 75, borderRadius: 15, }} src={item.makingPic1} className=" p-2 img-fluid rounded-start" alt="..." />
-                                                </td>
-                                                <td>{item.title}</td>
-                                                <td>{item.quantity}</td>
-                                                <td>{item.type}</td>
-                                            </tr>)
-                                        } */}
+                                        <tr className="text-center">
+                                            {/* <td>index</td> */}
+                                            <td>
+                                                <img style={{ minWidth: 75, height: 75, borderRadius: 15, }} src={displayPhoto} className=" p-2 img-fluid rounded-start" alt="..." />
+                                            </td>
+                                            <td>{name}</td>
+                                            <td>{packageGroupPeoples}</td>
+                                            <td>{totaldays}</td>
+                                        </tr>
+
                                         <tr>
-                                            <td colSpan="2"><strong>Total Amount: {Bill} Tk.</strong></td>
+                                            <td colSpan="2"><strong>Total Amount: {packagePresentPrice} Tk.</strong></td>
                                         </tr>
                                     </tbody>
                                 </table>

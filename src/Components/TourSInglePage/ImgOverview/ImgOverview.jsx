@@ -22,7 +22,7 @@ const ImgOverview = () => {
     // console.log(tours)
     // console.log(itinerary);
     const { overView, stayPlanDays, stayPlanNight, discount } = tours;
-    const { day, describe } = itinerary;
+    // const { day, describe } = itinerary;
     return (
         <div>
             <div className="container">
@@ -105,7 +105,7 @@ const ImgOverview = () => {
                     <h4>Package Itinerary</h4>
                     {
                         itinerary.map(ele =>
-                            <div className="py-2">
+                            <div key={Math.random()} className="py-2">
                                 <h4>{ele.day}</h4>
                                 <p>{ele.describe}</p>
                             </div>

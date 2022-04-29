@@ -3,7 +3,8 @@ import BookHeader from './BookHeader/BookHeader';
 const BookNow = () => {
     return (
         <>
-            <BookHeader />        </>
+            <BookHeader />
+        </>
     );
 };
 

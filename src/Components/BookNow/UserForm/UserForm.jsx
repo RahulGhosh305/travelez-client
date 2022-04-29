@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
+import useTourPlan from '../../CartTourPlan/useTourPlan';
+import useAuth from '../../SignUpSignInPage/UseAuthHook/useAuth';
 import Confirm from '../Confirm.jsx/Confirm';
 import FormPaymentDetails from '../FormPaymentDetails/FormPaymentDetails';
 import FormUserDetails from '../FormUserDetails/FormUserDetails';
 import Success from '../Success/Success';
-// import useCart from '../AddCart/useCartHook'
-// import useAuth from '../LoginSignUpPage/useAuthHook';
+
+
 
 const UserForm = () => {
-//   const {isLoggedIn} = useAuth();
-//   const { cartItems } = useCart()
-//   const Bill = cartItems.reduce((price, item) => price + item.quantity * item.price, 0)
-  // console.log(Bill)
+  const { isLoggedIn } = useAuth();
+  const { tour } = useTourPlan()
+  const { displayPhoto, name, packageGroupPeoples, packagePresentPrice, totaldays } = tour
+  // console.log(displayPhoto, name, packageGroupPeoples, packagePresentPrice, totaldays)
+
   const [userFrom, setUserForm] = useState({
     fullName: "",
     email: "",
@@ -48,10 +51,12 @@ const UserForm = () => {
       cardNumber,
       cvc,
       expireDate,
-    //   Bill : Bill,
-    //   cartItems,
-    //   logInEmail : isLoggedIn.email,
-    //   isLoggedInEmailName : isLoggedIn.displayName
+      logInEmail: isLoggedIn.email,
+      displayPhoto,
+      name,
+      packageGroupPeoples,
+      packagePresentPrice,
+      totaldays
     })
   }
 

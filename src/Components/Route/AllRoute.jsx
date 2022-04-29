@@ -14,6 +14,9 @@ import BookNow from '../BookNow/BookNow';
 import UpCommingEventDetails from '../HomePage/UpcomingEventDetails/UpCommingEventDetails';
 import NoPageFound from '../NoPageFound/NoPageFound';
 import PrivateRoute from '../SignUpSignInPage/PriveteRoute/PrivateRoute';
+import DetailsPackage from '../DashboardPage/DetailsPackage/DetailsPackage';
+import HostPage from '../HostPage/HostPage';
+
 
 const AllRoute = () => {
     return (
@@ -30,7 +33,9 @@ const AllRoute = () => {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/bookNow" element={<PrivateRoute> <BookNow /> </PrivateRoute>} />
             <Route path="/upComingEventDetails/:id" element={<UpCommingEventDetails />} />
+            <Route path="/detailsPackage/:id" element={<DetailsPackage />} />
             <Route path="*" element={<NoPageFound />} />
+            <Route path="/host" element={<HostPage />} />
         </Routes>
     );
 };

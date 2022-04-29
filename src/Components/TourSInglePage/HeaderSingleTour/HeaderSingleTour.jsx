@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import useTourPlan from '../../CartTourPlan/useTourPlan';
 import Navbar from '../../Shared/Navbar/Navbar'
 import styles from './HeaderSingleTour.module.css';
 
 const HeaderSingleTour = () => {
+    const { selectTourPackage } = useTourPlan()
     const [tours, setTours] = useState({})
     const navigate = useNavigate()
     const { id } = useParams()
@@ -15,11 +17,13 @@ const HeaderSingleTour = () => {
     }, [id])
     // console.log(tours)
     const { packageName, packagePresentPrice, prePackagePrice } = tours
-    const handleBookNow = () => {
-        navigate('/bookNow')
+    const handleBookNow = (tours) => {
+        // console.log(tours);
+        selectTourPackage(tours)
+        navigate("/bookNow")
     }
     const handleHostContact = () => {
-        navigate('/hostContact')
+        navigate('/host')
     }
     return (
         <>
@@ -42,7 +46,7 @@ const HeaderSingleTour = () => {
                         </div>
                         <div className="col-md-6">
                             <div className="d-flex align-items-end">
-                                <button onClick={() => handleBookNow()} className={`btn me-2 ${styles.singleTourBtn}`}>Book Now</button>
+                                <button onClick={() => handleBookNow(tours)} className={`btn me-2 ${styles.singleTourBtn}`}>Book Now</button>
                                 <button onClick={() => handleHostContact()} className={`btn ${styles.singleTourBtn}`}>Conact Host</button>
                             </div>
                         </div>

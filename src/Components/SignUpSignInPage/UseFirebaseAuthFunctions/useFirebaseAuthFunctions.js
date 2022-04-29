@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { getAuth, signOut, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail } from "firebase/auth";
+import { getAuth, signOut, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, onAuthStateChanged, getIdToken } from "firebase/auth";
 import firebaseConfig from '../FirebaseConfig/FirebaseConfig';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -108,6 +108,7 @@ const useFirebaseAuthFunctions = () => {
                 }
                 // console.log(loggedInUser)
                 SetIsLoggedIn(loggedInUser)
+                navigate(from, { replace: true });
             })
             .catch((error) => {
                 // Handle Errors here.
@@ -147,6 +148,28 @@ const useFirebaseAuthFunctions = () => {
                 console.log(errorCode, errorMessage);
             });
     }
+
+
+    //* Get the currently signed-in user
+    useEffect(() => {
+        const unsubscribed = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // console.log(user);
+                // User is signed in, see docs for a list of available properties
+                // const uid = user.uid;
+                // https://firebase.google.com/docs/reference/js/firebase.User
+                getIdToken(user)
+                    .then((idToken) => localStorage.setItem('idToken', idToken))
+                SetIsLoggedIn(user)
+
+            } else {
+                // User is signed out
+                SetIsLoggedIn({})
+            }
+
+            return () => unsubscribed
+        });
+    }, [])
 
 
 
