@@ -9,7 +9,7 @@ import recentPostImg from '../../../assets/recentPostImg1.webp'
 const AllBlogs = () => {
     const [BlogData, setBlogData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/addBlogs')
+        fetch('https://desolate-taiga-63194.herokuapp.com/addBlogs')
             .then(res => res.json())
             .then(data => setBlogData(data))
     }, [])

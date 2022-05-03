@@ -9,7 +9,7 @@ const DetailsPackage = () => {
     console.log(tourPackage)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/individualBookTour/${id}`)
+        fetch(`https://desolate-taiga-63194.herokuapp.com/individualBookTour/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTourPackage(data)

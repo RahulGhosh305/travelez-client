@@ -8,7 +8,7 @@ const TouchMessageView = () => {
     const { id } = useParams()
     console.log(id);
     useEffect(() => {
-        fetch(`http://localhost:5000/touchViewMessage/${id}`)
+        fetch(`https://desolate-taiga-63194.herokuapp.com/touchViewMessage/${id}`)
             .then(res => res.json())
             .then(data => {
                 setMessageView(data)

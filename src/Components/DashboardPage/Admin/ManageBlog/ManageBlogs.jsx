@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const ManageBlogs = () => {
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/addBlogs")
+        fetch("https://desolate-taiga-63194.herokuapp.com/addBlogs")
             .then(res => res.json())
             .then(data => {
                 setBlogs(data)

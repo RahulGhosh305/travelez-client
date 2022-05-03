@@ -21,7 +21,7 @@ const ContactForm = () => {
         resetField("subject")
         resetField("message")
 
-        fetch("http://localhost:5000/contactUsMessage", {
+        fetch("https://desolate-taiga-63194.herokuapp.com/contactUsMessage", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

@@ -12,7 +12,7 @@ const ManageEventDetails = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/upcommingevent/${id}`)
+        fetch(`https://desolate-taiga-63194.herokuapp.com/upcommingevent/${id}`)
             .then(res => res.json())
             .then(data => {
                 setEvent(data)

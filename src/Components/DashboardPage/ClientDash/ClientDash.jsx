@@ -12,7 +12,7 @@ const ClientDash = () => {
     // console.log(isLoggedIn.email)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/individualBookTour?email=${email}`)
+        fetch(`https://desolate-taiga-63194.herokuapp.com/individualBookTour?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)

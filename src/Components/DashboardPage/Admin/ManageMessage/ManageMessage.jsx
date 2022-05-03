@@ -9,21 +9,21 @@ const ManageMessage = () => {
     const [contactUsMessage, setContactUsMessage] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/touchInTouchMessage")
+        fetch("https://desolate-taiga-63194.herokuapp.com/touchInTouchMessage")
             .then(res => res.json())
             .then(data => {
                 setGetInTouch(data)
             })
     }, [])
     useEffect(() => {
-        fetch("http://localhost:5000/contactUsMessage")
+        fetch("https://desolate-taiga-63194.herokuapp.com/contactUsMessage")
             .then(res => res.json())
             .then(data => {
                 setContactUsMessage(data)
             })
     }, [])
     useEffect(() => {
-        fetch("http://localhost:5000/subcribers")
+        fetch("https://desolate-taiga-63194.herokuapp.com/subcribers")
             .then(res => res.json())
             .then(data => {
                 setSubcribers(data)

@@ -18,7 +18,7 @@ const ManageEvents = () => {
             displayPhoto: imageURL
         }
         console.log(sendData)
-        fetch("http://localhost:5000/upcommingevent", {
+        fetch("https://desolate-taiga-63194.herokuapp.com/upcommingevent", {
             method: 'POST',
             body: JSON.stringify(sendData),
             headers: {
@@ -32,7 +32,7 @@ const ManageEvents = () => {
     }
 
     useEffect(() => {
-        fetch("http://localhost:5000/upcommingevent")
+        fetch("https://desolate-taiga-63194.herokuapp.com/upcommingevent")
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -71,7 +71,7 @@ const ManageEvents = () => {
     }
 
     const handleRemove = (id) => {
-        fetch(`http://localhost:5000/upcommingevent/${id}`, {
+        fetch(`https://desolate-taiga-63194.herokuapp.com/upcommingevent/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

@@ -18,7 +18,7 @@ const BlogDetails = (props) => {
     const [comment, setComment] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singleBlog/${id}`)
+        fetch(`https://desolate-taiga-63194.herokuapp.com/singleBlog/${id}`)
             .then(res => res.json())
             .then(data => {
                 setSingleBlog(data)

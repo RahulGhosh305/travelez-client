@@ -13,7 +13,7 @@ const ManageAdmins = () => {
         }
     });
     const onSubmit = data => {
-        fetch("http://localhost:5000/admins", {
+        fetch("https://desolate-taiga-63194.herokuapp.com/admins", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -30,7 +30,7 @@ const ManageAdmins = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/admins')
+        fetch('https://desolate-taiga-63194.herokuapp.com/admins')
             .then(res => res.json())
             .then(data => {
                 setAdminEmails(data);
@@ -39,7 +39,7 @@ const ManageAdmins = () => {
     }, [])
 
     const handleEmailRemove = (id) => {
-        fetch(`http://localhost:5000/admins/${id}`, {
+        fetch(`https://desolate-taiga-63194.herokuapp.com/admins/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

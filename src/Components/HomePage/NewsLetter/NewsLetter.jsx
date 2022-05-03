@@ -15,7 +15,7 @@ const NewsLetter = () => {
         resetField("email")
         // console.log(data)
 
-        fetch("http://localhost:5000/subcribers", {
+        fetch("https://desolate-taiga-63194.herokuapp.com/subcribers", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

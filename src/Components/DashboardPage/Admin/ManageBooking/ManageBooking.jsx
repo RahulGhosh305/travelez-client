@@ -6,7 +6,7 @@ import AdminNav from '../AdminNav/AdminNav';
 const ManageBooking = () => {
     const [booked, setBooked] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/bookTour")
+        fetch("https://desolate-taiga-63194.herokuapp.com/bookTour")
             .then(res => res.json())
             .then(data => {
                 setBooked(data)

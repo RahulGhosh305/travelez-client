@@ -12,7 +12,7 @@ const ImgOverview = () => {
     const { id } = useParams()
     // console.log(id)
     useEffect(() => {
-        fetch(`http://localhost:5000/singleTourPackage/${id}`)
+        fetch(`https://desolate-taiga-63194.herokuapp.com/singleTourPackage/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTours(data)

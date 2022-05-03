@@ -28,7 +28,7 @@ const Confirm = ({ nextStep, prevStep, values }) => {
         }
         console.log(values);
         //* PROCESS TO SERVER FORM 
-        fetch('http://localhost:5000/bookTour', {
+        fetch('https://desolate-taiga-63194.herokuapp.com/bookTour', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {
