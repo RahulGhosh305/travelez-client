@@ -2,13 +2,34 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../../Shared/Footer/Footer';
 import AdminNav from '../AdminNav/AdminNav';
+import axios from 'axios';
 
 import { useForm } from "react-hook-form";
 
 const ManageEvents = () => {
     const [event, setEvent] = useState([])
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const [imageURL, setImageURl] = useState(null);
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+
+    const onSubmit = data => {
+        const sendData = {
+            ...data,
+            displayPhoto: imageURL
+        }
+        console.log(sendData)
+        fetch("http://localhost:5000/upcommingevent", {
+            method: 'POST',
+            body: JSON.stringify(sendData),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                alert(data)
+            })
+    }
 
     useEffect(() => {
         fetch("http://localhost:5000/upcommingevent")
@@ -18,7 +39,7 @@ const ManageEvents = () => {
                 setEvent(data)
             })
     }, [])
-    console.log(event)
+    // console.log(event)
     const horizontal = {
         width: "90%",
         margin: "0 auto",
@@ -28,6 +49,35 @@ const ManageEvents = () => {
     const handleEventDetail = useNavigate()
     const handleDetail = (id) => {
         handleEventDetail(`/manageEventDetail/${id}`)
+    }
+
+    // handle image input
+    const handleImageUpload = (event) => {
+        console.log(event.target.files[0])
+        const imageData = new FormData()
+        imageData.set('key', 'a246b045a78484bd307e45fbf7eb0ee7')
+        imageData.append('image', event.target.files[0])
+
+
+        axios.post('https://api.imgbb.com/1/upload',
+            imageData)
+            .then(response => {
+                // console.log(response.data.data.display_url)
+                setImageURl(response.data.data.display_url);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+
+    const handleRemove = (id) => {
+        fetch(`http://localhost:5000/upcommingevent/${id}`, {
+            method: 'DELETE',
+        })
+            .then(res => res.json())
+            .then(data => {
+                alert(data)
+            })
     }
 
     return (
@@ -71,12 +121,11 @@ const ManageEvents = () => {
                                 </div>
                             </div>
 
-                            <input type="file" className="form-control mb-4 border-0 border-bottom" placeholder="Photo" {...register("displayPhoto", { required: true })} />
+                            <input onChange={handleImageUpload} type='file' />
 
+                            <br />
 
-
-
-                            <input type="submit" />
+                            <input className="mt-2" type="submit" />
                         </form>
                     </div>
                     <div className="col-md-7">
@@ -101,7 +150,7 @@ const ManageEvents = () => {
                                             <td>{ele.peoples}</td>
                                             <td>{ele.presentPrice}</td>
                                             <td><button onClick={() => handleDetail(ele._id)} className="btn btn-success">Details</button></td>
-                                            <td><button className="btn btn-danger">Remove</button></td>
+                                            <td><button onClick={() => handleRemove(ele._id)} className="btn btn-danger">Remove</button></td>
                                         </tr>)
                                     }
                                 </tbody>
