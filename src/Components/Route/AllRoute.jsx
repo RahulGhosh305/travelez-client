@@ -16,6 +16,16 @@ import NoPageFound from '../NoPageFound/NoPageFound';
 import PrivateRoute from '../SignUpSignInPage/PriveteRoute/PrivateRoute';
 import DetailsPackage from '../DashboardPage/DetailsPackage/DetailsPackage';
 import HostPage from '../HostPage/HostPage';
+import ManageAdmins from '../DashboardPage/Admin/AdminDetails/ManageAdmins';
+import ManageEvents from '../DashboardPage/Admin/ManageEvents/ManageEvents';
+import ManageEventDetails from '../DashboardPage/Admin/ManageEventDetails/ManageEventDetails';
+import ManageBooking from '../DashboardPage/Admin/ManageBooking/ManageBooking';
+import ManageBookDetails from '../DashboardPage/Admin/ManageBookDetails/ManageBookDetails';
+import ManageMessage from '../DashboardPage/Admin/ManageMessage/ManageMessage';
+import ManageMessageView from '../DashboardPage/Admin/ManageMessageView/ManageMessageView';
+import TouchMessageView from '../DashboardPage/Admin/TouchMessageView/TouchMessageView';
+import ManagePackages from '../DashboardPage/Admin/ManagePackages/ManagePackages';
+import ManageBlogs from '../DashboardPage/Admin/ManageBlog/ManageBlogs';
 
 
 const AllRoute = () => {
@@ -36,6 +46,16 @@ const AllRoute = () => {
             <Route path="/detailsPackage/:id" element={<DetailsPackage />} />
             <Route path="*" element={<NoPageFound />} />
             <Route path="/host" element={<HostPage />} />
+            <Route path="/manageAdmins" element={<ManageAdmins />} />
+            <Route path="/manageEvents" element={<ManageEvents />} />
+            <Route path="/manageEventDetail/:id" element={<ManageEventDetails />} />
+            <Route path="/manageBooking" element={<ManageBooking />} />
+            <Route path="/bookDetails/:id" element={<ManageBookDetails />} />
+            <Route path="/manageMessage" element={<ManageMessage />} />
+            <Route path="/messageView/:id" element={<ManageMessageView />} />
+            <Route path="/touchMessageView/:id" element={<TouchMessageView />} />
+            <Route path="/managePackage" element={<ManagePackages />} />
+            <Route path="/manageBlogs" element={<ManageBlogs />} />
         </Routes>
     );
 };

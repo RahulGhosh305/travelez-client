@@ -5,18 +5,17 @@ import SelectedCard from '../SelectedCard/SelectedCard';
 import Footer from '../../Shared/Footer/Footer';
 
 
-const Header = () => {
+const ClientDash = () => {
     const [items, setItems] = useState([])
     const { isLoggedIn } = useAuth()
     const email = isLoggedIn.email
-    console.log(isLoggedIn.email)
-
+    // console.log(isLoggedIn.email)
 
     useEffect(() => {
         fetch(`http://localhost:5000/individualBookTour?email=${email}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 setItems(data)
             })
     }, [email])
@@ -34,14 +33,10 @@ const Header = () => {
             <div className="">
                 <div className="container">
                     <div className="row">
-                        {/* Client View Start Here */}
                         <h4 className="mt-3">{isLoggedIn.displayName !== null || undefined ? isLoggedIn.displayName : "Your"} Ordering Packages</h4>
                         {
                             items.map(singleData => <SelectedCard singleData={singleData} key={Math.random()} />)
                         }
-
-                        {/* Admin View Start Here */}
-
                         <div style={horizontal}>
                             <hr />
                         </div>
@@ -53,4 +48,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default ClientDash;

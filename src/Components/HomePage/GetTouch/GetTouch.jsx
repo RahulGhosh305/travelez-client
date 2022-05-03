@@ -6,14 +6,14 @@ const GetTouch = () => {
     const { register, handleSubmit, resetField, formState: { errors } } = useForm({
         mode: "onChange",
         defaultValues: {
-            Name: "",
+            name: "",
             email: "",
             subject: "",
             message: ""
         }
     });
     const onSubmit = data => {
-        resetField("Name")
+        resetField("name")
         resetField("email")
         resetField("subject")
         resetField("message")
@@ -49,8 +49,8 @@ const GetTouch = () => {
                                     <h2 className={styles.formTitle}>GET IN TOUCH</h2>
                                     <div className="row">
                                         <div className="col-md-6">
-                                            <input className="form-control border-0 border-bottom mb-3" placeholder='Name' {...register("Name", { required: true })} />
-                                            {errors.Name && <span className="text-danger">*This field is required</span>}
+                                            <input className="form-control border-0 border-bottom mb-3" placeholder='Name' {...register("name", { required: true })} />
+                                            {errors.name && <span className="text-danger">*This field is required</span>}
                                         </div>
                                         <div className="col-md-6">
                                             <input className="form-control border-0 border-bottom mb-3" placeholder="E-Mail" {...register("email", { required: true })} />
