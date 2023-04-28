@@ -6,7 +6,7 @@ import BlogCart from './BlogCart';
 const Blog = () => {
     const [BlogData, setBlogData] = useState([])
     useEffect(() => {
-        fetch('https://desolate-taiga-63194.herokuapp.com/addBlogs')
+        fetch('https://travelez-server.up.railway.app/addBlogs')
             .then(res => res.json())
             .then(data => setBlogData(data))
     }, [])

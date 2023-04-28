@@ -6,7 +6,7 @@ import styles from './PopularDestination.module.css'
 const PopularDestination = () => {
     const [tourPackage, setTourPackage] = useState([])
     useEffect(() => {
-        fetch('https://desolate-taiga-63194.herokuapp.com/allTourPackages')
+        fetch('https://travelez-server.up.railway.app/allTourPackages')
             .then(res => res.json())
             .then(data => {
                 setTourPackage(data)

@@ -10,7 +10,7 @@ import EventCart from './EventCart';
 const UpcomingEvent = () => {
     const [EventData, setEventData] = useState([])
     useState(() => {
-        fetch('https://desolate-taiga-63194.herokuapp.com/upcommingevent')
+        fetch('https://travelez-server.up.railway.app/upcommingevent')
             .then(res => res.json())
             .then(data => setEventData(data))
     }, [])

@@ -18,7 +18,7 @@ const ManageEvents = () => {
             displayPhoto: imageURL
         }
         console.log(sendData)
-        fetch("https://desolate-taiga-63194.herokuapp.com/upcommingevent", {
+        fetch("https://travelez-server.up.railway.app/upcommingevent", {
             method: 'POST',
             body: JSON.stringify(sendData),
             headers: {
@@ -32,7 +32,7 @@ const ManageEvents = () => {
     }
 
     useEffect(() => {
-        fetch("https://desolate-taiga-63194.herokuapp.com/upcommingevent")
+        fetch("https://travelez-server.up.railway.app/upcommingevent")
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -71,7 +71,7 @@ const ManageEvents = () => {
     }
 
     const handleRemove = (id) => {
-        fetch(`https://desolate-taiga-63194.herokuapp.com/upcommingevent/${id}`, {
+        fetch(`https://travelez-server.up.railway.app/upcommingevent/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

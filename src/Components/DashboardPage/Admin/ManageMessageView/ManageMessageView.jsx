@@ -8,7 +8,7 @@ const ManageMessageView = () => {
     const { id } = useParams()
     // console.log(id);
     useEffect(() => {
-        fetch(`https://desolate-taiga-63194.herokuapp.com/viewMessage/${id}`)
+        fetch(`https://travelez-server.up.railway.app/viewMessage/${id}`)
             .then(res => res.json())
             .then(data => {
                 setMessageView(data)

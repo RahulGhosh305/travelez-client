@@ -13,7 +13,7 @@ const ManageAdmins = () => {
         }
     });
     const onSubmit = data => {
-        fetch("https://desolate-taiga-63194.herokuapp.com/admins", {
+        fetch("https://travelez-server.up.railway.app/admins", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -30,7 +30,7 @@ const ManageAdmins = () => {
 
 
     useEffect(() => {
-        fetch('https://desolate-taiga-63194.herokuapp.com/admins')
+        fetch('https://travelez-server.up.railway.app/admins')
             .then(res => res.json())
             .then(data => {
                 setAdminEmails(data);
@@ -39,7 +39,7 @@ const ManageAdmins = () => {
     }, [])
 
     const handleEmailRemove = (id) => {
-        fetch(`https://desolate-taiga-63194.herokuapp.com/admins/${id}`, {
+        fetch(`https://travelez-server.up.railway.app/admins/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

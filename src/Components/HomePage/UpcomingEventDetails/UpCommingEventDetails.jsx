@@ -18,7 +18,7 @@ const UpCommingEventDetails = () => {
     }, [])
 
     useEffect(() => {
-        fetch(`https://desolate-taiga-63194.herokuapp.com/upcommingevent/${id}`)
+        fetch(`https://travelez-server.up.railway.app/upcommingevent/${id}`)
             .then(res => res.json())
             .then(data => setEvent(data))
     }, [id])

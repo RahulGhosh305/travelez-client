@@ -15,7 +15,7 @@ const NewsLetter = () => {
         resetField("email")
         // console.log(data)
 
-        fetch("https://desolate-taiga-63194.herokuapp.com/subcribers", {
+        fetch("https://travelez-server.up.railway.app/subcribers", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

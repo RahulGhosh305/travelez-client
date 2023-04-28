@@ -11,7 +11,7 @@ const HeaderSingleTour = () => {
     const { id } = useParams()
     // console.log(id)
     useEffect(() => {
-        fetch(`https://desolate-taiga-63194.herokuapp.com/singleTourPackage/${id}`)
+        fetch(`https://travelez-server.up.railway.app/singleTourPackage/${id}`)
             .then(res => res.json())
             .then(data => setTours(data))
     }, [id])

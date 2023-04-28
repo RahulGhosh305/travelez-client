@@ -9,7 +9,7 @@ const Dashboard = () => {
     const { isLoggedIn } = useAuth()
     console.log(isLoggedIn.email);
     useEffect(() => {
-        fetch('https://desolate-taiga-63194.herokuapp.com/admins')
+        fetch('https://travelez-server.up.railway.app/admins')
             .then(res => res.json())
             .then(data => {
                 setAdminEmails(data);

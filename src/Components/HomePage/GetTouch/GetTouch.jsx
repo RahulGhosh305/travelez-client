@@ -18,7 +18,7 @@ const GetTouch = () => {
         resetField("subject")
         resetField("message")
 
-        fetch("https://desolate-taiga-63194.herokuapp.com/touchInTouchMessage", {
+        fetch("https://travelez-server.up.railway.app/touchInTouchMessage", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

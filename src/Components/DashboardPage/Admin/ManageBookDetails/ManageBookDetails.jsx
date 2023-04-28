@@ -7,7 +7,7 @@ const ManageBookDetails = () => {
     const [bookData, setBookData] = useState({})
     const { id } = useParams()
     useEffect(() => {
-        fetch(`https://desolate-taiga-63194.herokuapp.com/individualBookTour/${id}`)
+        fetch(`https://travelez-server.up.railway.app/individualBookTour/${id}`)
             .then(res => res.json())
             .then(data => {
                 setBookData(data)
