@@ -7,7 +7,7 @@ const ManageBookDetails = () => {
     const [bookData, setBookData] = useState({})
     const { id } = useParams()
     useEffect(() => {
-        fetch(`https://travelez-server.up.railway.app/individualBookTour/${id}`)
+        fetch(`https://travelez-server.vercel.app/individualBookTour/${id}`)
             .then(res => res.json())
             .then(data => {
                 setBookData(data)

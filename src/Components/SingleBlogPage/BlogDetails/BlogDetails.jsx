@@ -18,7 +18,7 @@ const BlogDetails = (props) => {
     const [comment, setComment] = useState([])
 
     useEffect(() => {
-        fetch(`https://travelez-server.up.railway.app/singleBlog/${id}`)
+        fetch(`https://travelez-server.vercel.app/singleBlog/${id}`)
             .then(res => res.json())
             .then(data => {
                 setSingleBlog(data)

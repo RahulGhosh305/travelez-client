@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const ManagePackages = () => {
     const [tourPackage, setTourPackage] = useState([])
     useEffect(() => {
-        fetch("https://travelez-server.up.railway.app/allTourPackages")
+        fetch("https://travelez-server.vercel.app/allTourPackages")
             .then(res => res.json())
             .then(data => {
                 setTourPackage(data)

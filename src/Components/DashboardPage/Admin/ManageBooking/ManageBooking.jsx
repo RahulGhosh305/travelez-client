@@ -6,7 +6,7 @@ import AdminNav from '../AdminNav/AdminNav';
 const ManageBooking = () => {
     const [booked, setBooked] = useState([])
     useEffect(() => {
-        fetch("https://travelez-server.up.railway.app/bookTour")
+        fetch("https://travelez-server.vercel.app/bookTour")
             .then(res => res.json())
             .then(data => {
                 setBooked(data)

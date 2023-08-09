@@ -28,7 +28,7 @@ const Confirm = ({ nextStep, prevStep, values }) => {
         }
         console.log(values);
         //* PROCESS TO SERVER FORM 
-        fetch('https://travelez-server.up.railway.app/bookTour', {
+        fetch('https://travelez-server.vercel.app/bookTour', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {

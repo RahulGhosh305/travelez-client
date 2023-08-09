@@ -9,21 +9,21 @@ const ManageMessage = () => {
     const [contactUsMessage, setContactUsMessage] = useState([])
 
     useEffect(() => {
-        fetch("https://travelez-server.up.railway.app/touchInTouchMessage")
+        fetch("https://travelez-server.vercel.app/touchInTouchMessage")
             .then(res => res.json())
             .then(data => {
                 setGetInTouch(data)
             })
     }, [])
     useEffect(() => {
-        fetch("https://travelez-server.up.railway.app/contactUsMessage")
+        fetch("https://travelez-server.vercel.app/contactUsMessage")
             .then(res => res.json())
             .then(data => {
                 setContactUsMessage(data)
             })
     }, [])
     useEffect(() => {
-        fetch("https://travelez-server.up.railway.app/subcribers")
+        fetch("https://travelez-server.vercel.app/subcribers")
             .then(res => res.json())
             .then(data => {
                 setSubcribers(data)

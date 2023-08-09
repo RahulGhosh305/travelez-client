@@ -12,7 +12,7 @@ const ManageEventDetails = () => {
     }
 
     useEffect(() => {
-        fetch(`https://travelez-server.up.railway.app/upcommingevent/${id}`)
+        fetch(`https://travelez-server.vercel.app/upcommingevent/${id}`)
             .then(res => res.json())
             .then(data => {
                 setEvent(data)

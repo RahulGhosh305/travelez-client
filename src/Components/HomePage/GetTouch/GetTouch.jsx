@@ -18,7 +18,7 @@ const GetTouch = () => {
         resetField("subject")
         resetField("message")
 
-        fetch("https://travelez-server.up.railway.app/touchInTouchMessage", {
+        fetch("https://travelez-server.vercel.app/touchInTouchMessage", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

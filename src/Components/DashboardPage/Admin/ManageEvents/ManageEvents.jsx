@@ -18,7 +18,7 @@ const ManageEvents = () => {
             displayPhoto: imageURL
         }
         console.log(sendData)
-        fetch("https://travelez-server.up.railway.app/upcommingevent", {
+        fetch("https://travelez-server.vercel.app/upcommingevent", {
             method: 'POST',
             body: JSON.stringify(sendData),
             headers: {
@@ -32,7 +32,7 @@ const ManageEvents = () => {
     }
 
     useEffect(() => {
-        fetch("https://travelez-server.up.railway.app/upcommingevent")
+        fetch("https://travelez-server.vercel.app/upcommingevent")
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -71,7 +71,7 @@ const ManageEvents = () => {
     }
 
     const handleRemove = (id) => {
-        fetch(`https://travelez-server.up.railway.app/upcommingevent/${id}`, {
+        fetch(`https://travelez-server.vercel.app/upcommingevent/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

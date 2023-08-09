@@ -13,7 +13,7 @@ import instra6 from '../../../assets/instra6.webp'
 const Packages = () => {
     const [popularDestination, setPopularDestination] = useState([])
     useEffect(() => {
-        fetch('https://travelez-server.up.railway.app/allTourPackages')
+        fetch('https://travelez-server.vercel.app/allTourPackages')
             .then(res => res.json())
             .then(data => setPopularDestination(data))
     }, [])
