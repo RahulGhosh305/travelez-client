@@ -9,8 +9,8 @@ import EventCart from './EventCart';
 
 const UpcomingEvent = () => {
     const [EventData, setEventData] = useState([])
-    useState(() => {
-        fetch('https://travelez-server.vercel.app/upcommingevent')
+    useState(async () => {
+        await fetch('https://travelez-server.vercel.app/upcommingevent')
             .then(res => res.json())
             .then(data => setEventData(data))
     }, [])
@@ -50,6 +50,7 @@ const UpcomingEvent = () => {
             }
         ]
     };
+    console.log(EventData);
     return (
         <div className="container">
             <div className="row">
@@ -66,7 +67,7 @@ const UpcomingEvent = () => {
                             </div>
                             <Slider {...settings}>
                                 {
-                                    EventData.map(singleData => <EventCart singleData={singleData} key={Math} />)
+                                    EventData?.map(singleData => <EventCart singleData={singleData} key={Math} />)
                                 }
                             </Slider>
                         </div>

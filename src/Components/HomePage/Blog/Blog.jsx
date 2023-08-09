@@ -20,7 +20,7 @@ const Blog = () => {
                 <div className="row">
                     <div className="col-md-8 my-auto">
                         {
-                            BlogData.slice(0, 3).map(singleData => <BlogCart singleData={singleData} key={Math.random()} />)
+                            BlogData?.slice(0, 3).map(singleData => <BlogCart singleData={singleData} key={Math.random()} />)
                         }
                     </div>
                     <div className="col-md-4 my-auto">
