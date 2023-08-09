@@ -12,7 +12,7 @@ const PopularDestination = () => {
                 setTourPackage(data)
             })
     }, [])
-    // console.log(tourPackage);
+    console.log(tourPackage);
     return (
         <div className="container">
             <div className="d-flex justify-content-center mb-5">
