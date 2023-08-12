@@ -8,7 +8,7 @@ const ManageMessageView = () => {
     const { id } = useParams()
     // console.log(id);
     useEffect(() => {
-        fetch(`https://travelez-server.vercel.app/viewMessage/${id}`)
+        fetch(`https://travelez-server.onrender.com/viewMessage/${id}`)
             .then(res => res.json())
             .then(data => {
                 setMessageView(data)

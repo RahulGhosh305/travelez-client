@@ -10,7 +10,7 @@ import EventCart from './EventCart';
 const UpcomingEvent = () => {
     const [EventData, setEventData] = useState([])
     useState(async () => {
-        await fetch('https://travelez-server.vercel.app/upcommingevent')
+        await fetch('https://travelez-server.onrender.com/upcommingevent')
             .then(res => res.json())
             .then(data => setEventData(data))
     }, [])

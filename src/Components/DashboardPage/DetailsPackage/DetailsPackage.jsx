@@ -9,7 +9,7 @@ const DetailsPackage = () => {
     console.log(tourPackage)
 
     useEffect(() => {
-        fetch(`https://travelez-server.vercel.app/individualBookTour/${id}`)
+        fetch(`https://travelez-server.onrender.com/individualBookTour/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTourPackage(data)

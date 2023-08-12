@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const ManageBlogs = () => {
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
-        fetch("https://travelez-server.vercel.app/addBlogs")
+        fetch("https://travelez-server.onrender.com/addBlogs")
             .then(res => res.json())
             .then(data => {
                 setBlogs(data)

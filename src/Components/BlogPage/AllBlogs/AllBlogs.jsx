@@ -9,7 +9,7 @@ import recentPostImg from '../../../assets/recentPostImg1.webp'
 const AllBlogs = () => {
     const [BlogData, setBlogData] = useState([])
     useEffect(() => {
-        fetch('https://travelez-server.vercel.app/addBlogs')
+        fetch('https://travelez-server.onrender.com/addBlogs')
             .then(res => res.json())
             .then(data => setBlogData(data))
     }, [])

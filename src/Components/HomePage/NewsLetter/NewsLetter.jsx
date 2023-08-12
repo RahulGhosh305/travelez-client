@@ -15,7 +15,7 @@ const NewsLetter = () => {
         resetField("email")
         // console.log(data)
 
-        fetch("https://travelez-server.vercel.app/subcribers", {
+        fetch("https://travelez-server.onrender.com/subcribers", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

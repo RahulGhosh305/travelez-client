@@ -6,7 +6,7 @@ import styles from './PopularDestination.module.css'
 const PopularDestination = () => {
     const [tourPackage, setTourPackage] = useState([])
     useEffect(() => {
-        fetch('https://travelez-server.vercel.app/allTourPackages')
+        fetch('https://travelez-server.onrender.com/allTourPackages')
             .then(res => res.json())
             .then(data => {
                 setTourPackage(data)

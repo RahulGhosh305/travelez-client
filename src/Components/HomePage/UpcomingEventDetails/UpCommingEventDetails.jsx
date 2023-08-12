@@ -18,7 +18,7 @@ const UpCommingEventDetails = () => {
     }, [])
 
     useEffect(() => {
-        fetch(`https://travelez-server.vercel.app/upcommingevent/${id}`)
+        fetch(`https://travelez-server.onrender.com/upcommingevent/${id}`)
             .then(res => res.json())
             .then(data => setEvent(data))
     }, [id])

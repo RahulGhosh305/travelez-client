@@ -13,7 +13,7 @@ const ManageAdmins = () => {
         }
     });
     const onSubmit = data => {
-        fetch("https://travelez-server.vercel.app/admins", {
+        fetch("https://travelez-server.onrender.com/admins", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -30,7 +30,7 @@ const ManageAdmins = () => {
 
 
     useEffect(() => {
-        fetch('https://travelez-server.vercel.app/admins')
+        fetch('https://travelez-server.onrender.com/admins')
             .then(res => res.json())
             .then(data => {
                 setAdminEmails(data);
@@ -39,7 +39,7 @@ const ManageAdmins = () => {
     }, [])
 
     const handleEmailRemove = (id) => {
-        fetch(`https://travelez-server.vercel.app/admins/${id}`, {
+        fetch(`https://travelez-server.onrender.com/admins/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

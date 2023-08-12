@@ -21,7 +21,7 @@ const ContactForm = () => {
         resetField("subject")
         resetField("message")
 
-        fetch("https://travelez-server.vercel.app/contactUsMessage", {
+        fetch("https://travelez-server.onrender.com/contactUsMessage", {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

@@ -12,7 +12,7 @@ const ImgOverview = () => {
     const { id } = useParams()
     // console.log(id)
     useEffect(() => {
-        fetch(`https://travelez-server.vercel.app/singleTourPackage/${id}`)
+        fetch(`https://travelez-server.onrender.com/singleTourPackage/${id}`)
             .then(res => res.json())
             .then(data => {
                 setTours(data)

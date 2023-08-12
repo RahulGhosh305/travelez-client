@@ -8,7 +8,7 @@ const TouchMessageView = () => {
     const { id } = useParams()
     console.log(id);
     useEffect(() => {
-        fetch(`https://travelez-server.vercel.app/touchViewMessage/${id}`)
+        fetch(`https://travelez-server.onrender.com/touchViewMessage/${id}`)
             .then(res => res.json())
             .then(data => {
                 setMessageView(data)

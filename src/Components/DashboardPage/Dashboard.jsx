@@ -9,7 +9,7 @@ const Dashboard = () => {
     const { isLoggedIn } = useAuth()
     console.log(isLoggedIn.email);
     useEffect(() => {
-        fetch('https://travelez-server.vercel.app/admins')
+        fetch('https://travelez-server.onrender.com/admins')
             .then(res => res.json())
             .then(data => {
                 setAdminEmails(data);

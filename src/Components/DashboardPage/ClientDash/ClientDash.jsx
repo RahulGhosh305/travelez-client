@@ -12,7 +12,7 @@ const ClientDash = () => {
     // console.log(isLoggedIn.email)
 
     useEffect(() => {
-        fetch(`https://travelez-server.vercel.app/individualBookTour?email=${email}`)
+        fetch(`https://travelez-server.onrender.com/individualBookTour?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
