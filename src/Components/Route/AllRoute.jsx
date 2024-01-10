@@ -27,7 +27,6 @@ import TouchMessageView from '../DashboardPage/Admin/TouchMessageView/TouchMessa
 import ManagePackages from '../DashboardPage/Admin/ManagePackages/ManagePackages';
 import ManageBlogs from '../DashboardPage/Admin/ManageBlog/ManageBlogs';
 
-
 const AllRoute = () => {
     return (
         <Routes>
